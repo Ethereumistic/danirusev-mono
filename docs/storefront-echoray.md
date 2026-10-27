@@ -28,7 +28,7 @@ Local development: copy `apps/web/.env.example` to `apps/web/.dev.vars` (ignored
 pnpm --filter @danirusev/web exec wrangler secret put ECHORAY_INTEGRATION_SECRET
 ```
 
-Production: the Worker `danirusev-web` serves `dr11.echoray.cloud` through Echoray Connect. An Echoray operator names it as the business's site Worker (`convex run commerce/connect:setSiteWorker '{"businessId":"ks7c3n9k8akcx2rd19mph4cms18g47hy","worker":"danirusev-web"}'`), and the owner then claims `dr11` in Admin → Settings → Website and domain. Connect adds the DNS record and route and writes `STOREFRONT_INTEGRATION_ID`, `STOREFRONT_INTEGRATION_SECRET` and `STOREFRONT_ORIGIN` as Worker secrets; the voucher page uses them when the `ECHORAY_*` names are unset. `ECHORAY_GATEWAY_URL` and `ECHORAY_CONVEX_URL` (`https://convex.echoray.io`) are `vars` in `wrangler.jsonc`. `ECHORAY_STOREFRONT_ID` stays unset (fixtures) until the products are published; then set it to the integration ID. Never commit the secret or log it. Values are read with `import { env } from 'cloudflare:workers'` in `lib/echoray/config.server.ts`; the declared variables live in `src/cloudflare-workers.d.ts`.
+Production: the Worker `danirusev-web` serves `dr11.echoray.cloud` through Echoray Connect. An Echoray operator names it as the business's site Worker (`convex run commerce/connect:setSiteWorker '{"businessId":"ks7c3n9k8akcx2rd19mph4cms18g47hy","worker":"danirusev-web"}'`), and the owner then claims `dr11` in Admin → Settings → Website and domain. Connect adds the DNS record and route and writes `STOREFRONT_INTEGRATION_ID`, `STOREFRONT_INTEGRATION_SECRET` and `STOREFRONT_ORIGIN` as Worker secrets; the voucher page uses them when the `ECHORAY_*` names are unset. `ECHORAY_GATEWAY_URL` and `ECHORAY_CONVEX_URL` (`https://convex.echoray.io`) are `vars` in `wrangler.jsonc`. `ECHORAY_STOREFRONT_ID` is the public integration ID `p175c2xhv3vafj3hjq5hv225g98h3v4f` (set in `wrangler.jsonc` on 2026-10-27 when the products were published); unset it to fall back to fixtures. Never commit the secret or log it. Values are read with `import { env } from 'cloudflare:workers'` in `lib/echoray/config.server.ts`; the declared variables live in `src/cloudflare-workers.d.ts`.
 
 ## Fixture/live boundary
 
@@ -45,7 +45,7 @@ Server-only modules (`*.server.ts`, marked `@tanstack/react-start/server-only`):
 
 When `ECHORAY_STOREFRONT_ID` is empty, the catalog functions answer from `lib/echoray/fixtures.ts`: `PublicDetailV2` objects generated on 2026-10-27 from `docs/commerce/catalog/*/product.json` (prices ×100 into minor units, product IDs from the `.echoray-shop.json` receipts). The app never imports `docs/` at runtime; regenerate the fixture by hand when the product files change. Without the voucher variables the voucher page shows "Проверката не е настроена" (plus a setup hint in development).
 
-The products are still Echoray **drafts**, so the public catalog does not list them: with a storefront ID configured, the detail pages 404 and the "more experiences" strip is empty until the owner publishes them.
+The five products are **published** (2026-10-27). Only published products appear in the public catalog: an archived or draft product's page returns 404 and drops out of the "more experiences" strip.
 
 ## Page mapping
 

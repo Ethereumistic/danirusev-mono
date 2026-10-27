@@ -29,7 +29,7 @@ The content comes from the live danirusev.com public snapshot taken 2026-10-27 (
 - Location is a single-choice input pointing at the shop venue `pista-kraynitsi`. Its only live venue is `Писта Крайници` (Sofia). The legacy fixture cities (София / Пловдив / Севлиево) are not offered on the live site.
 - The live rent slug is `drift-rent`. The landing-page fixture still links to `rent-a-drift-car`, which 404s on the live site. Align it when the web app reads the catalog from Echoray.
 - Description = live description + program. Specifications = the four stat tiles + location + included / not included.
-- Products are **drafts**, inventory `made_to_order` (unlimited). The digital voucher choice is `digital: true` (ships nothing, contact-only checkout); fulfilment stays `delivery` until the owner sets up a collection point.
+- Products are **published** (2026-10-27), inventory `made_to_order` (unlimited). The digital voucher choice is `digital: true` (ships nothing, contact-only checkout); fulfilment stays `delivery` until the owner sets up a collection point.
 - `preferred_date` is a `date` input (1–365 days ahead), a preference confirmed by phone, not a booking.
 - Images: at most 5 per experience, in live display order. The danirusev-assets PNG masters are only 500×500 px; the Event uploads from Payload media are 1920×2560.
 
@@ -46,8 +46,8 @@ State on 2026-10-27:
 ## Open gaps
 
 The original Echoray brief is [handoff-echoray.md](handoff-echoray.md), and Echoray has implemented it. Still open:
-- The site is live at <https://dr11.echoray.cloud> (Worker `danirusev-web`, connected through Echoray Connect on 2026-10-27; see [../storefront-echoray.md](../storefront-echoray.md)). Voucher QR codes open `https://dr11.echoray.cloud/vouchers/<token>`. The catalog still comes from the bundled fixtures until the products are published and `ECHORAY_STOREFRONT_ID` is set.
-- Publishing the five draft products, and the real voucher templates (the current ones print „Севлиево / Трявна“).
+- The site is live at <https://dr11.echoray.cloud> (Worker `danirusev-web`, connected through Echoray Connect on 2026-10-27; see [../storefront-echoray.md](../storefront-echoray.md)). Voucher QR codes open `https://dr11.echoray.cloud/vouchers/<token>`. The products are published, and the site reads them from the live catalog (`ECHORAY_STOREFRONT_ID`).
+- The real voucher templates (the current ones print „Севлиево / Трявна“).
 - Checkout answers and online payments stay off until payments return.
 
 Research behind it: [research/legacy-commerce.md](research/legacy-commerce.md) (legacy model, vouchers, exact PDF stamping) and [research/echoray-capabilities.md](research/echoray-capabilities.md) (Echoray source review with file references).

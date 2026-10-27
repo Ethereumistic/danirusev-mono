@@ -10,7 +10,9 @@
   // Without ECHORAY_STOREFRONT_ID the site serves bundled catalog fixtures.
   "vars": {
     "ECHORAY_GATEWAY_URL": "https://commerce.echoray.io",
-    "ECHORAY_CONVEX_URL": "https://convex.echoray.io"
+    "ECHORAY_CONVEX_URL": "https://convex.echoray.io",
+    // Public storefront integration ID (Echoray Connect); unset → bundled fixtures.
+    "ECHORAY_STOREFRONT_ID": "p175c2xhv3vafj3hjq5hv225g98h3v4f"
   },
   "observability": {
     "enabled": true,
