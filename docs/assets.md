@@ -8,6 +8,8 @@ The current landing page uses the original project's public media and full wordm
 - `public/media/*`: local copies of feature, experience, portrait, testimonial, and YouTube images. `src/features/landing/media-manifest.json` records every original URL and its local filename.
 - `public/favicon.ico`, `public/og-image.jpg`: legacy public assets.
 - Icons use the legacy lucide-react 0.517.0 set. The small local brand-icon definitions retain its ISC attribution.
+- `public/fonts/geist-mono-latin.woff2`: the latin subset of Geist Mono served by danirusev.com (`/_next/static/media/f5271587012faf78-s.p.woff2`, captured 2026-10-27). It renders the experience page's program-time pills (`font-mono`), as on the reference. Geist is licensed under the SIL Open Font License 1.1 (Vercel).
+- Experience detail galleries are not copied locally: they load the image URLs the catalog returns (Echoray media in live mode, the `danirusev-assets` PNG masters named in the fixture product files otherwise).
 - Body/nav/headings use the deployed reference's system sans-serif stack. Inter and the separate Geist Black font introduced by the first scaffold are not used.
 
 The source media repository is [Ethereumistic/danirusev-assets](https://github.com/Ethereumistic/danirusev-assets). YouTube thumbnail and channel-avatar URLs come from the published landing-page snapshot on 2026-10-27. Media is served locally; no YouTube feed or CMS is called at runtime.

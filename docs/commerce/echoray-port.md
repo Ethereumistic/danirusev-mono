@@ -18,14 +18,13 @@ Keys are in the owner's OS keyring (Commerce and Library keys, profile `dani-rus
 
 The content comes from the live danirusev.com public snapshot taken 2026-10-27 ([research/experiences.json](research/experiences.json), notes in [research/web-notes.md](research/web-notes.md)). The copy is verbatim Bulgarian.
 
-| Handle | Name | Base price | Configurator |
-| --- | --- | --- | --- |
-| `drift-taxi` | Дрифт Такси | 155 € | voucher medium, location, GoPro +20 €, extra tires +80 €, recipient, preferred date |
-| `drift-rent` | Карай Дрифтачка | 270 € | same as taxi |
-| `drift-mix` | Дрифт Микс | 215 € | same as taxi |
-| `drift-event` | Дрифт Събитие | price on request (`inquiry: по договаряне`, price 0; sold via draft orders) | voucher medium (both free), location, recipient, preferred date |
-| `drift-day` | Дрифт Ден | 358 € | voucher medium, location, duration 2 h / 4 h +141 € / 6 h +348 €, GoPro, recipient, preferred date |
-
+| Handle        | Name            | Base price                                                                  | Configurator                                                                                       |
+| ------------- | --------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `drift-taxi`  | Дрифт Такси     | 155 €                                                                       | voucher medium, location, GoPro +20 €, extra tires +80 €, recipient, preferred date                |
+| `drift-rent`  | Карай Дрифтачка | 270 €                                                                       | same as taxi                                                                                       |
+| `drift-mix`   | Дрифт Микс      | 215 €                                                                       | same as taxi                                                                                       |
+| `drift-event` | Дрифт Събитие   | price on request (`inquiry: по договаряне`, price 0; sold via draft orders) | voucher medium (both free), location, recipient, preferred date                                    |
+| `drift-day`   | Дрифт Ден       | 358 €                                                                       | voucher medium, location, duration 2 h / 4 h +141 € / 6 h +348 €, GoPro, recipient, preferred date |
 - The physical voucher costs +4 €, except on Event where it's included. Recipient is limited to 16 characters, as on the legacy checkout.
 - Location is a single-choice input pointing at the shop venue `pista-kraynitsi`. Its only live venue is `Писта Крайници` (Sofia). The legacy fixture cities (София / Пловдив / Севлиево) are not offered on the live site.
 - The live rent slug is `drift-rent`. The landing-page fixture still links to `rent-a-drift-car`, which 404s on the live site. Align it when the web app reads the catalog from Echoray.

@@ -1,9 +1,7 @@
 {
   "handle": "drift-event",
   "name": "Дрифт Събитие",
-  "products": [
-    "drift-event"
-  ],
+  "products": ["drift-event"],
   "validityDays": 365,
   "autoIssue": false,
   "templateNote": "Шаблонът печата „Севлиево / Трявна“ и продължителност; действителната локация се печата долу („ЛОКАЦИЯ: …“) до замяната на шаблоните.",

@@ -12,16 +12,16 @@ Written 27 October 2026 by the agent that built these features in `/home/echo/Do
 
 ## What Echoray now offers (all live)
 
-| Feature | Where |
-| --- | --- |
-| Staff orders with personalisation answers; contact-only when nothing ships; completion as cash, bank transfer, paid another way, complimentary, or imported | Admin → Draft orders (module **Draft orders**) |
-| Configurator choice `"digital": true` (ships nothing) and `"venue": "<key>"` | product.json `configurator` |
-| `date` input (preferred day, not a booking): `minDays`, `maxDays`, `disabledWeekdays` | product.json `configurator` |
-| Price on request: `"inquiry": { "label": "по договаряне" }` (no price shown, checkout refuses it, sell via a draft order) | product.json |
-| Venues | `shop venues`, `shop venue …`; Admin → Settings → Venues |
-| Vouchers: types with a private PDF template and a stamp layout, issue, list, void/restore, PDF reprint, redeem at the venue (scan or code, staff confirm) | `shop vouchers …`; Admin → Vouchers (module **Experience vouchers**) |
-| Public catalog v2 (`include=experience`: type, attributes, categories, configurator, price on request) | `@echoray/api-client` `createPublicCatalogClient({ …, extensions: ['experience'] })` |
-| Voucher verify page data (validity only) | Convex query `commerce/vouchers:voucherPage` |
+| Feature                                                                                                                                                     | Where                                                                                |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Staff orders with personalisation answers; contact-only when nothing ships; completion as cash, bank transfer, paid another way, complimentary, or imported | Admin → Draft orders (module **Draft orders**)                                       |
+| Configurator choice `"digital": true` (ships nothing) and `"venue": "<key>"`                                                                                | product.json `configurator`                                                          |
+| `date` input (preferred day, not a booking): `minDays`, `maxDays`, `disabledWeekdays`                                                                       | product.json `configurator`                                                          |
+| Price on request: `"inquiry": { "label": "по договаряне" }` (no price shown, checkout refuses it, sell via a draft order)                                   | product.json                                                                         |
+| Venues                                                                                                                                                      | `shop venues`, `shop venue …`; Admin → Settings → Venues                             |
+| Vouchers: types with a private PDF template and a stamp layout, issue, list, void/restore, PDF reprint, redeem at the venue (scan or code, staff confirm)   | `shop vouchers …`; Admin → Vouchers (module **Experience vouchers**)                 |
+| Public catalog v2 (`include=experience`: type, attributes, categories, configurator, price on request)                                                      | `@echoray/api-client` `createPublicCatalogClient({ …, extensions: ['experience'] })` |
+| Voucher verify page data (validity only)                                                                                                                    | Convex query `commerce/vouchers:voucherPage`                                         |
 
 ## Step 1. Check the connection
 
@@ -87,8 +87,29 @@ Create these five files in `docs/commerce/vouchers/<handle>.json` (the legacy st
   "autoIssue": false,
   "templateNote": "The artwork prints “Севлиево / Трявна” and a duration; the purchased location and duration may differ.",
   "layout": [
-    { "field": "recipient", "page": 0, "x": 510, "y": 109.5, "size": 78, "font": "geist-black", "colour": "#ffffff", "align": "left", "uppercase": true },
-    { "field": "expiry", "page": 0, "x": 1400, "y": 55, "size": 18, "font": "geist-black", "colour": "#ffc106", "align": "right", "uppercase": true, "text": "ВАЖИ ДО: {value}" },
+    {
+      "field": "recipient",
+      "page": 0,
+      "x": 510,
+      "y": 109.5,
+      "size": 78,
+      "font": "geist-black",
+      "colour": "#ffffff",
+      "align": "left",
+      "uppercase": true
+    },
+    {
+      "field": "expiry",
+      "page": 0,
+      "x": 1400,
+      "y": 55,
+      "size": 18,
+      "font": "geist-black",
+      "colour": "#ffc106",
+      "align": "right",
+      "uppercase": true,
+      "text": "ВАЖИ ДО: {value}"
+    },
     { "field": "qr", "page": 0, "x": 1250, "y": 630, "size": 150 }
   ]
 }
@@ -96,13 +117,13 @@ Create these five files in `docs/commerce/vouchers/<handle>.json` (the legacy st
 
 The other four differ only in `handle`, `name`, `products` and the expiry `colour`:
 
-| handle | name | products | expiry colour |
-| --- | --- | --- | --- |
-| `drift-taxi` | Дрифт Такси | `["drift-taxi"]` | `#ffc106` |
-| `drift-rent` | Наем на Дрифт Автомобил | `["drift-rent"]` | `#39b6ff` |
-| `drift-mix` | Дрифт Микс | `["drift-mix"]` | `#d0f61a` |
-| `drift-event` | Дрифт Събитие | `["drift-event"]` | `#fb3640` |
-| `drift-day` | Дрифт Ден | `["drift-day"]` | `#97579e` |
+| handle        | name                    | products          | expiry colour |
+| ------------- | ----------------------- | ----------------- | ------------- |
+| `drift-taxi`  | Дрифт Такси             | `["drift-taxi"]`  | `#ffc106`     |
+| `drift-rent`  | Наем на Дрифт Автомобил | `["drift-rent"]`  | `#39b6ff`     |
+| `drift-mix`   | Дрифт Микс              | `["drift-mix"]`   | `#d0f61a`     |
+| `drift-event` | Дрифт Събитие           | `["drift-event"]` | `#fb3640`     |
+| `drift-day`   | Дрифт Ден               | `["drift-day"]`   | `#97579e`     |
 
 Use the product names as they are in the catalog files if they differ from this table. Then upload each with its template (7–16 MB each; they stay private, never in Library):
 

@@ -45,33 +45,33 @@ Do A1 (manual orders with configurator answers) before B, because B links vouche
 
 These files are on branch `claude/danirusev-commerce-backend-eae353`, in the worktree `/home/echo/Documents/danirusev-mono/.claude/worktrees/danirusev-commerce-backend-eae353`. Once that branch is merged, the same relative paths exist under `/home/echo/Documents/danirusev-mono`. Below, `$MONO` means whichever of the two exists.
 
-| File | What it gives you |
-| --- | --- |
-| `$MONO/docs/commerce/echoray-port.md` | Mapping of legacy experiences → Echoray products, and the compromises made |
-| `$MONO/docs/commerce/catalog/{drift-taxi,drift-rent,drift-mix,drift-event,drift-day}/product.json` | The live product files, with the configurator in use |
-| `$MONO/docs/commerce/catalog/collections.json` | The collection |
-| `$MONO/docs/commerce/research/echoray-capabilities.md` | Source review of Echoray (this repo) with file:line references and a ranked gap list. **Start here.** |
-| `$MONO/docs/commerce/research/legacy-commerce.md` | The legacy model, checkout, voucher lifecycle and redemption, and the **exact PDF stamping** (sections 3–5) |
-| `$MONO/docs/commerce/research/web-notes.md` | Live-site behaviour: add-on selection rules, checkout fields, voucher terms (1-year validity, email link without attachment) |
-| `$MONO/docs/commerce/research/experiences.json` | Full public data snapshot of the five experiences |
-| `$MONO/AGENTS.md` | The storefront's architecture: TanStack Start on Cloudflare Workers, Convex planned. Use it as the consumer's constraints. |
+| File                                                                                               | What it gives you                                                                                                            |
+| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `$MONO/docs/commerce/echoray-port.md`                                                              | Mapping of legacy experiences → Echoray products, and the compromises made                                                   |
+| `$MONO/docs/commerce/catalog/{drift-taxi,drift-rent,drift-mix,drift-event,drift-day}/product.json` | The live product files, with the configurator in use                                                                         |
+| `$MONO/docs/commerce/catalog/collections.json`                                                     | The collection                                                                                                               |
+| `$MONO/docs/commerce/research/echoray-capabilities.md`                                             | Source review of Echoray (this repo) with file:line references and a ranked gap list. **Start here.**                        |
+| `$MONO/docs/commerce/research/legacy-commerce.md`                                                  | The legacy model, checkout, voucher lifecycle and redemption, and the **exact PDF stamping** (sections 3–5)                  |
+| `$MONO/docs/commerce/research/web-notes.md`                                                        | Live-site behaviour: add-on selection rules, checkout fields, voucher terms (1-year validity, email link without attachment) |
+| `$MONO/docs/commerce/research/experiences.json`                                                    | Full public data snapshot of the five experiences                                                                            |
+| `$MONO/AGENTS.md`                                                                                  | The storefront's architecture: TanStack Start on Cloudflare Workers, Convex planned. Use it as the consumer's constraints.   |
 
 ### Legacy app, read only (`/home/echo/Documents/danirusev`)
 
-| File | Why |
-| --- | --- |
-| `public/vouchers/drift-taxi.pdf`, `drift-rent.pdf`, `drift-mix.pdf`, `drift-event.pdf`, `drift-day.pdf` | The five voucher templates: single page, 1440 × 810 pt, no form fields, 7–16 MB each |
-| `public/fonts/Geist-Black.ttf` | The font used for stamping (Cyrillic) |
-| `public/fonts/Gagalin-Regular.otf` | The brand wordmark font (not used in the PDFs) |
-| `app/api/vouchers/download/[id]/route.ts` | The stamping code: pdf-lib + fontkit + qrcode, with coordinates |
-| `lib/utils.ts` | Theme colours per type and site URL resolution |
-| `app/api/vouchers/generate/route.ts`, `app/api/vouchers/redeem/route.ts`, `app/api/orders/confirm-date/route.ts` | Issuance and redemption API |
-| `app/(dash)/dash/actions.ts`, `app/(dash)/dash/columns.tsx` | Staff order and voucher workflow: date confirmation, recipient edits, statuses |
-| `app/(dash)/dash/verify/page.tsx`, `app/(dash)/dash/verify/[id]/verify-voucher-client.tsx` | Staff scanner and verify/redeem screen |
-| `components/vouchers/voucher-card.tsx`, `app/(frontend)/vouchers/page.tsx` | The customer voucher view |
-| `lib/resend.ts` | The voucher confirmation email |
-| `collections/Products.ts`, `components/experience/experience-additional-items.tsx` | The experience and add-on model, and the selection rules |
-| `app/(frontend)/checkout/checkout-form.tsx`, `app/(frontend)/terms/page.tsx` | Checkout fields; voucher terms (sections 6–9) |
+| File                                                                                                             | Why                                                                                  |
+| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| `public/vouchers/drift-taxi.pdf`, `drift-rent.pdf`, `drift-mix.pdf`, `drift-event.pdf`, `drift-day.pdf`          | The five voucher templates: single page, 1440 × 810 pt, no form fields, 7–16 MB each |
+| `public/fonts/Geist-Black.ttf`                                                                                   | The font used for stamping (Cyrillic)                                                |
+| `public/fonts/Gagalin-Regular.otf`                                                                               | The brand wordmark font (not used in the PDFs)                                       |
+| `app/api/vouchers/download/[id]/route.ts`                                                                        | The stamping code: pdf-lib + fontkit + qrcode, with coordinates                      |
+| `lib/utils.ts`                                                                                                   | Theme colours per type and site URL resolution                                       |
+| `app/api/vouchers/generate/route.ts`, `app/api/vouchers/redeem/route.ts`, `app/api/orders/confirm-date/route.ts` | Issuance and redemption API                                                          |
+| `app/(dash)/dash/actions.ts`, `app/(dash)/dash/columns.tsx`                                                      | Staff order and voucher workflow: date confirmation, recipient edits, statuses       |
+| `app/(dash)/dash/verify/page.tsx`, `app/(dash)/dash/verify/[id]/verify-voucher-client.tsx`                       | Staff scanner and verify/redeem screen                                               |
+| `components/vouchers/voucher-card.tsx`, `app/(frontend)/vouchers/page.tsx`                                       | The customer voucher view                                                            |
+| `lib/resend.ts`                                                                                                  | The voucher confirmation email                                                       |
+| `collections/Products.ts`, `components/experience/experience-additional-items.tsx`                               | The experience and add-on model, and the selection rules                             |
+| `app/(frontend)/checkout/checkout-form.tsx`, `app/(frontend)/terms/page.tsx`                                     | Checkout fields; voucher terms (sections 6–9)                                        |
 
 The legacy stamps, identical on all five templates (PDF points, origin at bottom-left):
 
@@ -136,7 +136,7 @@ Verify each item against the source first. If something already exists, wire it 
    - recipient, location (a venue or custom text), `issuedAt`, `expiresAt` (default issue + 365 days, editable at issue time);
    - a snapshot of the template version and stamped values;
    - source (manual or order line, with idempotency key), issuer, status (`active` / `redeemed` / `void`, with `expired` computed server-side) and an audit trail.
-   
+
    Redemption is atomic and single use, and records who redeemed it and when. Void and restore are allowed. An expired voucher can't be redeemed.
 3. **Manual issuance UI (staff).** Fields: name on voucher, expiry (default +365 days or a chosen date), location (venue picker or custom input), voucher type, and an optional order or draft link.
    - Issue → code + QR + stamped PDF → download, reprint, and optionally email it through the existing notification and mail gates.

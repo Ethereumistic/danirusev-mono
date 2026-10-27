@@ -31,7 +31,7 @@ const experiences = [
     theme: 'taxi',
   },
   {
-    slug: 'rent-a-drift-car',
+    slug: 'drift-rent',
     title: 'Карай Дрифтачка',
     subtitle: 'Карай Сам',
     description:
@@ -90,6 +90,16 @@ export function getLandingContent() {
     videos: content.videos,
   }
 }
-export function getExperience(slug: string) {
-  return experiences.find((experience) => experience.slug === slug)
+/** Landing cards for the other experiences, priced from the catalog list (minor units). */
+export function getExperienceCards(
+  catalog: readonly { slug: string; price: number | null }[],
+  excludeSlug?: string,
+): Experience[] {
+  return experiences.flatMap((experience) => {
+    const listed = catalog.find((item) => item.slug === experience.slug)
+    if (!listed || experience.slug === excludeSlug) return []
+    return [
+      { ...experience, price: listed.price === null ? 0 : listed.price / 100 },
+    ]
+  })
 }

@@ -2,7 +2,7 @@
 
 A UI-first rebuild of the Dani Rusev website. TanStack Start and React run on Cloudflare Workers, with Tailwind CSS and shared shadcn components built on Base UI.
 
-The landing and contact pages run entirely on local content and deterministic fixtures. No database, backend service, authentication, payment integration, environment variables, or external account is required. Prices and packages are illustrative; contact links open the user's phone/email application. Experience previews do not create reservations. The contact form validates locally and explicitly reports that messages are not sent yet.
+The landing and contact pages run entirely on local content and deterministic fixtures. Experience detail pages (`/experience/<slug>`) and the voucher check page (`/vouchers/<token>`) read Echoray Commerce when configured and fall back to bundled catalog fixtures otherwise, so no database, backend service, authentication, payment integration, environment variables, or external account is required for development. See [Echoray storefront notes](docs/storefront-echoray.md). Prices and packages are illustrative; contact links open the user's phone/email application. Experience pages do not create reservations: the booking button opens the live site's call prompt. The contact form validates locally and explicitly reports that messages are not sent yet.
 
 ## Getting started
 
@@ -47,6 +47,9 @@ The generated `apps/web/src/routeTree.gen.ts` is checked in so fresh-checkout ty
 - `apps/web/src/routes/`: typed file routes, metadata, route errors, document shell.
 - `apps/web/src/features/landing/data.ts`: typed fixture data and the `getLandingContent` data boundary.
 - `apps/web/src/features/landing/`: faithful legacy sections, video hero, galleries, experience previews, and public-content fixtures.
+- `apps/web/src/features/experience/`: experience detail page port, configurator preview and the `getExperience`/`listExperiences` server functions.
+- `apps/web/src/features/vouchers/`: public voucher validity page.
+- `apps/web/src/lib/echoray/`: server-only Echoray catalog and voucher clients, response types, and catalog fixtures.
 - `apps/web/src/features/contact/`: original contact page and frontend-only form validation; see [contact port notes](docs/contact-port.md).
 - `apps/web/src/components/`: shared site layout, navigation/footer, and lazy Motion provider/features.
 - `apps/web/src/styles.css`: application layout, local fonts, responsive design, reduced motion.
@@ -71,6 +74,8 @@ When publishing is requested, select the intended Cloudflare account and environ
 ```powershell
 pnpm --filter @danirusev/web deploy
 ```
+
+Echoray settings are optional: copy `apps/web/.env.example` to `apps/web/.dev.vars` locally; in Cloudflare set the vars per environment and the secret with `pnpm --filter @danirusev/web exec wrangler secret put ECHORAY_INTEGRATION_SECRET`. Details are in [the storefront notes](docs/storefront-echoray.md).
 
 No deployment has been made by this scaffold. The fixture site ships `noindex` metadata and a blocking `robots.txt`; remove those deliberately for a real public launch, confirm the canonical domain, and verify actual commercial content first.
 

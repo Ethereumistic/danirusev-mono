@@ -1,9 +1,7 @@
 {
   "handle": "drift-taxi",
   "name": "Дрифт Такси",
-  "products": [
-    "drift-taxi"
-  ],
+  "products": ["drift-taxi"],
   "validityDays": 365,
   "autoIssue": false,
   "templateNote": "Шаблонът печата „Севлиево / Трявна“ и продължителност; действителната локация се печата долу („ЛОКАЦИЯ: …“) до замяната на шаблоните.",

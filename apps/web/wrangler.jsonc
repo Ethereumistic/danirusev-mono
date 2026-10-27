@@ -5,6 +5,10 @@
   // Latest date supported by the pinned local workerd runtime at scaffold time.
   "compatibility_date": "2026-10-26",
   "compatibility_flags": ["nodejs_compat"],
+  // Echoray Commerce (docs/storefront-echoray.md). Without ECHORAY_STOREFRONT_ID the
+  // site serves bundled catalog fixtures. Set per environment when connecting:
+  //   vars: ECHORAY_GATEWAY_URL, ECHORAY_STOREFRONT_ID, ECHORAY_CONVEX_URL, ECHORAY_INTEGRATION_ID
+  //   secret (never here): wrangler secret put ECHORAY_INTEGRATION_SECRET
   "observability": {
     "enabled": true,
     "logs": { "enabled": true, "head_sampling_rate": 1 },

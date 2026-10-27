@@ -30,9 +30,7 @@
   ],
   "price": 215,
   "inventory": "made_to_order",
-  "fulfillment": [
-    "delivery"
-  ],
+  "fulfillment": ["delivery"],
   "specifications": [
     {
       "label": "Време",
@@ -64,11 +62,7 @@
     }
   ],
   "type": "Дрифт преживяване",
-  "tags": [
-    "дрифт",
-    "ваучер",
-    "преживяване"
-  ],
+  "tags": ["дрифт", "ваучер", "преживяване"],
   "seo": {
     "title": "Дрифт Микс | Dani Rusev 11",
     "description": "Усетете дрифта от двете страни - от пасажерското място и от шофьорската седалка!"

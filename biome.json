@@ -9,7 +9,8 @@
       "!**/.wrangler",
       "!**/.tanstack",
       "!**/output",
-      "!**/.playwright-cli"
+      "!**/.playwright-cli",
+      "!docs/commerce/research"
     ]
   },
   "formatter": { "indentStyle": "space", "indentWidth": 2 },
