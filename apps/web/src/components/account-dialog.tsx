@@ -170,12 +170,12 @@ function Paused({
           {description}
         </DialogDescription>
       </div>
-      <div className="flex w-full items-center gap-2">
+      <div className="flex w-full flex-wrap items-center gap-2">
         <a
           href={`tel:${PHONE}`}
-          className="flex-1 inline-flex items-center justify-center gap-3 text-nowrap rounded-xl bg-mix px-6 py-4 text-xl font-black text-black shadow-lg shadow-amber-400/20 transition-all hover:scale-105 hover:bg-amber-300 sm:text-2xl"
+          className="flex-1 inline-flex items-center justify-center gap-2 text-nowrap rounded-xl bg-mix px-3 py-4 text-base font-black text-black shadow-lg shadow-amber-400/20 transition-all hover:scale-105 hover:bg-amber-300 sm:gap-3 sm:px-6 sm:text-2xl"
         >
-          <PhoneCall className="size-6 shrink-0" />
+          <PhoneCall className="size-5 shrink-0 sm:size-6" />
           {PHONE_LABEL}
         </a>
         <CopyNumber number={PHONE} />
