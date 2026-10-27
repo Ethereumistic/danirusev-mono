@@ -28,7 +28,7 @@ Local development: copy `apps/web/.env.example` to `apps/web/.dev.vars` (ignored
 pnpm --filter @danirusev/web exec wrangler secret put ECHORAY_INTEGRATION_SECRET
 ```
 
-Ask the owner for the storefront integration (Echoray admin → Settings → Website and domain). Never commit the secret or log it. Values are read with `import { env } from 'cloudflare:workers'` in `lib/echoray/config.server.ts`; the declared variables live in `src/cloudflare-workers.d.ts`.
+Production: the Worker `danirusev-web` serves `dr11.echoray.cloud` through Echoray Connect. An Echoray operator names it as the business's site Worker (`convex run commerce/connect:setSiteWorker '{"businessId":"ks7c3n9k8akcx2rd19mph4cms18g47hy","worker":"danirusev-web"}'`), and the owner then claims `dr11` in Admin → Settings → Website and domain. Connect adds the DNS record and route and writes `STOREFRONT_INTEGRATION_ID`, `STOREFRONT_INTEGRATION_SECRET` and `STOREFRONT_ORIGIN` as Worker secrets; the voucher page uses them when the `ECHORAY_*` names are unset. `ECHORAY_GATEWAY_URL` and `ECHORAY_CONVEX_URL` (`https://convex.echoray.io`) are `vars` in `wrangler.jsonc`. `ECHORAY_STOREFRONT_ID` stays unset (fixtures) until the products are published; then set it to the integration ID. Never commit the secret or log it. Values are read with `import { env } from 'cloudflare:workers'` in `lib/echoray/config.server.ts`; the declared variables live in `src/cloudflare-workers.d.ts`.
 
 ## Fixture/live boundary
 

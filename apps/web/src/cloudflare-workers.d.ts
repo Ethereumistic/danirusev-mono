@@ -8,5 +8,9 @@ declare module 'cloudflare:workers' {
     readonly ECHORAY_INTEGRATION_ID?: string
     readonly ECHORAY_INTEGRATION_SECRET?: string
     readonly ECHORAY_CONVEX_URL?: string
+    // Written by Echoray Connect when this Worker serves the shop's domain.
+    readonly STOREFRONT_INTEGRATION_ID?: string
+    readonly STOREFRONT_INTEGRATION_SECRET?: string
+    readonly STOREFRONT_ORIGIN?: string
   }
 }

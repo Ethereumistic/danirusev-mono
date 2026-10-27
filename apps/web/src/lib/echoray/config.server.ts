@@ -33,12 +33,19 @@ export function catalogConfig(): CatalogConfig | null {
   return { gatewayUrl: gateway.origin, storefrontId }
 }
 
-/** The voucher page's Convex query, or null when the server secret is not configured. */
+/**
+ * The voucher page's Convex query, or null when the server secret is not configured.
+ * Echoray Connect writes STOREFRONT_INTEGRATION_ID/SECRET into the site Worker itself.
+ */
 export function voucherConfig(): VoucherConfig | null {
   const convexUrl = value(env.ECHORAY_CONVEX_URL)
-  const secret = value(env.ECHORAY_INTEGRATION_SECRET)
+  const secret =
+    value(env.ECHORAY_INTEGRATION_SECRET) ??
+    value(env.STOREFRONT_INTEGRATION_SECRET)
   const integrationId =
-    value(env.ECHORAY_INTEGRATION_ID) ?? value(env.ECHORAY_STOREFRONT_ID)
+    value(env.ECHORAY_INTEGRATION_ID) ??
+    value(env.STOREFRONT_INTEGRATION_ID) ??
+    value(env.ECHORAY_STOREFRONT_ID)
   if (!convexUrl || !secret || !integrationId) return null
   const url = new URL(convexUrl)
   if (url.protocol !== 'https:' && url.hostname !== '127.0.0.1')
