@@ -11,6 +11,8 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ExperienceSlugRouteImport } from './routes/experience.$slug'
+import { Route as VouchersTokenRouteImport } from './routes/vouchers.$token'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,31 +24,49 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ExperienceSlugRoute = ExperienceSlugRouteImport.update({
+  id: '/experience/$slug',
+  path: '/experience/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VouchersTokenRoute = VouchersTokenRouteImport.update({
+  id: '/vouchers/$token',
+  path: '/vouchers/$token',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
+  '/experience/$slug': typeof ExperienceSlugRoute
+  '/vouchers/$token': typeof VouchersTokenRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
+  '/experience/$slug': typeof ExperienceSlugRoute
+  '/vouchers/$token': typeof VouchersTokenRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
+  '/experience/$slug': typeof ExperienceSlugRoute
+  '/vouchers/$token': typeof VouchersTokenRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact'
+  fullPaths: '/' | '/contact' | '/experience/$slug' | '/vouchers/$token'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact'
-  id: '__root__' | '/' | '/contact'
+  to: '/' | '/contact' | '/experience/$slug' | '/vouchers/$token'
+  id: '__root__' | '/' | '/contact' | '/experience/$slug' | '/vouchers/$token'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
+  ExperienceSlugRoute: typeof ExperienceSlugRoute
+  VouchersTokenRoute: typeof VouchersTokenRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -65,12 +85,28 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/experience/$slug': {
+      id: '/experience/$slug'
+      path: '/experience/$slug'
+      fullPath: '/experience/$slug'
+      preLoaderRoute: typeof ExperienceSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vouchers/$token': {
+      id: '/vouchers/$token'
+      path: '/vouchers/$token'
+      fullPath: '/vouchers/$token'
+      preLoaderRoute: typeof VouchersTokenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
+  ExperienceSlugRoute: ExperienceSlugRoute,
+  VouchersTokenRoute: VouchersTokenRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

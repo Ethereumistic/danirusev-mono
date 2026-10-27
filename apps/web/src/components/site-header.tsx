@@ -20,6 +20,7 @@ import {
   Zap,
 } from 'lucide-react'
 import { useState } from 'react'
+import { AccountDialog, type AccountMode } from './account-dialog'
 import { EmptyCartContent } from './empty-cart-content'
 import Logo from './logo'
 
@@ -39,6 +40,11 @@ const navigation = [
 export function SiteHeader() {
   const { pathname } = useLocation()
   const [open, setOpen] = useState(false)
+  const [account, setAccount] = useState<AccountMode | null>(null)
+  const openAccount = (mode: AccountMode) => {
+    setOpen(false)
+    setAccount(mode)
+  }
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between mx-auto px-4">
@@ -95,15 +101,13 @@ export function SiteHeader() {
         </nav>
         <div className="flex items-center gap-x-2 lg:gap-x-4">
           <EmptyCart />
-          <a
-            href="/sign-in"
-            className={cn(
-              buttonVariants({ variant: 'main' }),
-              'hidden lg:inline-flex text-alt font-black uppercase tracking-tighter italic bg-main',
-            )}
+          <Button
+            variant="main"
+            className="hidden lg:inline-flex text-alt font-black uppercase tracking-tighter italic bg-main"
+            onClick={() => openAccount('signIn')}
           >
             Вход
-          </a>
+          </Button>
           <Button
             variant="ghost"
             className="px-2 text-foreground hover:bg-white/5 lg:hidden"
@@ -183,27 +187,30 @@ export function SiteHeader() {
             )}
           </nav>
           <div className="p-4 border-t border-white/5 bg-slate-950/50 backdrop-blur-xl shrink-0 pb-[calc(env(safe-area-inset-bottom)+1rem)] space-y-2">
-            <a
-              href="/sign-in"
-              className={cn(
-                buttonVariants({ variant: 'main' }),
-                'w-full h-14 text-alt font-black uppercase tracking-tighter italic bg-main rounded-2xl shadow-[0_0_20px_rgba(208,246,26,0.2)]',
-              )}
+            <Button
+              variant="main"
+              className="w-full h-14 text-alt font-black uppercase tracking-tighter italic bg-main rounded-2xl shadow-[0_0_20px_rgba(208,246,26,0.2)]"
+              onClick={() => openAccount('signIn')}
             >
               Влез в профила →
-            </a>
-            <a
-              href="/sign-up"
-              className={cn(
-                buttonVariants({ variant: 'ghost' }),
-                'w-full h-12 hover:text-slate-400 text-white font-black uppercase tracking-tighter italic rounded-2xl border border-white/5 bg-white/5',
-              )}
+            </Button>
+            <Button
+              variant="ghost"
+              className="w-full h-12 hover:text-slate-400 text-white font-black uppercase tracking-tighter italic rounded-2xl border border-white/5 bg-white/5"
+              onClick={() => openAccount('signUp')}
             >
               Регистрация
-            </a>
+            </Button>
           </div>
         </SheetContent>
       </Sheet>
+      <AccountDialog
+        open={account !== null}
+        onOpenChange={(next) => {
+          if (!next) setAccount(null)
+        }}
+        initialMode={account ?? 'signIn'}
+      />
     </header>
   )
 }

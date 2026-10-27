@@ -1,0 +1,53 @@
+{
+  "handle": "drift-rent",
+  "name": "Карай Дрифтачка",
+  "products": ["drift-rent"],
+  "validityDays": 365,
+  "autoIssue": false,
+  "templateNote": "Шаблонът печата „Севлиево / Трявна“ и продължителност; действителната локация се печата долу („ЛОКАЦИЯ: …“) до замяната на шаблоните.",
+  "layout": [
+    {
+      "field": "recipient",
+      "page": 0,
+      "x": 510,
+      "y": 109.5,
+      "size": 78,
+      "font": "geist-black",
+      "colour": "#ffffff",
+      "align": "left",
+      "uppercase": true
+    },
+    {
+      "field": "expiry",
+      "page": 0,
+      "x": 1400,
+      "y": 55,
+      "size": 18,
+      "font": "geist-black",
+      "colour": "#39b6ff",
+      "align": "right",
+      "uppercase": true,
+      "text": "ВАЖИ ДО: {value}"
+    },
+    {
+      "field": "location",
+      "page": 0,
+      "x": 620,
+      "y": 55,
+      "size": 18,
+      "font": "geist-black",
+      "colour": "#39b6ff",
+      "align": "left",
+      "uppercase": true,
+      "maxWidth": 520,
+      "text": "ЛОКАЦИЯ: {value}"
+    },
+    {
+      "field": "qr",
+      "page": 0,
+      "x": 1250,
+      "y": 630,
+      "size": 150
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { Button } from '@danirusev/ui/components/button'
+import { buttonVariants } from '@danirusev/ui/components/button'
 import {
   Carousel,
   CarouselContent,
@@ -6,13 +6,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@danirusev/ui/components/carousel'
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogTitle,
-} from '@danirusev/ui/components/dialog'
 import { cn } from '@danirusev/ui/lib/utils'
+import { Link } from '@tanstack/react-router'
 import {
   ArrowUpRight,
   Car,
@@ -25,7 +20,7 @@ import {
 } from 'lucide-react'
 import { AnimatePresence, useReducedMotion } from 'motion/react'
 import * as motion from 'motion/react-m'
-import { useEffect, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { Image } from '@/components/image'
 import type { Experience, ThemeColor } from './data'
 
@@ -90,10 +85,13 @@ const themes = {
 
 export function ExperienceCatalog({
   experiences,
+  title = 'Избери Своя Адреналин',
+  subtitle = 'От возене през специални събития до пълен контрол - имаме нещо за всеки',
 }: {
   experiences: readonly Experience[]
+  title?: string
+  subtitle?: string
 }) {
-  const [selected, setSelected] = useState<Experience | null>(null)
   return (
     <section
       id="drift-experiences"
@@ -107,20 +105,26 @@ export function ExperienceCatalog({
             id="experiences-title"
             className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter italic mb-4"
           >
-            Избери Своя <span className="text-main">Адреналин</span>
+            {title.split(' ').map((word, index, words) =>
+              word === 'Адреналин' ? (
+                // biome-ignore lint/suspicious/noArrayIndexKey: words of a fixed heading.
+                <span key={index} className="text-main">
+                  {word}
+                </span>
+              ) : (
+                // biome-ignore lint/suspicious/noArrayIndexKey: words of a fixed heading.
+                <Fragment key={index}>
+                  {word}
+                  {index < words.length - 1 ? ' ' : ''}
+                </Fragment>
+              ),
+            )}
           </h2>
-          <p className="text-xl text-slate-400">
-            От возене през специални събития до пълен контрол - имаме нещо за
-            всеки
-          </p>
+          <p className="text-xl text-slate-400">{subtitle}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:hidden gap-6">
           {experiences.map((experience) => (
-            <ExperienceCard
-              key={experience.slug}
-              experience={experience}
-              onPreview={() => setSelected(experience)}
-            />
+            <ExperienceCard key={experience.slug} experience={experience} />
           ))}
         </div>
         <Carousel
@@ -134,10 +138,7 @@ export function ExperienceCatalog({
                 key={experience.slug}
                 className="pl-4 md:pl-6 md:basis-1/2 lg:basis-[31%]"
               >
-                <ExperienceCard
-                  experience={experience}
-                  onPreview={() => setSelected(experience)}
-                />
+                <ExperienceCard experience={experience} />
               </CarouselItem>
             ))}
           </CarouselContent>
@@ -145,52 +146,10 @@ export function ExperienceCatalog({
           <CarouselNext className="-right-12 bg-slate-900 hover:bg-slate-800 border-slate-700 hover:border-main/50 text-white" />
         </Carousel>
       </div>
-      <Dialog
-        open={selected !== null}
-        onOpenChange={(open) => {
-          if (!open) setSelected(null)
-        }}
-      >
-        <DialogContent className="bg-slate-950 border border-slate-800 sm:max-w-lg p-8">
-          {selected && (
-            <>
-              <DialogTitle className="text-3xl font-black uppercase italic">
-                {selected.title}
-              </DialogTitle>
-              <DialogDescription className="text-slate-300 leading-relaxed">
-                {selected.description}
-              </DialogDescription>
-              <Image
-                src={selected.image}
-                alt={selected.title}
-                width={640}
-                height={400}
-                className="w-full h-48 object-cover rounded-xl"
-              />
-              <p className="text-sm text-slate-400">
-                Онлайн резервациите предстоят. Свържи се с нас за актуална цена,
-                дата и условия.
-              </p>
-              <a
-                href="tel:+359882726020"
-                className="bg-main text-black rounded-xl h-14 flex items-center justify-center font-black uppercase"
-              >
-                +359 88 272 6020
-              </a>
-            </>
-          )}
-        </DialogContent>
-      </Dialog>
     </section>
   )
 }
-function ExperienceCard({
-  experience,
-  onPreview,
-}: {
-  experience: Experience
-  onPreview: () => void
-}) {
+function ExperienceCard({ experience }: { experience: Experience }) {
   const theme = themes[experience.theme]
   const Icon = theme.icon
   const [location, setLocation] = useState(0)
@@ -236,7 +195,8 @@ function ExperienceCard({
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
           src={experience.image}
-          alt={experience.title}
+          srcSet={experience.imageSrcSet || undefined}
+          alt={experience.imageAlt || experience.title}
           fill
           sizes="(max-width:768px) 100vw,(max-width:1024px) 50vw,33vw"
           className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -302,19 +262,21 @@ function ExperienceCard({
             <span className="text-nowrap">{experience.horsepower} HP</span>
           </span>
         </div>
-        <Button
+        <Link
+          to="/experience/$slug"
+          params={{ slug: experience.slug }}
           className={cn(
+            buttonVariants(),
             'w-full cursor-pointer font-extrabold uppercase tracking-wider h-14 text-lg rounded-xl group overflow-visible transition-all text-black after:absolute after:inset-0 after:z-20',
             theme.bg,
             theme.hover,
           )}
           aria-label={`Виж повече за ${experience.title}`}
-          onClick={onPreview}
         >
           <span className="relative z-10 flex items-center justify-center gap-2">
             Виж Повече <ArrowUpRight className="w-5 h-5" />
           </span>
-        </Button>
+        </Link>
       </div>
     </article>
   )

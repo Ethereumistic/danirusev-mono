@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "handle": "drift-rent",
+  "name": "Карай Дрифтачка",
+  "status": "published",
+  "headline": "Карай Сам",
+  "description": "Поемете контрола. Под напътствията на Дани, вие ще се научите да контролирате хаоса.\n\nПрограма:\n• Основи на дрифта, работа с волан и газ.\n• Упражнения за иницииране на дрифт и 'донъти'.\n• Връзване на завои по трасето.\n• Обобщение на карането и обратна връзка",
+  "collection": "Дрифт Преживявания",
+  "images": [
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/rent/1.png",
+      "alt": "Карай Дрифтачка 1"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/rent/2.png",
+      "alt": "Карай Дрифтачка 2"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/rent/3.png",
+      "alt": "Карай Дрифтачка 3"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/rent/4.png",
+      "alt": "Карай Дрифтачка 4"
+    }
+  ],
+  "price": 270,
+  "inventory": "made_to_order",
+  "fulfillment": ["delivery"],
+  "specifications": [
+    {
+      "label": "Време",
+      "value": "60 мин"
+    },
+    {
+      "label": "Автомобил",
+      "value": "BMW E46 V6"
+    },
+    {
+      "label": "Мощност",
+      "value": "240 HP"
+    },
+    {
+      "label": "Гуми",
+      "value": "4"
+    },
+    {
+      "label": "Локация",
+      "value": "София, Писта Крайници"
+    },
+    {
+      "label": "Цената включва",
+      "value": "Инструктор (Дани Русев), Наем на подготвен автомобил, Гориво и Гуми, Наем на писта"
+    },
+    {
+      "label": "Цената не включва",
+      "value": "Транспорт до пистата, Храна и напитки"
+    }
+  ],
+  "type": "Дрифт преживяване",
+  "tags": ["дрифт", "ваучер", "преживяване"],
+  "seo": {
+    "title": "Карай Дрифтачка | Dani Rusev 11",
+    "description": "Поемете контрола. Под напътствията на Дани, вие ще се научите да контролирате хаоса."
+  },
+  "configurator": {
+    "version": 1,
+    "pricing": [],
+    "inputs": [
+      {
+        "key": "voucher",
+        "label": "Ваучер",
+        "kind": "choice",
+        "required": true,
+        "choices": [
+          {
+            "value": "digital",
+            "label": "Ваучер Дигитален",
+            "amount": 0,
+            "digital": true
+          },
+          {
+            "value": "physical",
+            "label": "Ваучер Физически",
+            "amount": 400
+          }
+        ]
+      },
+      {
+        "key": "location",
+        "label": "Локация",
+        "kind": "choice",
+        "required": true,
+        "hint": "Google Maps: https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7",
+        "choices": [
+          {
+            "value": "pista-kraynitsi",
+            "label": "Писта Крайници",
+            "amount": 0,
+            "venue": "pista-kraynitsi"
+          }
+        ]
+      },
+      {
+        "key": "gopro",
+        "label": "GoPro Заснемане",
+        "kind": "toggle",
+        "required": false,
+        "amount": 2000,
+        "hint": "Професионално заснемане на цялата сесия"
+      },
+      {
+        "key": "extra_tires",
+        "label": "Допълнителни Гуми",
+        "kind": "toggle",
+        "required": false,
+        "amount": 8000,
+        "hint": "2 екстра гуми за по-дълго возене"
+      },
+      {
+        "key": "recipient",
+        "label": "Име на ваучера / Име на получателя (по избор)",
+        "kind": "text",
+        "required": false,
+        "maxLength": 16
+      },
+      {
+        "key": "preferred_date",
+        "label": "Предпочитана дата",
+        "kind": "date",
+        "required": false,
+        "minDays": 1,
+        "maxDays": 365,
+        "hint": "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+        "availability": true
+      }
+    ]
+  }
+}

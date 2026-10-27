@@ -1,0 +1,4677 @@
+[
+  {
+    "id": 18,
+    "slug": "drift-taxi",
+    "url": "https://danirusev.com/experience/drift-taxi",
+    "captured_at_utc": "2026-10-27T16:54:52+00:00",
+    "title": "Дрифт Такси",
+    "subtitle": "Пасажерско Изживяване",
+    "headline": "Дрифт Такси",
+    "separate_headline_field_found": false,
+    "description": "Седнете на пасажерската седалка до Дани Русев и усетете истинската G-сила. Без теория, само чист адреналин.",
+    "description_paragraphs": [
+      "Седнете на пасажерската седалка до Дани Русев и усетете истинската G-сила. Без теория, само чист адреналин."
+    ],
+    "price": {
+      "amount": 155,
+      "currency": "EUR",
+      "displayed": "155 €",
+      "base_price_label": "Базова цена",
+      "total_price_label": "Обща цена",
+      "default_total": 155,
+      "compare_at_price": null,
+      "displayed_bgn": null,
+      "bgn_visible_at_capture": false,
+      "bgn_conversion_rendering_cutoff": "2026-08-09",
+      "currency_logic_public_bundle": "https://danirusev.com/_next/static/chunks/7098-bc179bc9e823b270.js"
+    },
+    "duration": "60 мин",
+    "technical_specifications": {
+      "car_model": "BMW E46 V6",
+      "horsepower": 240,
+      "horsepower_unit": "HP",
+      "tires_burned": "4"
+    },
+    "displayed_specifications": [
+      {
+        "label": "Време",
+        "value": "60 мин"
+      },
+      {
+        "label": "Автомобил",
+        "value": "BMW E46 V6"
+      },
+      {
+        "label": "Мощност",
+        "value": "240",
+        "unit": "HP"
+      },
+      {
+        "label": "Гуми",
+        "value": "4"
+      }
+    ],
+    "locations": [
+      {
+        "city": "София",
+        "id": "69416251bc3c8c1502dc06a6",
+        "selectable_location_options": [
+          {
+            "id": "694155c70008520d411ada7d",
+            "name": "Писта Крайници",
+            "description": "",
+            "type": "location",
+            "cms_order": 5,
+            "price": null,
+            "currency": null,
+            "displayed_price": null,
+            "price_calculator_increment": 0,
+            "default_selected_on_fresh_client": true,
+            "multiple_options_in_same_group_selectable": false,
+            "multiple_units_of_this_add_on_selectable": false,
+            "description_rendered_in_option_card": false,
+            "google_maps_url": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+          }
+        ],
+        "alternative_location_found": false,
+        "changes_price": false,
+        "location_specific_availability_published": false
+      }
+    ],
+    "program_heading": "Програма",
+    "program": [
+      {
+        "time": "10 min",
+        "activity": "Брифинг",
+        "description": "Запознаване с мерките за безопасност и екипировката.",
+        "icon": null,
+        "id": "694154d60008520d411ada63"
+      },
+      {
+        "time": "5 min",
+        "activity": "Екипиране",
+        "description": "Слагане на каска и закопчаване на 4-точковите колани.",
+        "icon": null,
+        "id": "694154e80008520d411ada65"
+      },
+      {
+        "time": "45 min",
+        "activity": "Дрифт Сесия",
+        "description": "45 минути бясно лашкане на седалката.",
+        "icon": null,
+        "id": "694154fa0008520d411ada67"
+      }
+    ],
+    "included_heading": "Цената включва",
+    "included": [
+      "Професионален пилот",
+      "Гориво и Гуми",
+      "Каска и боне",
+      "Наем на писта"
+    ],
+    "not_included_heading": "Цената не включва",
+    "not_included": [
+      "Транспорт до пистата",
+      "Храна и напитки"
+    ],
+    "add_ons_heading": "Допълнителни опции",
+    "add_ons": [
+      {
+        "id": "694155390008520d411ada75",
+        "name": "GoPro Заснемане",
+        "description": "Професионално заснемане на цялата сесия",
+        "type": "standard",
+        "cms_order": 1,
+        "price": 20,
+        "currency": "EUR",
+        "displayed_price": "+20 €",
+        "price_calculator_increment": 20,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": true,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": true,
+        "google_maps_url": null
+      },
+      {
+        "id": "6941556d0008520d411ada77",
+        "name": "Допълнителни Гуми",
+        "description": "2 екстра гуми за по-дълго возене",
+        "type": "standard",
+        "cms_order": 2,
+        "price": 80,
+        "currency": "EUR",
+        "displayed_price": "+80 €",
+        "price_calculator_increment": 80,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": true,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": true,
+        "google_maps_url": null
+      },
+      {
+        "id": "694155810008520d411ada79",
+        "name": "Ваучер Дигитален",
+        "description": "",
+        "type": "voucher",
+        "cms_order": 3,
+        "price": null,
+        "currency": null,
+        "displayed_price": null,
+        "price_calculator_increment": 0,
+        "default_selected_on_fresh_client": true,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      },
+      {
+        "id": "694155ae0008520d411ada7b",
+        "name": "Ваучер Физически",
+        "description": "",
+        "type": "voucher",
+        "cms_order": 4,
+        "price": 4,
+        "currency": "EUR",
+        "displayed_price": "+4 €",
+        "price_calculator_increment": 4,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      },
+      {
+        "id": "694155c70008520d411ada7d",
+        "name": "Писта Крайници",
+        "description": "",
+        "type": "location",
+        "cms_order": 5,
+        "price": null,
+        "currency": null,
+        "displayed_price": null,
+        "price_calculator_increment": 0,
+        "default_selected_on_fresh_client": true,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+      }
+    ],
+    "option_selection_logic_public_bundle": "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js",
+    "car_choice_options": [],
+    "extra_lap_options": [],
+    "extra_passenger_options": [],
+    "booking": {
+      "date_label": "Предпочитана дата",
+      "date_default": null,
+      "date_selection_mode": "single",
+      "past_dates_disabled": true,
+      "availability_calendar_found": false,
+      "date_confirmation_notice": "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+      "button_label": "Добави в Количката",
+      "online_reservations_temporarily_disabled": true,
+      "button_opens_contact_dialog": true,
+      "button_adds_product_to_cart": false,
+      "contact_dialog_title": "Моля обадете се на телефон:",
+      "contact_dialog_notice": "Временно онлайн резервациите не работят.",
+      "contact_dialog_phone": "+359 882726020",
+      "contact_phone_url": "tel:+359882726020",
+      "payment_notice": "* Плащането се извършва ОНЛАЙН *",
+      "cash_on_delivery_notice": "За наложен платеж се обадете:",
+      "cash_on_delivery_phone": "+359 88 272 6020",
+      "public_bundle_source": "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js"
+    },
+    "requirements_and_restrictions": {
+      "minimum_age": null,
+      "age_restriction_text": null,
+      "height_or_weight_restrictions": null,
+      "driving_licence_required": null,
+      "driving_licence_or_prior_experience_text": null,
+      "product_specific_requirement_section_found": false,
+      "informed_consent_terms_source": "https://danirusev.com/terms",
+      "informed_consent_terms_paragraphs": [
+        "ВНИМАНИЕ: Преживяванията, предлагани от Търговеца, са с висок риск и по своята същност са опасни. Те включват, но не се ограничават до, рискове от сериозни телесни повреди, инвалидност или смърт.",
+        "С покупката на ваучер за преживяване, Вие потвърждавате, че разбирате и приемате тези рискове.",
+        "ЗАДЪЛЖИТЕЛНО УСЛОВИЕ ЗА УЧАСТИЕ: Всеки участник, без изключение, е длъжен лично да подпише документ „Информирано съгласие“ при пристигане на мястото на събитието. Този документ подробно описва всички потенциални рискове, свързани с преживяването.",
+        "Отказът да подпишете документа за Информирано съгласие ще доведе до незабавен отказ за участие в преживяването, без право на възстановяване на заплатената сума."
+      ]
+    },
+    "faqs": [],
+    "separate_specification_tables": [],
+    "gallery_image_urls": [
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/0.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/2.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/3.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/4.webp"
+    ],
+    "main_image_url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/0.webp",
+    "gallery": [
+      {
+        "position": 1,
+        "is_main_hero": true,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/0.webp",
+        "source_type": "url",
+        "cms_alt": "Drift Taxi Experience 1",
+        "rendered_alt": "Дрифт Такси 1",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/0.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 2,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/2.webp",
+        "source_type": "url",
+        "cms_alt": "Drift Taxi Experience 2",
+        "rendered_alt": "Дрифт Такси 2",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/2.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 3,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/3.webp",
+        "source_type": "url",
+        "cms_alt": "Drift Taxi Experience 3",
+        "rendered_alt": "Дрифт Такси 3",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/3.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 4,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/4.webp",
+        "source_type": "url",
+        "cms_alt": "Drift Taxi Experience 4",
+        "rendered_alt": "Дрифт Такси 4",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/4.webp",
+        "media": null,
+        "http_status": 200
+      }
+    ],
+    "seo": {
+      "title": "Дрифт Такси | Dani Rusev 11 | Dani Rusev 11 - Екстремни Преживявания",
+      "meta_description": "Седнете на пасажерската седалка до Дани Русев и усетете истинската G-сила. Без теория, само чист адреналин.",
+      "canonical_url": "https://danirusev.com/experience/drift-taxi",
+      "open_graph_title": "Дрифт Такси | Dani Rusev 11",
+      "open_graph_description": "Седнете на пасажерската седалка до Дани Русев и усетете истинската G-сила. Без теория, само чист адреналин.",
+      "all_meta_fields": {
+        "viewport": "width=device-width, initial-scale=1",
+        "next-size-adjust": "",
+        "description": "Седнете на пасажерската седалка до Дани Русев и усетете истинската G-сила. Без теория, само чист адреналин.",
+        "author": "Dani Rusev",
+        "keywords": "екстремни преживявания,автомобилни преживявания,дрифт,рали,писта каране,подарък за мъж,ваучер за преживяване,България,дани русев,данаил русев,rally driving experience,drift driving experience",
+        "creator": "Dani Rusev",
+        "publisher": "Echoray.io",
+        "robots": "index, follow",
+        "googlebot": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "format-detection": "telephone=no, address=no, email=no",
+        "og:title": "Дрифт Такси | Dani Rusev 11",
+        "og:description": "Седнете на пасажерската седалка до Дани Русев и усетете истинската G-сила. Без теория, само чист адреналин.",
+        "og:url": "https://danirusev.com",
+        "og:site_name": "Dani Rusev 11",
+        "og:locale": "bg_BG",
+        "og:image": "https://danirusev.com/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dani Rusev 11",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Dani Rusev 11",
+        "twitter:description": "Екстремни автомобилни преживявания в България. Дрифт, рали и каране на писта с професионални инструктори.",
+        "twitter:image": "https://danirusev.com/og-image.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Dani Rusev 11",
+          "alternateName": "Dani Rusev Extreme Experiences",
+          "url": "https://danirusev.com",
+          "logo": "https://danirusev.com/og-image.jpg",
+          "description": "Екстремни автомобилни преживявания - дрифт, рали и каране на писта в България",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BG",
+            "addressLocality": "София"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": [
+              "bg",
+              "en"
+            ]
+          },
+          "sameAs": [
+            "https://www.facebook.com/dani.rusev.5",
+            "https://www.instagram.com/danirusev11",
+            "https://www.youtube.com/@danirusev11",
+            "https://www.tiktok.com/@danirusev11"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Дрифт Такси",
+          "description": "Седнете на пасажерската седалка до Дани Русев и усетете истинската G-сила. Без теория, само чист адреналин.",
+          "image": [
+            "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/0.webp"
+          ],
+          "category": "Automotive Experience",
+          "brand": {
+            "@type": "Brand",
+            "name": "Dani Rusev 11"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://danirusev.com/experience/drift-taxi",
+            "priceCurrency": "EUR",
+            "price": 155,
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2026-10-27T16:48:26.917Z",
+            "priceValidUntil": "2027-10-27T16:48:26.917Z"
+          },
+          "duration": "60 мин",
+          "provider": {
+            "@type": "Organization",
+            "name": "Dani Rusev 11"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Дрифт Такси",
+              "item": "/experience/drift-taxi"
+            }
+          ]
+        }
+      ]
+    },
+    "page_headings": [
+      {
+        "level": 1,
+        "text": "Дрифт Такси"
+      },
+      {
+        "level": 1,
+        "text": "Дрифт Такси"
+      },
+      {
+        "level": 3,
+        "text": "Програма"
+      },
+      {
+        "level": 4,
+        "text": "Брифинг"
+      },
+      {
+        "level": 4,
+        "text": "Екипиране"
+      },
+      {
+        "level": 4,
+        "text": "Дрифт Сесия"
+      },
+      {
+        "level": 4,
+        "text": "Локация"
+      },
+      {
+        "level": 3,
+        "text": "Какво е включено"
+      },
+      {
+        "level": 3,
+        "text": "Допълнителни опции"
+      },
+      {
+        "level": 4,
+        "text": "GoPro Заснемане"
+      },
+      {
+        "level": 4,
+        "text": "Допълнителни Гуми"
+      },
+      {
+        "level": 4,
+        "text": "Ваучер Дигитален"
+      },
+      {
+        "level": 4,
+        "text": "Ваучер Физически"
+      },
+      {
+        "level": 4,
+        "text": "Писта Крайници"
+      },
+      {
+        "level": 4,
+        "text": "Предпочитана дата"
+      }
+    ],
+    "page_paragraphs": [
+      "\"Седнете на пасажерската седалка до Дани Русев и усетете истинската G-сила. Без теория, само чист адреналин.\"",
+      "Запознаване с мерките за безопасност и екипировката.",
+      "Слагане на каска и закопчаване на 4-точковите колани.",
+      "45 минути бясно лашкане на седалката.",
+      "София",
+      "Професионално заснемане на цялата сесия",
+      "2 екстра гуми за по-дълго возене",
+      "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+      "Пасажерско Изживяване",
+      "* Плащането се извършва ОНЛАЙН *",
+      "За наложен платеж се обадете:"
+    ],
+    "gift_voucher_flow": {
+      "separate_gift_voucher_product_found": false,
+      "digital_option_name": "Ваучер Дигитален",
+      "physical_option_name": "Ваучер Физически",
+      "recipient_name_field": {
+        "id_template": "voucher-name-{cartItemId}",
+        "label": "Име на ваучера",
+        "placeholder": "Име на получателя (по избор)",
+        "type": "text",
+        "required": false,
+        "max_length": 16,
+        "default": "",
+        "per_experience_cart_item": true,
+        "public_bundle_sources": [
+          "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+          "https://danirusev.com/_next/static/chunks/2171-050e2ce5f76f2b93.js"
+        ]
+      },
+      "public_terms_url": "https://danirusev.com/terms",
+      "guest_purchase_clause": "3.3. Покупката на Ваучер може да се прави от регистриран и нерегистриран потребител, който съгласно настоящите Общи условия предоставя данните, необходими за сключване и изпълнение на договора.",
+      "delivery_clauses": [
+        "6.1. Закупените физически Ваучери се доставят с куриер до адрес или до офис на куриер, или се получават лично от представител на Търговеца, а електронните ваучери се изпращат по електронна поща.",
+        "6.2. Цената на доставката на физическите ваучери зависи от тарифата на избраната от Потребителя куриерска фирма и услуга за доставка.",
+        "6.3. В случай че получателят не бъде намерен в срока за изпълнение на доставката на посочения адрес или не бъде осигурен достъп и условия за предаване на поръчката в този срок, Търговецът се освобождава от задължението да достави ваучера и Купувачът на ваучера следва да му заплати направени разходи за куриерски услуги по доставка и връщане на поръчката, както и разходи направени за опаковка.",
+        "6.4. За доставка по електронна поща под формата на електронен ваучер Купувачът на ваучера носи изцяло риска от неполучаване на Ваучера по електронен път при грешно подаден от негова страна имейл адрес и/или блокиране на съобщението от пощата му или други технически причини, които не са по вина на Търговеца.",
+        "6.5. Срокът за доставка на физически ваучер и за изпращане на електронен ваучер е 3-5 работни дни."
+      ],
+      "validity_clause": "6.6. Валидността на ваучера е 1 (една година) считано от датата на извършване на поръчката.",
+      "expired_voucher_clause": "6.7. Всеки ваучер може да се използва в рамките на своята валидност, изписана на ваучера. Резервации по ваучери с изтекла валидност не се правят. Такива ваучери са невалидни и услугите към тях не подлежат на изпълнение.",
+      "cancellation_clauses": [
+        "7.1. Потребителят има право, без да дължи обезщетение или неустойка и без да посочва причина, да се откаже от сключения договор в срок 14 календарни дни, считано от датата на получаване на стоката/ваучера.",
+        "7.2. Когато потребителят е упражнил правото си на отказ от договора от разстояние, Търговецът възстановява всички суми, получени от Купувача на ваучера, с изключение на разходите за доставка и банкови такси, удържани при превод, без неоправдано забавяне и не по-късно от 14 дни, считано от датата, на която е бил уведомен за решението на потребителя да се откаже от договора. Търговецът възстановява получените суми на посочена от потребителя банкова сметка.",
+        "7.3. Правото на отказ не се прилага за услуги, които вече са изпълнени или за персонализирани стоки.",
+        "7.4. В случай че правото на отказ е упражнено, потребителят трябва да изпрати или предаде на Търговеца закупения ваучер в срок до 3 дни от датата, на която е съобщил за отказа от договора от разстояние.",
+        "7.5. Отказ на поръчка се приема писмено с електронно писмо, с попълнен и изпратен по електронната поща формуляр за Упражняване на правото за отказ от Договор."
+      ],
+      "validity_extension_clause": "6.8. Срокът на валидност на ваучера не подлежи на удължаване.",
+      "issue_after_date_confirmation_clause": "8.1. След постигане на съгласие между търговеца и потребителя относно дата за изпълнение на събитието, търговецът избира и потвърждава датата чрез административен панел, след което ваучерът се генерира в потребителския акаунт на потребителя и е достъпен чрез индивидуален линк на адрес: https://danirusev.com/vouchers",
+      "digital_email_delivery_paragraph": "Потребителят има възможност да избере дали ваучерът да бъде дигитален или физически. При избор на дигитален ваучер, потребителят получава уведомителен имейл с линк към конкретния ваучер, без ваучерът да бъде прикачен като файл към имейла. Търговецът не носи отговорност при неполучаване на имейл уведомлението, когато това се дължи на некоректно въведен имейл адрес, филтриране от пощенски услуги, технически проблеми или други обстоятелства извън контрола на търговеца.",
+      "email_attachment_promised": false,
+      "email_link_promised": true,
+      "public_pdf_download_found": false,
+      "account_vouchers_url": "https://danirusev.com/vouchers",
+      "account_vouchers_public_headings": [
+        "Моите Ваучери",
+        "Управлявайте вашите дрифт преживявания"
+      ],
+      "post_purchase_voucher_observed": false
+    },
+    "checkout": {
+      "url": "https://danirusev.com/checkout",
+      "empty_cart_messages": [
+        "Твоята количка е празна",
+        "Изглежда още нямаш добавени преживявания. Вземи я напълни ;)",
+        "Преживявания →"
+      ],
+      "populated_checkout_observed_in_browser": false,
+      "populated_checkout_fields_extracted_from_public_javascript": true,
+      "public_bundle_source": "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+      "personal_information_heading": "Лична Информация",
+      "personal_information_subtitle": "Попълнете данните си преди да продължите",
+      "personal_information_fields": [
+        {
+          "id": "fullName",
+          "label": "Име и Фамилия",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "phoneNumber",
+          "label": "Тел. Номер",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "address",
+          "label": "Адрес",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "city",
+          "label": "Град",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "postalCode",
+          "label": "Пощенски код",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "country",
+          "label": "Държава",
+          "type": "text",
+          "required": false,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "България",
+          "disabled": true
+        }
+      ],
+      "recipient_name_field": {
+        "id_template": "voucher-name-{cartItemId}",
+        "label": "Име на ваучера",
+        "placeholder": "Име на получателя (по избор)",
+        "type": "text",
+        "required": false,
+        "max_length": 16,
+        "default": "",
+        "per_experience_cart_item": true,
+        "public_bundle_sources": [
+          "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+          "https://danirusev.com/_next/static/chunks/2171-050e2ce5f76f2b93.js"
+        ]
+      },
+      "payment_heading": "Плащане",
+      "payment_subtitle": "Сигурно плащане чрез myPOS",
+      "payment_provider": "myPOS",
+      "payment_currency": "EUR",
+      "continue_button": "Продължи към плащане →",
+      "zero_subtotal_button": "Потвърди Заявка →",
+      "terms_dialog": {
+        "title": "Правни Условия",
+        "description": "Преди да преминете към плащане, моля запознайте се и потвърдете съгласието си с нашите условия за ползване.",
+        "checkbox_id": "terms",
+        "checkbox_default": false,
+        "checkbox_label": "Прочетох и се съгласявам с Общите условия и Политиката за поверителност на Dani Rusev 11.",
+        "checkbox_required": true,
+        "links": [
+          "https://danirusev.com/terms",
+          "https://danirusev.com/privacy"
+        ],
+        "confirm_button": "Потвърди и Продължи →"
+      },
+      "shipping_label": "Доставка",
+      "shipping_display": "При плащане",
+      "payment_session_created": false,
+      "forms_submitted": false,
+      "payment_card_fields_observed": false
+    },
+    "source_urls": [
+      "https://danirusev.com/",
+      "https://danirusev.com/experience/drift-taxi",
+      "https://danirusev.com/api/products?where%5BproductType%5D%5Bequals%5D=experience&limit=100&depth=2",
+      "https://danirusev.com/terms",
+      "https://danirusev.com/checkout",
+      "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js",
+      "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js"
+    ],
+    "public_api_and_resolved_page_product_match": true,
+    "raw_public_product": {
+      "id": 18,
+      "title": "Дрифт Такси",
+      "slug": "drift-taxi",
+      "productType": "experience",
+      "price": 155,
+      "compareAtPrice": null,
+      "description": "Седнете на пасажерската седалка до Дани Русев и усетете истинската G-сила. Без теория, само чист адреналин.",
+      "categories": [
+        {
+          "id": 3,
+          "title": "Преживяване",
+          "slug": "experience",
+          "parent": null,
+          "updatedAt": "2025-12-16T12:53:51.218Z",
+          "createdAt": "2025-12-16T12:53:51.917Z"
+        }
+      ],
+      "gallery": [
+        {
+          "id": "694156060008520d411ada81",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/0.webp",
+          "alt": "Drift Taxi Experience 1"
+        },
+        {
+          "id": "6941561d0008520d411ada83",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/2.webp",
+          "alt": "Drift Taxi Experience 2"
+        },
+        {
+          "id": "694156270008520d411ada85",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/3.webp",
+          "alt": "Drift Taxi Experience 3"
+        },
+        {
+          "id": "694156370008520d411ada87",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/taxi/4.webp",
+          "alt": "Drift Taxi Experience 4"
+        }
+      ],
+      "stock": 0,
+      "lowStockThreshold": 5,
+      "optionDefinitions": [],
+      "variants": [],
+      "subtitle": "Пасажерско Изживяване",
+      "duration": "60 мин",
+      "locations": [
+        {
+          "id": "69416251bc3c8c1502dc06a6",
+          "city": "София"
+        }
+      ],
+      "techSpecs": {
+        "carModel": "BMW E46 V6",
+        "horsePower": 240,
+        "tiresBurned": "4"
+      },
+      "visuals": {
+        "iconName": "CarTaxiFront",
+        "themeColor": "taxi",
+        "pattern": "taxi-checker"
+      },
+      "program": [
+        {
+          "id": "694154d60008520d411ada63",
+          "time": "10 min",
+          "icon": null,
+          "activity": "Брифинг",
+          "description": "Запознаване с мерките за безопасност и екипировката."
+        },
+        {
+          "id": "694154e80008520d411ada65",
+          "time": "5 min",
+          "icon": null,
+          "activity": "Екипиране",
+          "description": "Слагане на каска и закопчаване на 4-точковите колани."
+        },
+        {
+          "id": "694154fa0008520d411ada67",
+          "time": "45 min",
+          "icon": null,
+          "activity": "Дрифт Сесия",
+          "description": "45 минути бясно лашкане на седалката."
+        }
+      ],
+      "included": [
+        {
+          "id": "694155130008520d411ada69",
+          "item": "Професионален пилот"
+        },
+        {
+          "id": "694155190008520d411ada6b",
+          "item": "Гориво и Гуми"
+        },
+        {
+          "id": "6941551c0008520d411ada6d",
+          "item": "Каска и боне"
+        },
+        {
+          "id": "69726bb00da6c2387d26a167",
+          "item": "Наем на писта"
+        }
+      ],
+      "notIncluded": [
+        {
+          "id": "6941552a0008520d411ada71",
+          "item": "Транспорт до пистата"
+        },
+        {
+          "id": "694155300008520d411ada73",
+          "item": "Храна и напитки"
+        }
+      ],
+      "additionalItems": [
+        {
+          "id": "694155390008520d411ada75",
+          "name": "GoPro Заснемане",
+          "price": 20,
+          "description": "Професионално заснемане на цялата сесия",
+          "icon": "Video",
+          "type": "standard",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "6941556d0008520d411ada77",
+          "name": "Допълнителни Гуми",
+          "price": 80,
+          "description": "2 екстра гуми за по-дълго возене",
+          "icon": "Disc",
+          "type": "standard",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "694155810008520d411ada79",
+          "name": "Ваучер Дигитален",
+          "price": null,
+          "description": "",
+          "icon": "Smartphone",
+          "type": "voucher",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "694155ae0008520d411ada7b",
+          "name": "Ваучер Физически",
+          "price": 4,
+          "description": "",
+          "icon": "Gift",
+          "type": "voucher",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "694155c70008520d411ada7d",
+          "name": "Писта Крайници",
+          "price": null,
+          "description": "",
+          "icon": "MapPin",
+          "type": "location",
+          "googleMapsUrl": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+        }
+      ],
+      "tabNames": {
+        "program": null,
+        "included": null,
+        "additional": null
+      },
+      "updatedAt": "2026-03-23T20:01:16.521Z",
+      "createdAt": "2025-12-16T12:53:22.658Z",
+      "_status": "published"
+    }
+  },
+  {
+    "id": 19,
+    "slug": "drift-rent",
+    "url": "https://danirusev.com/experience/drift-rent",
+    "captured_at_utc": "2026-10-27T16:54:52+00:00",
+    "title": "Карай Дрифтачка",
+    "subtitle": "Карай Сам",
+    "headline": "Карай Дрифтачка",
+    "separate_headline_field_found": false,
+    "description": "Поемете контрола. Под напътствията на Дани, вие ще се научите да контролирате хаоса.",
+    "description_paragraphs": [
+      "Поемете контрола. Под напътствията на Дани, вие ще се научите да контролирате хаоса."
+    ],
+    "price": {
+      "amount": 270,
+      "currency": "EUR",
+      "displayed": "270 €",
+      "base_price_label": "Базова цена",
+      "total_price_label": "Обща цена",
+      "default_total": 270,
+      "compare_at_price": null,
+      "displayed_bgn": null,
+      "bgn_visible_at_capture": false,
+      "bgn_conversion_rendering_cutoff": "2026-08-09",
+      "currency_logic_public_bundle": "https://danirusev.com/_next/static/chunks/7098-bc179bc9e823b270.js"
+    },
+    "duration": "60 мин",
+    "technical_specifications": {
+      "car_model": "BMW E46 V6",
+      "horsepower": 240,
+      "horsepower_unit": "HP",
+      "tires_burned": "4"
+    },
+    "displayed_specifications": [
+      {
+        "label": "Време",
+        "value": "60 мин"
+      },
+      {
+        "label": "Автомобил",
+        "value": "BMW E46 V6"
+      },
+      {
+        "label": "Мощност",
+        "value": "240",
+        "unit": "HP"
+      },
+      {
+        "label": "Гуми",
+        "value": "4"
+      }
+    ],
+    "locations": [
+      {
+        "city": "София",
+        "id": "69416b2bb45ea63f74fa4174",
+        "selectable_location_options": [
+          {
+            "id": "69416b2bb45ea63f74fa4182",
+            "name": "Писта Крайници",
+            "description": "Начинаещи",
+            "type": "location",
+            "cms_order": 5,
+            "price": null,
+            "currency": null,
+            "displayed_price": null,
+            "price_calculator_increment": 0,
+            "default_selected_on_fresh_client": true,
+            "multiple_options_in_same_group_selectable": false,
+            "multiple_units_of_this_add_on_selectable": false,
+            "description_rendered_in_option_card": false,
+            "google_maps_url": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+          }
+        ],
+        "alternative_location_found": false,
+        "changes_price": false,
+        "location_specific_availability_published": false
+      }
+    ],
+    "program_heading": "Програма",
+    "program": [
+      {
+        "time": "15 min",
+        "activity": "Теория",
+        "description": "Основи на дрифта, работа с волан и газ.",
+        "icon": null,
+        "id": "69416b2bb45ea63f74fa4176"
+      },
+      {
+        "time": "10 min",
+        "activity": "Практика",
+        "description": "Упражнения за иницииране на дрифт и 'донъти'.",
+        "icon": null,
+        "id": "69416b2bb45ea63f74fa4177"
+      },
+      {
+        "time": "35 min",
+        "activity": "Свободно каране",
+        "description": "Връзване на завои по трасето.",
+        "icon": null,
+        "id": "69416b2bb45ea63f74fa4178"
+      },
+      {
+        "time": "60 min",
+        "activity": "Финал",
+        "description": "Обобщение на карането и обратна връзка",
+        "icon": null,
+        "id": "6941b887b36d9df423c8a59e"
+      }
+    ],
+    "included_heading": "Цената включва",
+    "included": [
+      "Инструктор (Дани Русев)",
+      "Наем на подготвен автомобил",
+      "Гориво и Гуми",
+      "Наем на писта"
+    ],
+    "not_included_heading": "Цената не включва",
+    "not_included": [
+      "Транспорт до пистата",
+      "Храна и напитки"
+    ],
+    "add_ons_heading": "Допълнителни опции",
+    "add_ons": [
+      {
+        "id": "69416b2bb45ea63f74fa417e",
+        "name": "GoPro Заснемане",
+        "description": "Професионално заснемане на цялата сесия",
+        "type": "standard",
+        "cms_order": 1,
+        "price": 20,
+        "currency": "EUR",
+        "displayed_price": "+20 €",
+        "price_calculator_increment": 20,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": true,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": true,
+        "google_maps_url": null
+      },
+      {
+        "id": "69416b2bb45ea63f74fa417f",
+        "name": "Допълнителни Гуми",
+        "description": "2 екстра гуми за по-дълго возене",
+        "type": "standard",
+        "cms_order": 2,
+        "price": 80,
+        "currency": "EUR",
+        "displayed_price": "+80 €",
+        "price_calculator_increment": 80,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": true,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": true,
+        "google_maps_url": null
+      },
+      {
+        "id": "69416b2bb45ea63f74fa4180",
+        "name": "Ваучер Дигитален",
+        "description": "",
+        "type": "voucher",
+        "cms_order": 3,
+        "price": null,
+        "currency": null,
+        "displayed_price": null,
+        "price_calculator_increment": 0,
+        "default_selected_on_fresh_client": true,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      },
+      {
+        "id": "69416b2bb45ea63f74fa4181",
+        "name": "Ваучер Физически",
+        "description": "",
+        "type": "voucher",
+        "cms_order": 4,
+        "price": 4,
+        "currency": "EUR",
+        "displayed_price": "+4 €",
+        "price_calculator_increment": 4,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      },
+      {
+        "id": "69416b2bb45ea63f74fa4182",
+        "name": "Писта Крайници",
+        "description": "Начинаещи",
+        "type": "location",
+        "cms_order": 5,
+        "price": null,
+        "currency": null,
+        "displayed_price": null,
+        "price_calculator_increment": 0,
+        "default_selected_on_fresh_client": true,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+      }
+    ],
+    "option_selection_logic_public_bundle": "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js",
+    "car_choice_options": [],
+    "extra_lap_options": [],
+    "extra_passenger_options": [],
+    "booking": {
+      "date_label": "Предпочитана дата",
+      "date_default": null,
+      "date_selection_mode": "single",
+      "past_dates_disabled": true,
+      "availability_calendar_found": false,
+      "date_confirmation_notice": "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+      "button_label": "Добави в Количката",
+      "online_reservations_temporarily_disabled": true,
+      "button_opens_contact_dialog": true,
+      "button_adds_product_to_cart": false,
+      "contact_dialog_title": "Моля обадете се на телефон:",
+      "contact_dialog_notice": "Временно онлайн резервациите не работят.",
+      "contact_dialog_phone": "+359 882726020",
+      "contact_phone_url": "tel:+359882726020",
+      "payment_notice": "* Плащането се извършва ОНЛАЙН *",
+      "cash_on_delivery_notice": "За наложен платеж се обадете:",
+      "cash_on_delivery_phone": "+359 88 272 6020",
+      "public_bundle_source": "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js"
+    },
+    "requirements_and_restrictions": {
+      "minimum_age": null,
+      "age_restriction_text": null,
+      "height_or_weight_restrictions": null,
+      "driving_licence_required": null,
+      "driving_licence_or_prior_experience_text": null,
+      "product_specific_requirement_section_found": false,
+      "informed_consent_terms_source": "https://danirusev.com/terms",
+      "informed_consent_terms_paragraphs": [
+        "ВНИМАНИЕ: Преживяванията, предлагани от Търговеца, са с висок риск и по своята същност са опасни. Те включват, но не се ограничават до, рискове от сериозни телесни повреди, инвалидност или смърт.",
+        "С покупката на ваучер за преживяване, Вие потвърждавате, че разбирате и приемате тези рискове.",
+        "ЗАДЪЛЖИТЕЛНО УСЛОВИЕ ЗА УЧАСТИЕ: Всеки участник, без изключение, е длъжен лично да подпише документ „Информирано съгласие“ при пристигане на мястото на събитието. Този документ подробно описва всички потенциални рискове, свързани с преживяването.",
+        "Отказът да подпишете документа за Информирано съгласие ще доведе до незабавен отказ за участие в преживяването, без право на възстановяване на заплатената сума."
+      ]
+    },
+    "faqs": [],
+    "separate_specification_tables": [],
+    "gallery_image_urls": [
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/1.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/2.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/3.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/4.webp"
+    ],
+    "main_image_url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/1.webp",
+    "gallery": [
+      {
+        "position": 1,
+        "is_main_hero": true,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/1.webp",
+        "source_type": "url",
+        "cms_alt": "Rent a drift car experience 1",
+        "rendered_alt": "Карай Дрифтачка 1",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/1.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 2,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/2.webp",
+        "source_type": "url",
+        "cms_alt": "Rent a drift car experience 2",
+        "rendered_alt": "Карай Дрифтачка 2",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/2.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 3,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/3.webp",
+        "source_type": "url",
+        "cms_alt": "Rent a drift car experience 3",
+        "rendered_alt": "Карай Дрифтачка 3",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/3.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 4,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/4.webp",
+        "source_type": "url",
+        "cms_alt": "Rent a drift car experience 4",
+        "rendered_alt": "Карай Дрифтачка 4",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/4.webp",
+        "media": null,
+        "http_status": 200
+      }
+    ],
+    "seo": {
+      "title": "Карай Дрифтачка | Dani Rusev 11 | Dani Rusev 11 - Екстремни Преживявания",
+      "meta_description": "Поемете контрола. Под напътствията на Дани, вие ще се научите да контролирате хаоса.",
+      "canonical_url": "https://danirusev.com/experience/drift-rent",
+      "open_graph_title": "Карай Дрифтачка | Dani Rusev 11",
+      "open_graph_description": "Поемете контрола. Под напътствията на Дани, вие ще се научите да контролирате хаоса.",
+      "all_meta_fields": {
+        "viewport": "width=device-width, initial-scale=1",
+        "next-size-adjust": "",
+        "description": "Поемете контрола. Под напътствията на Дани, вие ще се научите да контролирате хаоса.",
+        "author": "Dani Rusev",
+        "keywords": "екстремни преживявания,автомобилни преживявания,дрифт,рали,писта каране,подарък за мъж,ваучер за преживяване,България,дани русев,данаил русев,rally driving experience,drift driving experience",
+        "creator": "Dani Rusev",
+        "publisher": "Echoray.io",
+        "robots": "index, follow",
+        "googlebot": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "format-detection": "telephone=no, address=no, email=no",
+        "og:title": "Карай Дрифтачка | Dani Rusev 11",
+        "og:description": "Поемете контрола. Под напътствията на Дани, вие ще се научите да контролирате хаоса.",
+        "og:url": "https://danirusev.com",
+        "og:site_name": "Dani Rusev 11",
+        "og:locale": "bg_BG",
+        "og:image": "https://danirusev.com/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dani Rusev 11",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Dani Rusev 11",
+        "twitter:description": "Екстремни автомобилни преживявания в България. Дрифт, рали и каране на писта с професионални инструктори.",
+        "twitter:image": "https://danirusev.com/og-image.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Dani Rusev 11",
+          "alternateName": "Dani Rusev Extreme Experiences",
+          "url": "https://danirusev.com",
+          "logo": "https://danirusev.com/og-image.jpg",
+          "description": "Екстремни автомобилни преживявания - дрифт, рали и каране на писта в България",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BG",
+            "addressLocality": "София"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": [
+              "bg",
+              "en"
+            ]
+          },
+          "sameAs": [
+            "https://www.facebook.com/dani.rusev.5",
+            "https://www.instagram.com/danirusev11",
+            "https://www.youtube.com/@danirusev11",
+            "https://www.tiktok.com/@danirusev11"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Карай Дрифтачка",
+          "description": "Поемете контрола. Под напътствията на Дани, вие ще се научите да контролирате хаоса.",
+          "image": [
+            "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/1.webp"
+          ],
+          "category": "Automotive Experience",
+          "brand": {
+            "@type": "Brand",
+            "name": "Dani Rusev 11"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://danirusev.com/experience/drift-rent",
+            "priceCurrency": "EUR",
+            "price": 270,
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2026-10-27T16:49:09.259Z",
+            "priceValidUntil": "2027-10-27T16:49:09.259Z"
+          },
+          "duration": "60 мин",
+          "provider": {
+            "@type": "Organization",
+            "name": "Dani Rusev 11"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Карай Дрифтачка",
+              "item": "/experience/drift-rent"
+            }
+          ]
+        }
+      ]
+    },
+    "page_headings": [
+      {
+        "level": 1,
+        "text": "Карай Дрифтачка"
+      },
+      {
+        "level": 1,
+        "text": "Карай Дрифтачка"
+      },
+      {
+        "level": 3,
+        "text": "Програма"
+      },
+      {
+        "level": 4,
+        "text": "Теория"
+      },
+      {
+        "level": 4,
+        "text": "Практика"
+      },
+      {
+        "level": 4,
+        "text": "Свободно каране"
+      },
+      {
+        "level": 4,
+        "text": "Финал"
+      },
+      {
+        "level": 4,
+        "text": "Локация"
+      },
+      {
+        "level": 3,
+        "text": "Какво е включено"
+      },
+      {
+        "level": 3,
+        "text": "Допълнителни опции"
+      },
+      {
+        "level": 4,
+        "text": "GoPro Заснемане"
+      },
+      {
+        "level": 4,
+        "text": "Допълнителни Гуми"
+      },
+      {
+        "level": 4,
+        "text": "Ваучер Дигитален"
+      },
+      {
+        "level": 4,
+        "text": "Ваучер Физически"
+      },
+      {
+        "level": 4,
+        "text": "Писта Крайници"
+      },
+      {
+        "level": 4,
+        "text": "Предпочитана дата"
+      }
+    ],
+    "page_paragraphs": [
+      "\"Поемете контрола. Под напътствията на Дани, вие ще се научите да контролирате хаоса.\"",
+      "Основи на дрифта, работа с волан и газ.",
+      "Упражнения за иницииране на дрифт и 'донъти'.",
+      "Връзване на завои по трасето.",
+      "Обобщение на карането и обратна връзка",
+      "София",
+      "Професионално заснемане на цялата сесия",
+      "2 екстра гуми за по-дълго возене",
+      "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+      "Карай Сам",
+      "* Плащането се извършва ОНЛАЙН *",
+      "За наложен платеж се обадете:"
+    ],
+    "gift_voucher_flow": {
+      "separate_gift_voucher_product_found": false,
+      "digital_option_name": "Ваучер Дигитален",
+      "physical_option_name": "Ваучер Физически",
+      "recipient_name_field": {
+        "id_template": "voucher-name-{cartItemId}",
+        "label": "Име на ваучера",
+        "placeholder": "Име на получателя (по избор)",
+        "type": "text",
+        "required": false,
+        "max_length": 16,
+        "default": "",
+        "per_experience_cart_item": true,
+        "public_bundle_sources": [
+          "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+          "https://danirusev.com/_next/static/chunks/2171-050e2ce5f76f2b93.js"
+        ]
+      },
+      "public_terms_url": "https://danirusev.com/terms",
+      "guest_purchase_clause": "3.3. Покупката на Ваучер може да се прави от регистриран и нерегистриран потребител, който съгласно настоящите Общи условия предоставя данните, необходими за сключване и изпълнение на договора.",
+      "delivery_clauses": [
+        "6.1. Закупените физически Ваучери се доставят с куриер до адрес или до офис на куриер, или се получават лично от представител на Търговеца, а електронните ваучери се изпращат по електронна поща.",
+        "6.2. Цената на доставката на физическите ваучери зависи от тарифата на избраната от Потребителя куриерска фирма и услуга за доставка.",
+        "6.3. В случай че получателят не бъде намерен в срока за изпълнение на доставката на посочения адрес или не бъде осигурен достъп и условия за предаване на поръчката в този срок, Търговецът се освобождава от задължението да достави ваучера и Купувачът на ваучера следва да му заплати направени разходи за куриерски услуги по доставка и връщане на поръчката, както и разходи направени за опаковка.",
+        "6.4. За доставка по електронна поща под формата на електронен ваучер Купувачът на ваучера носи изцяло риска от неполучаване на Ваучера по електронен път при грешно подаден от негова страна имейл адрес и/или блокиране на съобщението от пощата му или други технически причини, които не са по вина на Търговеца.",
+        "6.5. Срокът за доставка на физически ваучер и за изпращане на електронен ваучер е 3-5 работни дни."
+      ],
+      "validity_clause": "6.6. Валидността на ваучера е 1 (една година) считано от датата на извършване на поръчката.",
+      "expired_voucher_clause": "6.7. Всеки ваучер може да се използва в рамките на своята валидност, изписана на ваучера. Резервации по ваучери с изтекла валидност не се правят. Такива ваучери са невалидни и услугите към тях не подлежат на изпълнение.",
+      "cancellation_clauses": [
+        "7.1. Потребителят има право, без да дължи обезщетение или неустойка и без да посочва причина, да се откаже от сключения договор в срок 14 календарни дни, считано от датата на получаване на стоката/ваучера.",
+        "7.2. Когато потребителят е упражнил правото си на отказ от договора от разстояние, Търговецът възстановява всички суми, получени от Купувача на ваучера, с изключение на разходите за доставка и банкови такси, удържани при превод, без неоправдано забавяне и не по-късно от 14 дни, считано от датата, на която е бил уведомен за решението на потребителя да се откаже от договора. Търговецът възстановява получените суми на посочена от потребителя банкова сметка.",
+        "7.3. Правото на отказ не се прилага за услуги, които вече са изпълнени или за персонализирани стоки.",
+        "7.4. В случай че правото на отказ е упражнено, потребителят трябва да изпрати или предаде на Търговеца закупения ваучер в срок до 3 дни от датата, на която е съобщил за отказа от договора от разстояние.",
+        "7.5. Отказ на поръчка се приема писмено с електронно писмо, с попълнен и изпратен по електронната поща формуляр за Упражняване на правото за отказ от Договор."
+      ],
+      "validity_extension_clause": "6.8. Срокът на валидност на ваучера не подлежи на удължаване.",
+      "issue_after_date_confirmation_clause": "8.1. След постигане на съгласие между търговеца и потребителя относно дата за изпълнение на събитието, търговецът избира и потвърждава датата чрез административен панел, след което ваучерът се генерира в потребителския акаунт на потребителя и е достъпен чрез индивидуален линк на адрес: https://danirusev.com/vouchers",
+      "digital_email_delivery_paragraph": "Потребителят има възможност да избере дали ваучерът да бъде дигитален или физически. При избор на дигитален ваучер, потребителят получава уведомителен имейл с линк към конкретния ваучер, без ваучерът да бъде прикачен като файл към имейла. Търговецът не носи отговорност при неполучаване на имейл уведомлението, когато това се дължи на некоректно въведен имейл адрес, филтриране от пощенски услуги, технически проблеми или други обстоятелства извън контрола на търговеца.",
+      "email_attachment_promised": false,
+      "email_link_promised": true,
+      "public_pdf_download_found": false,
+      "account_vouchers_url": "https://danirusev.com/vouchers",
+      "account_vouchers_public_headings": [
+        "Моите Ваучери",
+        "Управлявайте вашите дрифт преживявания"
+      ],
+      "post_purchase_voucher_observed": false
+    },
+    "checkout": {
+      "url": "https://danirusev.com/checkout",
+      "empty_cart_messages": [
+        "Твоята количка е празна",
+        "Изглежда още нямаш добавени преживявания. Вземи я напълни ;)",
+        "Преживявания →"
+      ],
+      "populated_checkout_observed_in_browser": false,
+      "populated_checkout_fields_extracted_from_public_javascript": true,
+      "public_bundle_source": "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+      "personal_information_heading": "Лична Информация",
+      "personal_information_subtitle": "Попълнете данните си преди да продължите",
+      "personal_information_fields": [
+        {
+          "id": "fullName",
+          "label": "Име и Фамилия",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "phoneNumber",
+          "label": "Тел. Номер",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "address",
+          "label": "Адрес",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "city",
+          "label": "Град",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "postalCode",
+          "label": "Пощенски код",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "country",
+          "label": "Държава",
+          "type": "text",
+          "required": false,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "България",
+          "disabled": true
+        }
+      ],
+      "recipient_name_field": {
+        "id_template": "voucher-name-{cartItemId}",
+        "label": "Име на ваучера",
+        "placeholder": "Име на получателя (по избор)",
+        "type": "text",
+        "required": false,
+        "max_length": 16,
+        "default": "",
+        "per_experience_cart_item": true,
+        "public_bundle_sources": [
+          "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+          "https://danirusev.com/_next/static/chunks/2171-050e2ce5f76f2b93.js"
+        ]
+      },
+      "payment_heading": "Плащане",
+      "payment_subtitle": "Сигурно плащане чрез myPOS",
+      "payment_provider": "myPOS",
+      "payment_currency": "EUR",
+      "continue_button": "Продължи към плащане →",
+      "zero_subtotal_button": "Потвърди Заявка →",
+      "terms_dialog": {
+        "title": "Правни Условия",
+        "description": "Преди да преминете към плащане, моля запознайте се и потвърдете съгласието си с нашите условия за ползване.",
+        "checkbox_id": "terms",
+        "checkbox_default": false,
+        "checkbox_label": "Прочетох и се съгласявам с Общите условия и Политиката за поверителност на Dani Rusev 11.",
+        "checkbox_required": true,
+        "links": [
+          "https://danirusev.com/terms",
+          "https://danirusev.com/privacy"
+        ],
+        "confirm_button": "Потвърди и Продължи →"
+      },
+      "shipping_label": "Доставка",
+      "shipping_display": "При плащане",
+      "payment_session_created": false,
+      "forms_submitted": false,
+      "payment_card_fields_observed": false
+    },
+    "source_urls": [
+      "https://danirusev.com/",
+      "https://danirusev.com/experience/drift-rent",
+      "https://danirusev.com/api/products?where%5BproductType%5D%5Bequals%5D=experience&limit=100&depth=2",
+      "https://danirusev.com/terms",
+      "https://danirusev.com/checkout",
+      "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js",
+      "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js"
+    ],
+    "public_api_and_resolved_page_product_match": true,
+    "raw_public_product": {
+      "id": 19,
+      "title": "Карай Дрифтачка",
+      "slug": "drift-rent",
+      "productType": "experience",
+      "price": 270,
+      "compareAtPrice": null,
+      "description": "Поемете контрола. Под напътствията на Дани, вие ще се научите да контролирате хаоса.",
+      "categories": [
+        {
+          "id": 3,
+          "title": "Преживяване",
+          "slug": "experience",
+          "parent": null,
+          "updatedAt": "2025-12-16T12:53:51.218Z",
+          "createdAt": "2025-12-16T12:53:51.917Z"
+        }
+      ],
+      "gallery": [
+        {
+          "id": "69416b2bb45ea63f74fa4170",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/1.webp",
+          "alt": "Rent a drift car experience 1"
+        },
+        {
+          "id": "69416b2bb45ea63f74fa4171",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/2.webp",
+          "alt": "Rent a drift car experience 2"
+        },
+        {
+          "id": "69416b2bb45ea63f74fa4172",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/3.webp",
+          "alt": "Rent a drift car experience 3"
+        },
+        {
+          "id": "69416b2bb45ea63f74fa4173",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/rent/4.webp",
+          "alt": "Rent a drift car experience 4"
+        }
+      ],
+      "stock": 0,
+      "lowStockThreshold": 5,
+      "optionDefinitions": [],
+      "variants": [],
+      "subtitle": "Карай Сам",
+      "duration": "60 мин",
+      "locations": [
+        {
+          "id": "69416b2bb45ea63f74fa4174",
+          "city": "София"
+        }
+      ],
+      "techSpecs": {
+        "carModel": "BMW E46 V6",
+        "horsePower": 240,
+        "tiresBurned": "4"
+      },
+      "visuals": {
+        "iconName": "Car",
+        "themeColor": "rent",
+        "pattern": "tyre-pattern"
+      },
+      "program": [
+        {
+          "id": "69416b2bb45ea63f74fa4176",
+          "time": "15 min",
+          "icon": null,
+          "activity": "Теория",
+          "description": "Основи на дрифта, работа с волан и газ."
+        },
+        {
+          "id": "69416b2bb45ea63f74fa4177",
+          "time": "10 min",
+          "icon": null,
+          "activity": "Практика",
+          "description": "Упражнения за иницииране на дрифт и 'донъти'."
+        },
+        {
+          "id": "69416b2bb45ea63f74fa4178",
+          "time": "35 min",
+          "icon": null,
+          "activity": "Свободно каране",
+          "description": "Връзване на завои по трасето."
+        },
+        {
+          "id": "6941b887b36d9df423c8a59e",
+          "time": "60 min",
+          "icon": null,
+          "activity": "Финал",
+          "description": "Обобщение на карането и обратна връзка"
+        }
+      ],
+      "included": [
+        {
+          "id": "69416b2bb45ea63f74fa4179",
+          "item": "Инструктор (Дани Русев)"
+        },
+        {
+          "id": "69416b2bb45ea63f74fa417a",
+          "item": "Наем на подготвен автомобил"
+        },
+        {
+          "id": "69416b2bb45ea63f74fa417b",
+          "item": "Гориво и Гуми"
+        },
+        {
+          "id": "69726a2d0da6c2387d26a164",
+          "item": "Наем на писта"
+        }
+      ],
+      "notIncluded": [
+        {
+          "id": "69416bf5189aca1e5d7b7dfa",
+          "item": "Транспорт до пистата"
+        },
+        {
+          "id": "69416b2bb45ea63f74fa417d",
+          "item": "Храна и напитки"
+        }
+      ],
+      "additionalItems": [
+        {
+          "id": "69416b2bb45ea63f74fa417e",
+          "name": "GoPro Заснемане",
+          "price": 20,
+          "description": "Професионално заснемане на цялата сесия",
+          "icon": "Video",
+          "type": "standard",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "69416b2bb45ea63f74fa417f",
+          "name": "Допълнителни Гуми",
+          "price": 80,
+          "description": "2 екстра гуми за по-дълго возене",
+          "icon": "Disc",
+          "type": "standard",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "69416b2bb45ea63f74fa4180",
+          "name": "Ваучер Дигитален",
+          "price": null,
+          "description": "",
+          "icon": "Smartphone",
+          "type": "voucher",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "69416b2bb45ea63f74fa4181",
+          "name": "Ваучер Физически",
+          "price": 4,
+          "description": "",
+          "icon": "Gift",
+          "type": "voucher",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "69416b2bb45ea63f74fa4182",
+          "name": "Писта Крайници",
+          "price": null,
+          "description": "Начинаещи",
+          "icon": "MapPin",
+          "type": "location",
+          "googleMapsUrl": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+        }
+      ],
+      "tabNames": {
+        "program": null,
+        "included": null,
+        "additional": null
+      },
+      "updatedAt": "2026-03-23T20:00:17.066Z",
+      "createdAt": "2025-12-16T14:22:36.250Z",
+      "_status": "published"
+    },
+    "requested_old_url": {
+      "url": "https://danirusev.com/experience/rent-a-drift-car",
+      "http_status": 200,
+      "nextjs_not_found_digest": "NEXT_HTTP_ERROR_FALLBACK;404",
+      "redirect_to_current_product": false
+    }
+  },
+  {
+    "id": 20,
+    "slug": "drift-mix",
+    "url": "https://danirusev.com/experience/drift-mix",
+    "captured_at_utc": "2026-10-27T16:54:52+00:00",
+    "title": "Дрифт Микс",
+    "subtitle": "Возене + Каране",
+    "headline": "Дрифт Микс",
+    "separate_headline_field_found": false,
+    "description": "Усетете дрифта от двете страни - от пасажерското място и от шофьорската седалка!",
+    "description_paragraphs": [
+      "Усетете дрифта от двете страни - от пасажерското място и от шофьорската седалка!"
+    ],
+    "price": {
+      "amount": 215,
+      "currency": "EUR",
+      "displayed": "215 €",
+      "base_price_label": "Базова цена",
+      "total_price_label": "Обща цена",
+      "default_total": 215,
+      "compare_at_price": null,
+      "displayed_bgn": null,
+      "bgn_visible_at_capture": false,
+      "bgn_conversion_rendering_cutoff": "2026-08-09",
+      "currency_logic_public_bundle": "https://danirusev.com/_next/static/chunks/7098-bc179bc9e823b270.js"
+    },
+    "duration": "60 мин",
+    "technical_specifications": {
+      "car_model": "BMW E46 V6",
+      "horsepower": 240,
+      "horsepower_unit": "HP",
+      "tires_burned": "4"
+    },
+    "displayed_specifications": [
+      {
+        "label": "Време",
+        "value": "60 мин"
+      },
+      {
+        "label": "Автомобил",
+        "value": "BMW E46 V6"
+      },
+      {
+        "label": "Мощност",
+        "value": "240",
+        "unit": "HP"
+      },
+      {
+        "label": "Гуми",
+        "value": "4"
+      }
+    ],
+    "locations": [
+      {
+        "city": "София",
+        "id": "69416c6ab45ea63f74fa4188",
+        "selectable_location_options": [
+          {
+            "id": "69416c6ab45ea63f74fa4196",
+            "name": "Писта Крайници",
+            "description": "",
+            "type": "location",
+            "cms_order": 5,
+            "price": null,
+            "currency": null,
+            "displayed_price": null,
+            "price_calculator_increment": 0,
+            "default_selected_on_fresh_client": true,
+            "multiple_options_in_same_group_selectable": false,
+            "multiple_units_of_this_add_on_selectable": false,
+            "description_rendered_in_option_card": false,
+            "google_maps_url": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+          }
+        ],
+        "alternative_location_found": false,
+        "changes_price": false,
+        "location_specific_availability_published": false
+      }
+    ],
+    "program_heading": "Програма",
+    "program": [
+      {
+        "time": "10 min",
+        "activity": "Теория",
+        "description": "Основи на дрифта, работа с волан и газ.",
+        "icon": null,
+        "id": "69416c6ab45ea63f74fa418a"
+      },
+      {
+        "time": "20 min",
+        "activity": "Возене",
+        "description": " Интензивно возене на трасе.",
+        "icon": null,
+        "id": "69416c6ab45ea63f74fa418b"
+      },
+      {
+        "time": "30 min",
+        "activity": "Свободно каране",
+        "description": "Започни трансформацията си в дрифт звяр.",
+        "icon": null,
+        "id": "69416c6ab45ea63f74fa418c"
+      },
+      {
+        "time": "60 min",
+        "activity": "Финал",
+        "description": "Обобщение на карането и обратна връзка.",
+        "icon": null,
+        "id": "6941bbc5b36d9df423c8a59f"
+      }
+    ],
+    "included_heading": "Цената включва",
+    "included": [
+      "Инструктор (Дани Русев)",
+      "Наем на подготвен автомобил",
+      "Гориво и Гуми",
+      "Наем на писта"
+    ],
+    "not_included_heading": "Цената не включва",
+    "not_included": [
+      "Транспорт до пистата",
+      "Храна и напитки"
+    ],
+    "add_ons_heading": "Допълнителни опции",
+    "add_ons": [
+      {
+        "id": "69416c6ab45ea63f74fa4192",
+        "name": "GoPro Заснемане",
+        "description": "Професионално заснемане на цялата сесия",
+        "type": "standard",
+        "cms_order": 1,
+        "price": 20,
+        "currency": "EUR",
+        "displayed_price": "+20 €",
+        "price_calculator_increment": 20,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": true,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": true,
+        "google_maps_url": null
+      },
+      {
+        "id": "69416c6ab45ea63f74fa4193",
+        "name": "Допълнителни Гуми",
+        "description": "2 екстра гуми за по-дълго возене или каране",
+        "type": "standard",
+        "cms_order": 2,
+        "price": 80,
+        "currency": "EUR",
+        "displayed_price": "+80 €",
+        "price_calculator_increment": 80,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": true,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": true,
+        "google_maps_url": null
+      },
+      {
+        "id": "69416c6ab45ea63f74fa4194",
+        "name": "Ваучер Дигитален",
+        "description": "",
+        "type": "voucher",
+        "cms_order": 3,
+        "price": null,
+        "currency": null,
+        "displayed_price": null,
+        "price_calculator_increment": 0,
+        "default_selected_on_fresh_client": true,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      },
+      {
+        "id": "69416c6ab45ea63f74fa4195",
+        "name": "Ваучер Физически",
+        "description": "",
+        "type": "voucher",
+        "cms_order": 4,
+        "price": 4,
+        "currency": "EUR",
+        "displayed_price": "+4 €",
+        "price_calculator_increment": 4,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      },
+      {
+        "id": "69416c6ab45ea63f74fa4196",
+        "name": "Писта Крайници",
+        "description": "",
+        "type": "location",
+        "cms_order": 5,
+        "price": null,
+        "currency": null,
+        "displayed_price": null,
+        "price_calculator_increment": 0,
+        "default_selected_on_fresh_client": true,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+      }
+    ],
+    "option_selection_logic_public_bundle": "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js",
+    "car_choice_options": [],
+    "extra_lap_options": [],
+    "extra_passenger_options": [],
+    "booking": {
+      "date_label": "Предпочитана дата",
+      "date_default": null,
+      "date_selection_mode": "single",
+      "past_dates_disabled": true,
+      "availability_calendar_found": false,
+      "date_confirmation_notice": "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+      "button_label": "Добави в Количката",
+      "online_reservations_temporarily_disabled": true,
+      "button_opens_contact_dialog": true,
+      "button_adds_product_to_cart": false,
+      "contact_dialog_title": "Моля обадете се на телефон:",
+      "contact_dialog_notice": "Временно онлайн резервациите не работят.",
+      "contact_dialog_phone": "+359 882726020",
+      "contact_phone_url": "tel:+359882726020",
+      "payment_notice": "* Плащането се извършва ОНЛАЙН *",
+      "cash_on_delivery_notice": "За наложен платеж се обадете:",
+      "cash_on_delivery_phone": "+359 88 272 6020",
+      "public_bundle_source": "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js"
+    },
+    "requirements_and_restrictions": {
+      "minimum_age": null,
+      "age_restriction_text": null,
+      "height_or_weight_restrictions": null,
+      "driving_licence_required": null,
+      "driving_licence_or_prior_experience_text": null,
+      "product_specific_requirement_section_found": false,
+      "informed_consent_terms_source": "https://danirusev.com/terms",
+      "informed_consent_terms_paragraphs": [
+        "ВНИМАНИЕ: Преживяванията, предлагани от Търговеца, са с висок риск и по своята същност са опасни. Те включват, но не се ограничават до, рискове от сериозни телесни повреди, инвалидност или смърт.",
+        "С покупката на ваучер за преживяване, Вие потвърждавате, че разбирате и приемате тези рискове.",
+        "ЗАДЪЛЖИТЕЛНО УСЛОВИЕ ЗА УЧАСТИЕ: Всеки участник, без изключение, е длъжен лично да подпише документ „Информирано съгласие“ при пристигане на мястото на събитието. Този документ подробно описва всички потенциални рискове, свързани с преживяването.",
+        "Отказът да подпишете документа за Информирано съгласие ще доведе до незабавен отказ за участие в преживяването, без право на възстановяване на заплатената сума."
+      ]
+    },
+    "faqs": [],
+    "separate_specification_tables": [],
+    "gallery_image_urls": [
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/2.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/1.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/3.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/4.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/5.webp"
+    ],
+    "main_image_url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/2.webp",
+    "gallery": [
+      {
+        "position": 1,
+        "is_main_hero": true,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/2.webp",
+        "source_type": "url",
+        "cms_alt": "Drift Mix Experience 1",
+        "rendered_alt": "Дрифт Микс 1",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/2.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 2,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/1.webp",
+        "source_type": "url",
+        "cms_alt": "Drift Mix Experience 2",
+        "rendered_alt": "Дрифт Микс 2",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/1.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 3,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/3.webp",
+        "source_type": "url",
+        "cms_alt": "Drift Mix Experience 3",
+        "rendered_alt": "Дрифт Микс 3",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/3.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 4,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/4.webp",
+        "source_type": "url",
+        "cms_alt": "Drift Mix Experience 4",
+        "rendered_alt": "Дрифт Микс 4",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/4.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 5,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/5.webp",
+        "source_type": "url",
+        "cms_alt": "Drift Mix Experience 5",
+        "rendered_alt": "Дрифт Микс 5",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/5.webp",
+        "media": null,
+        "http_status": 200
+      }
+    ],
+    "seo": {
+      "title": "Дрифт Микс | Dani Rusev 11 | Dani Rusev 11 - Екстремни Преживявания",
+      "meta_description": "Усетете дрифта от двете страни - от пасажерското място и от шофьорската седалка!",
+      "canonical_url": "https://danirusev.com/experience/drift-mix",
+      "open_graph_title": "Дрифт Микс | Dani Rusev 11",
+      "open_graph_description": "Усетете дрифта от двете страни - от пасажерското място и от шофьорската седалка!",
+      "all_meta_fields": {
+        "viewport": "width=device-width, initial-scale=1",
+        "next-size-adjust": "",
+        "description": "Усетете дрифта от двете страни - от пасажерското място и от шофьорската седалка!",
+        "author": "Dani Rusev",
+        "keywords": "екстремни преживявания,автомобилни преживявания,дрифт,рали,писта каране,подарък за мъж,ваучер за преживяване,България,дани русев,данаил русев,rally driving experience,drift driving experience",
+        "creator": "Dani Rusev",
+        "publisher": "Echoray.io",
+        "robots": "index, follow",
+        "googlebot": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "format-detection": "telephone=no, address=no, email=no",
+        "og:title": "Дрифт Микс | Dani Rusev 11",
+        "og:description": "Усетете дрифта от двете страни - от пасажерското място и от шофьорската седалка!",
+        "og:url": "https://danirusev.com",
+        "og:site_name": "Dani Rusev 11",
+        "og:locale": "bg_BG",
+        "og:image": "https://danirusev.com/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dani Rusev 11",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Dani Rusev 11",
+        "twitter:description": "Екстремни автомобилни преживявания в България. Дрифт, рали и каране на писта с професионални инструктори.",
+        "twitter:image": "https://danirusev.com/og-image.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Dani Rusev 11",
+          "alternateName": "Dani Rusev Extreme Experiences",
+          "url": "https://danirusev.com",
+          "logo": "https://danirusev.com/og-image.jpg",
+          "description": "Екстремни автомобилни преживявания - дрифт, рали и каране на писта в България",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BG",
+            "addressLocality": "София"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": [
+              "bg",
+              "en"
+            ]
+          },
+          "sameAs": [
+            "https://www.facebook.com/dani.rusev.5",
+            "https://www.instagram.com/danirusev11",
+            "https://www.youtube.com/@danirusev11",
+            "https://www.tiktok.com/@danirusev11"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Дрифт Микс",
+          "description": "Усетете дрифта от двете страни - от пасажерското място и от шофьорската седалка!",
+          "image": [
+            "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/2.webp"
+          ],
+          "category": "Automotive Experience",
+          "brand": {
+            "@type": "Brand",
+            "name": "Dani Rusev 11"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://danirusev.com/experience/drift-mix",
+            "priceCurrency": "EUR",
+            "price": 215,
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2026-10-27T16:48:27.119Z",
+            "priceValidUntil": "2027-10-27T16:48:27.120Z"
+          },
+          "duration": "60 мин",
+          "provider": {
+            "@type": "Organization",
+            "name": "Dani Rusev 11"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Дрифт Микс",
+              "item": "/experience/drift-mix"
+            }
+          ]
+        }
+      ]
+    },
+    "page_headings": [
+      {
+        "level": 1,
+        "text": "Дрифт Микс"
+      },
+      {
+        "level": 1,
+        "text": "Дрифт Микс"
+      },
+      {
+        "level": 3,
+        "text": "Програма"
+      },
+      {
+        "level": 4,
+        "text": "Теория"
+      },
+      {
+        "level": 4,
+        "text": "Возене"
+      },
+      {
+        "level": 4,
+        "text": "Свободно каране"
+      },
+      {
+        "level": 4,
+        "text": "Финал"
+      },
+      {
+        "level": 4,
+        "text": "Локация"
+      },
+      {
+        "level": 3,
+        "text": "Какво е включено"
+      },
+      {
+        "level": 3,
+        "text": "Допълнителни опции"
+      },
+      {
+        "level": 4,
+        "text": "GoPro Заснемане"
+      },
+      {
+        "level": 4,
+        "text": "Допълнителни Гуми"
+      },
+      {
+        "level": 4,
+        "text": "Ваучер Дигитален"
+      },
+      {
+        "level": 4,
+        "text": "Ваучер Физически"
+      },
+      {
+        "level": 4,
+        "text": "Писта Крайници"
+      },
+      {
+        "level": 4,
+        "text": "Предпочитана дата"
+      }
+    ],
+    "page_paragraphs": [
+      "\"Усетете дрифта от двете страни - от пасажерското място и от шофьорската седалка!\"",
+      "Основи на дрифта, работа с волан и газ.",
+      "Интензивно возене на трасе.",
+      "Започни трансформацията си в дрифт звяр.",
+      "Обобщение на карането и обратна връзка.",
+      "София",
+      "Професионално заснемане на цялата сесия",
+      "2 екстра гуми за по-дълго возене или каране",
+      "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+      "Возене + Каране",
+      "* Плащането се извършва ОНЛАЙН *",
+      "За наложен платеж се обадете:"
+    ],
+    "gift_voucher_flow": {
+      "separate_gift_voucher_product_found": false,
+      "digital_option_name": "Ваучер Дигитален",
+      "physical_option_name": "Ваучер Физически",
+      "recipient_name_field": {
+        "id_template": "voucher-name-{cartItemId}",
+        "label": "Име на ваучера",
+        "placeholder": "Име на получателя (по избор)",
+        "type": "text",
+        "required": false,
+        "max_length": 16,
+        "default": "",
+        "per_experience_cart_item": true,
+        "public_bundle_sources": [
+          "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+          "https://danirusev.com/_next/static/chunks/2171-050e2ce5f76f2b93.js"
+        ]
+      },
+      "public_terms_url": "https://danirusev.com/terms",
+      "guest_purchase_clause": "3.3. Покупката на Ваучер може да се прави от регистриран и нерегистриран потребител, който съгласно настоящите Общи условия предоставя данните, необходими за сключване и изпълнение на договора.",
+      "delivery_clauses": [
+        "6.1. Закупените физически Ваучери се доставят с куриер до адрес или до офис на куриер, или се получават лично от представител на Търговеца, а електронните ваучери се изпращат по електронна поща.",
+        "6.2. Цената на доставката на физическите ваучери зависи от тарифата на избраната от Потребителя куриерска фирма и услуга за доставка.",
+        "6.3. В случай че получателят не бъде намерен в срока за изпълнение на доставката на посочения адрес или не бъде осигурен достъп и условия за предаване на поръчката в този срок, Търговецът се освобождава от задължението да достави ваучера и Купувачът на ваучера следва да му заплати направени разходи за куриерски услуги по доставка и връщане на поръчката, както и разходи направени за опаковка.",
+        "6.4. За доставка по електронна поща под формата на електронен ваучер Купувачът на ваучера носи изцяло риска от неполучаване на Ваучера по електронен път при грешно подаден от негова страна имейл адрес и/или блокиране на съобщението от пощата му или други технически причини, които не са по вина на Търговеца.",
+        "6.5. Срокът за доставка на физически ваучер и за изпращане на електронен ваучер е 3-5 работни дни."
+      ],
+      "validity_clause": "6.6. Валидността на ваучера е 1 (една година) считано от датата на извършване на поръчката.",
+      "expired_voucher_clause": "6.7. Всеки ваучер може да се използва в рамките на своята валидност, изписана на ваучера. Резервации по ваучери с изтекла валидност не се правят. Такива ваучери са невалидни и услугите към тях не подлежат на изпълнение.",
+      "cancellation_clauses": [
+        "7.1. Потребителят има право, без да дължи обезщетение или неустойка и без да посочва причина, да се откаже от сключения договор в срок 14 календарни дни, считано от датата на получаване на стоката/ваучера.",
+        "7.2. Когато потребителят е упражнил правото си на отказ от договора от разстояние, Търговецът възстановява всички суми, получени от Купувача на ваучера, с изключение на разходите за доставка и банкови такси, удържани при превод, без неоправдано забавяне и не по-късно от 14 дни, считано от датата, на която е бил уведомен за решението на потребителя да се откаже от договора. Търговецът възстановява получените суми на посочена от потребителя банкова сметка.",
+        "7.3. Правото на отказ не се прилага за услуги, които вече са изпълнени или за персонализирани стоки.",
+        "7.4. В случай че правото на отказ е упражнено, потребителят трябва да изпрати или предаде на Търговеца закупения ваучер в срок до 3 дни от датата, на която е съобщил за отказа от договора от разстояние.",
+        "7.5. Отказ на поръчка се приема писмено с електронно писмо, с попълнен и изпратен по електронната поща формуляр за Упражняване на правото за отказ от Договор."
+      ],
+      "validity_extension_clause": "6.8. Срокът на валидност на ваучера не подлежи на удължаване.",
+      "issue_after_date_confirmation_clause": "8.1. След постигане на съгласие между търговеца и потребителя относно дата за изпълнение на събитието, търговецът избира и потвърждава датата чрез административен панел, след което ваучерът се генерира в потребителския акаунт на потребителя и е достъпен чрез индивидуален линк на адрес: https://danirusev.com/vouchers",
+      "digital_email_delivery_paragraph": "Потребителят има възможност да избере дали ваучерът да бъде дигитален или физически. При избор на дигитален ваучер, потребителят получава уведомителен имейл с линк към конкретния ваучер, без ваучерът да бъде прикачен като файл към имейла. Търговецът не носи отговорност при неполучаване на имейл уведомлението, когато това се дължи на некоректно въведен имейл адрес, филтриране от пощенски услуги, технически проблеми или други обстоятелства извън контрола на търговеца.",
+      "email_attachment_promised": false,
+      "email_link_promised": true,
+      "public_pdf_download_found": false,
+      "account_vouchers_url": "https://danirusev.com/vouchers",
+      "account_vouchers_public_headings": [
+        "Моите Ваучери",
+        "Управлявайте вашите дрифт преживявания"
+      ],
+      "post_purchase_voucher_observed": false
+    },
+    "checkout": {
+      "url": "https://danirusev.com/checkout",
+      "empty_cart_messages": [
+        "Твоята количка е празна",
+        "Изглежда още нямаш добавени преживявания. Вземи я напълни ;)",
+        "Преживявания →"
+      ],
+      "populated_checkout_observed_in_browser": false,
+      "populated_checkout_fields_extracted_from_public_javascript": true,
+      "public_bundle_source": "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+      "personal_information_heading": "Лична Информация",
+      "personal_information_subtitle": "Попълнете данните си преди да продължите",
+      "personal_information_fields": [
+        {
+          "id": "fullName",
+          "label": "Име и Фамилия",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "phoneNumber",
+          "label": "Тел. Номер",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "address",
+          "label": "Адрес",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "city",
+          "label": "Град",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "postalCode",
+          "label": "Пощенски код",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "country",
+          "label": "Държава",
+          "type": "text",
+          "required": false,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "България",
+          "disabled": true
+        }
+      ],
+      "recipient_name_field": {
+        "id_template": "voucher-name-{cartItemId}",
+        "label": "Име на ваучера",
+        "placeholder": "Име на получателя (по избор)",
+        "type": "text",
+        "required": false,
+        "max_length": 16,
+        "default": "",
+        "per_experience_cart_item": true,
+        "public_bundle_sources": [
+          "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+          "https://danirusev.com/_next/static/chunks/2171-050e2ce5f76f2b93.js"
+        ]
+      },
+      "payment_heading": "Плащане",
+      "payment_subtitle": "Сигурно плащане чрез myPOS",
+      "payment_provider": "myPOS",
+      "payment_currency": "EUR",
+      "continue_button": "Продължи към плащане →",
+      "zero_subtotal_button": "Потвърди Заявка →",
+      "terms_dialog": {
+        "title": "Правни Условия",
+        "description": "Преди да преминете към плащане, моля запознайте се и потвърдете съгласието си с нашите условия за ползване.",
+        "checkbox_id": "terms",
+        "checkbox_default": false,
+        "checkbox_label": "Прочетох и се съгласявам с Общите условия и Политиката за поверителност на Dani Rusev 11.",
+        "checkbox_required": true,
+        "links": [
+          "https://danirusev.com/terms",
+          "https://danirusev.com/privacy"
+        ],
+        "confirm_button": "Потвърди и Продължи →"
+      },
+      "shipping_label": "Доставка",
+      "shipping_display": "При плащане",
+      "payment_session_created": false,
+      "forms_submitted": false,
+      "payment_card_fields_observed": false
+    },
+    "source_urls": [
+      "https://danirusev.com/",
+      "https://danirusev.com/experience/drift-mix",
+      "https://danirusev.com/api/products?where%5BproductType%5D%5Bequals%5D=experience&limit=100&depth=2",
+      "https://danirusev.com/terms",
+      "https://danirusev.com/checkout",
+      "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js",
+      "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js"
+    ],
+    "public_api_and_resolved_page_product_match": true,
+    "raw_public_product": {
+      "id": 20,
+      "title": "Дрифт Микс",
+      "slug": "drift-mix",
+      "productType": "experience",
+      "price": 215,
+      "compareAtPrice": null,
+      "description": "Усетете дрифта от двете страни - от пасажерското място и от шофьорската седалка!",
+      "categories": [
+        {
+          "id": 3,
+          "title": "Преживяване",
+          "slug": "experience",
+          "parent": null,
+          "updatedAt": "2025-12-16T12:53:51.218Z",
+          "createdAt": "2025-12-16T12:53:51.917Z"
+        }
+      ],
+      "gallery": [
+        {
+          "id": "69416c6ab45ea63f74fa4184",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/2.webp",
+          "alt": "Drift Mix Experience 1"
+        },
+        {
+          "id": "69416c6ab45ea63f74fa4185",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/1.webp",
+          "alt": "Drift Mix Experience 2"
+        },
+        {
+          "id": "69416c6ab45ea63f74fa4186",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/3.webp",
+          "alt": "Drift Mix Experience 3"
+        },
+        {
+          "id": "69416c6ab45ea63f74fa4187",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/4.webp",
+          "alt": "Drift Mix Experience 4"
+        },
+        {
+          "id": "69416cc1189aca1e5d7b7dfc",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/mix/5.webp",
+          "alt": "Drift Mix Experience 5"
+        }
+      ],
+      "stock": 0,
+      "lowStockThreshold": 5,
+      "optionDefinitions": [],
+      "variants": [],
+      "subtitle": "Возене + Каране",
+      "duration": "60 мин",
+      "locations": [
+        {
+          "id": "69416c6ab45ea63f74fa4188",
+          "city": "София"
+        }
+      ],
+      "techSpecs": {
+        "carModel": "BMW E46 V6",
+        "horsePower": 240,
+        "tiresBurned": "4"
+      },
+      "visuals": {
+        "iconName": "Gauge",
+        "themeColor": "mix",
+        "pattern": "mix"
+      },
+      "program": [
+        {
+          "id": "69416c6ab45ea63f74fa418a",
+          "time": "10 min",
+          "icon": null,
+          "activity": "Теория",
+          "description": "Основи на дрифта, работа с волан и газ."
+        },
+        {
+          "id": "69416c6ab45ea63f74fa418b",
+          "time": "20 min",
+          "icon": null,
+          "activity": "Возене",
+          "description": " Интензивно возене на трасе."
+        },
+        {
+          "id": "69416c6ab45ea63f74fa418c",
+          "time": "30 min",
+          "icon": null,
+          "activity": "Свободно каране",
+          "description": "Започни трансформацията си в дрифт звяр."
+        },
+        {
+          "id": "6941bbc5b36d9df423c8a59f",
+          "time": "60 min",
+          "icon": null,
+          "activity": "Финал",
+          "description": "Обобщение на карането и обратна връзка."
+        }
+      ],
+      "included": [
+        {
+          "id": "69416c6ab45ea63f74fa418d",
+          "item": "Инструктор (Дани Русев)"
+        },
+        {
+          "id": "69416c6ab45ea63f74fa418e",
+          "item": "Наем на подготвен автомобил"
+        },
+        {
+          "id": "69416c6ab45ea63f74fa418f",
+          "item": "Гориво и Гуми"
+        },
+        {
+          "id": "697273f10da6c2387d26a16a",
+          "item": "Наем на писта"
+        }
+      ],
+      "notIncluded": [
+        {
+          "id": "69416d46189aca1e5d7b7dfe",
+          "item": "Транспорт до пистата"
+        },
+        {
+          "id": "69416c6ab45ea63f74fa4191",
+          "item": "Храна и напитки"
+        }
+      ],
+      "additionalItems": [
+        {
+          "id": "69416c6ab45ea63f74fa4192",
+          "name": "GoPro Заснемане",
+          "price": 20,
+          "description": "Професионално заснемане на цялата сесия",
+          "icon": "Video",
+          "type": "standard",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "69416c6ab45ea63f74fa4193",
+          "name": "Допълнителни Гуми",
+          "price": 80,
+          "description": "2 екстра гуми за по-дълго возене или каране",
+          "icon": "Disc",
+          "type": "standard",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "69416c6ab45ea63f74fa4194",
+          "name": "Ваучер Дигитален",
+          "price": null,
+          "description": "",
+          "icon": "Smartphone",
+          "type": "voucher",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "69416c6ab45ea63f74fa4195",
+          "name": "Ваучер Физически",
+          "price": 4,
+          "description": "",
+          "icon": "Gift",
+          "type": "voucher",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "69416c6ab45ea63f74fa4196",
+          "name": "Писта Крайници",
+          "price": null,
+          "description": "",
+          "icon": "MapPin",
+          "type": "location",
+          "googleMapsUrl": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+        }
+      ],
+      "tabNames": {
+        "program": null,
+        "included": null,
+        "additional": null
+      },
+      "updatedAt": "2026-03-23T20:10:25.496Z",
+      "createdAt": "2025-12-16T14:27:55.083Z",
+      "_status": "published"
+    }
+  },
+  {
+    "id": 21,
+    "slug": "drift-event",
+    "url": "https://danirusev.com/experience/drift-event",
+    "captured_at_utc": "2026-10-27T16:54:52+00:00",
+    "title": "Дрифт Събитие",
+    "subtitle": "Специален Повод",
+    "headline": "Дрифт Събитие",
+    "separate_headline_field_found": false,
+    "description": "Поверете ни организацията на Вашите най-ценни моменти. Ние създаваме стилни, добре обмислени изненади и преживявания, които оставят вечен спомен!",
+    "description_paragraphs": [
+      "Поверете ни организацията на Вашите най-ценни моменти. Ние създаваме стилни, добре обмислени изненади и преживявания, които оставят вечен спомен!"
+    ],
+    "price": {
+      "amount": null,
+      "currency": null,
+      "displayed": "ПО ДОГОВАРЯНЕ",
+      "base_price_label": "Базова цена",
+      "total_price_label": null,
+      "default_total": null,
+      "compare_at_price": null,
+      "displayed_bgn": null,
+      "bgn_visible_at_capture": false,
+      "bgn_conversion_rendering_cutoff": "2026-08-09",
+      "currency_logic_public_bundle": "https://danirusev.com/_next/static/chunks/7098-bc179bc9e823b270.js"
+    },
+    "duration": "~4 часа",
+    "technical_specifications": {
+      "car_model": "BMW E46 V6",
+      "horsepower": 240,
+      "horsepower_unit": "HP",
+      "tires_burned": "∞"
+    },
+    "displayed_specifications": [
+      {
+        "label": "Време",
+        "value": "~4 часа"
+      },
+      {
+        "label": "Автомобил",
+        "value": "BMW E46 V6"
+      },
+      {
+        "label": "Мощност",
+        "value": "240",
+        "unit": "HP"
+      },
+      {
+        "label": "Гуми",
+        "value": "∞"
+      }
+    ],
+    "locations": [
+      {
+        "city": "София",
+        "id": "695413f8018f4d6a16d0bd4e",
+        "selectable_location_options": [
+          {
+            "id": "69676bc403100480f4412cda",
+            "name": "Писта Крайници",
+            "description": null,
+            "type": "location",
+            "cms_order": 3,
+            "price": null,
+            "currency": null,
+            "displayed_price": null,
+            "price_calculator_increment": 0,
+            "default_selected_on_fresh_client": true,
+            "multiple_options_in_same_group_selectable": false,
+            "multiple_units_of_this_add_on_selectable": false,
+            "description_rendered_in_option_card": false,
+            "google_maps_url": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+          }
+        ],
+        "alternative_location_found": false,
+        "changes_price": false,
+        "location_specific_availability_published": false
+      }
+    ],
+    "program_heading": "Подходящо за",
+    "program": [
+      {
+        "time": "1",
+        "activity": "Рожден ден",
+        "description": "Празнувайте поредната година с висока скорост и личен урок по дрифт, който ще държи пулса ти висок дълго след финала.",
+        "icon": "Cake",
+        "id": "69541492018f4d6a16d0bd52"
+      },
+      {
+        "time": "2",
+        "activity": "Ергенско или моминско парти",
+        "description": "Влезте в семейния живот с контролиран занос и споделен адреналин в кабината на мощни дрифт автомобили.",
+        "icon": "BottleWine",
+        "id": "695416ab018f4d6a16d0bd72"
+      },
+      {
+        "time": "3",
+        "activity": "Gender Reveal",
+        "description": "Разберете пола на вашето бебе чрез зрелищни облаци от син или розов дим, генерирани от въртящи се гуми.",
+        "icon": "Baby",
+        "id": "6954162e018f4d6a16d0bd6c"
+      },
+      {
+        "time": "4",
+        "activity": "Годеж и сватба",
+        "description": "Кажете „Да!“ под звука на въртящи се гуми, превръщайки пристигането си в незабравимо шоу с много конски сили.",
+        "icon": "Gem",
+        "id": "69541649018f4d6a16d0bd6e"
+      },
+      {
+        "time": "5",
+        "activity": "TEAM BUILDING",
+        "description": "Сплотете екипа чрез екстремно предизвикателство на пистата, което изисква пълно доверие и перфектна координация.",
+        "icon": "Building2",
+        "id": "6954167d018f4d6a16d0bd70"
+      },
+      {
+        "time": "6",
+        "activity": "Личен повод с класа",
+        "description": "Отбележете важните моменти с ексклузивно дрифт преживяване, където прецизното шофиране среща безкомпромисния лукс.",
+        "icon": "Sparkle",
+        "id": "695416da018f4d6a16d0bd74"
+      }
+    ],
+    "included_heading": "Цената включва",
+    "included": [
+      "Инструктор (Дани Русев)",
+      "Наем на подготвен автомобил",
+      "Гориво и Гуми за цялата сесия",
+      "Кетъринг",
+      "Музика",
+      "Декор",
+      "Игри"
+    ],
+    "not_included_heading": "Цената не включва",
+    "not_included": [
+      "Депозит за щети",
+      "Транспорт до пистата"
+    ],
+    "add_ons_heading": "Допълнителни опции",
+    "add_ons": [
+      {
+        "id": "6954154e018f4d6a16d0bd68",
+        "name": "Ваучер Дигитален",
+        "description": null,
+        "type": "voucher",
+        "cms_order": 1,
+        "price": null,
+        "currency": null,
+        "displayed_price": null,
+        "price_calculator_increment": 0,
+        "default_selected_on_fresh_client": true,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      },
+      {
+        "id": "6954157e018f4d6a16d0bd6a",
+        "name": "Ваучер Физически",
+        "description": null,
+        "type": "voucher",
+        "cms_order": 2,
+        "price": null,
+        "currency": null,
+        "displayed_price": null,
+        "price_calculator_increment": 0,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      },
+      {
+        "id": "69676bc403100480f4412cda",
+        "name": "Писта Крайници",
+        "description": null,
+        "type": "location",
+        "cms_order": 3,
+        "price": null,
+        "currency": null,
+        "displayed_price": null,
+        "price_calculator_increment": 0,
+        "default_selected_on_fresh_client": true,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+      }
+    ],
+    "option_selection_logic_public_bundle": "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js",
+    "car_choice_options": [],
+    "extra_lap_options": [],
+    "extra_passenger_options": [],
+    "booking": {
+      "date_label": "Предпочитана дата",
+      "date_default": null,
+      "date_selection_mode": "single",
+      "past_dates_disabled": true,
+      "availability_calendar_found": false,
+      "date_confirmation_notice": "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+      "button_label": "Добави в Количката",
+      "online_reservations_temporarily_disabled": true,
+      "button_opens_contact_dialog": true,
+      "button_adds_product_to_cart": false,
+      "contact_dialog_title": "Моля обадете се на телефон:",
+      "contact_dialog_notice": "Временно онлайн резервациите не работят.",
+      "contact_dialog_phone": "+359 882726020",
+      "contact_phone_url": "tel:+359882726020",
+      "payment_notice": "* Плащането се извършва ОНЛАЙН *",
+      "cash_on_delivery_notice": "За наложен платеж се обадете:",
+      "cash_on_delivery_phone": "+359 88 272 6020",
+      "public_bundle_source": "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js"
+    },
+    "requirements_and_restrictions": {
+      "minimum_age": null,
+      "age_restriction_text": null,
+      "height_or_weight_restrictions": null,
+      "driving_licence_required": null,
+      "driving_licence_or_prior_experience_text": null,
+      "product_specific_requirement_section_found": false,
+      "informed_consent_terms_source": "https://danirusev.com/terms",
+      "informed_consent_terms_paragraphs": [
+        "ВНИМАНИЕ: Преживяванията, предлагани от Търговеца, са с висок риск и по своята същност са опасни. Те включват, но не се ограничават до, рискове от сериозни телесни повреди, инвалидност или смърт.",
+        "С покупката на ваучер за преживяване, Вие потвърждавате, че разбирате и приемате тези рискове.",
+        "ЗАДЪЛЖИТЕЛНО УСЛОВИЕ ЗА УЧАСТИЕ: Всеки участник, без изключение, е длъжен лично да подпише документ „Информирано съгласие“ при пристигане на мястото на събитието. Този документ подробно описва всички потенциални рискове, свързани с преживяването.",
+        "Отказът да подпишете документа за Информирано съгласие ще доведе до незабавен отказ за участие в преживяването, без право на възстановяване на заплатената сума."
+      ]
+    },
+    "faqs": [],
+    "separate_specification_tables": [],
+    "gallery_image_urls": [
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/1.webp",
+      "https://danirusev.com/api/media/file/2.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/3.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/4.webp",
+      "https://danirusev.com/api/media/file/7.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/6.webp",
+      "https://danirusev.com/api/media/file/6.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/8.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/9.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/10.webp",
+      "https://danirusev.com/api/media/file/5.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/12.webp"
+    ],
+    "main_image_url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/1.webp",
+    "gallery": [
+      {
+        "position": 1,
+        "is_main_hero": true,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/1.webp",
+        "source_type": "url",
+        "cms_alt": "Рожден ден на момиче",
+        "rendered_alt": "Дрифт Събитие 1",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/1.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 2,
+        "is_main_hero": false,
+        "url": "https://danirusev.com/api/media/file/2.webp",
+        "source_type": "upload",
+        "cms_alt": "Сватба",
+        "rendered_alt": "Дрифт Събитие 2",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/2.webp",
+        "media": {
+          "id": 7,
+          "alt": "Двойка мъж и жена",
+          "prefix": "media",
+          "updatedAt": "2026-06-08T12:54:02.343Z",
+          "createdAt": "2026-06-08T12:54:00.575Z",
+          "url": "https://danirusev.com/api/media/file/2.webp",
+          "thumbnailURL": null,
+          "filename": "2.webp",
+          "mimeType": "image/webp",
+          "filesize": 781880,
+          "width": 1920,
+          "height": 2560,
+          "focalX": 50,
+          "focalY": 50
+        },
+        "http_status": 200
+      },
+      {
+        "position": 3,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/3.webp",
+        "source_type": "url",
+        "cms_alt": "Рожден ден момче",
+        "rendered_alt": "Дрифт Събитие 3",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/3.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 4,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/4.webp",
+        "source_type": "url",
+        "cms_alt": "Моминско парти",
+        "rendered_alt": "Дрифт Събитие 4",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/4.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 5,
+        "is_main_hero": false,
+        "url": "https://danirusev.com/api/media/file/7.webp",
+        "source_type": "upload",
+        "cms_alt": "Моминско булка",
+        "rendered_alt": "Дрифт Събитие 5",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/5.webp",
+        "media": {
+          "id": 5,
+          "alt": "Булката дрифти",
+          "prefix": "media",
+          "updatedAt": "2026-06-08T12:50:55.307Z",
+          "createdAt": "2026-06-08T12:50:54.054Z",
+          "url": "https://danirusev.com/api/media/file/7.webp",
+          "thumbnailURL": null,
+          "filename": "7.webp",
+          "mimeType": "image/webp",
+          "filesize": 352208,
+          "width": 1920,
+          "height": 2560,
+          "focalX": 50,
+          "focalY": 50
+        },
+        "http_status": 200
+      },
+      {
+        "position": 6,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/6.webp",
+        "source_type": "url",
+        "cms_alt": "Ергенско парти",
+        "rendered_alt": "Дрифт Събитие 6",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/6.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 7,
+        "is_main_hero": false,
+        "url": "https://danirusev.com/api/media/file/6.webp",
+        "source_type": "upload",
+        "cms_alt": "Ергенско",
+        "rendered_alt": "Дрифт Събитие 7",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/7.webp",
+        "media": {
+          "id": 6,
+          "alt": "На капака на москвича",
+          "prefix": "media",
+          "updatedAt": "2026-06-08T12:52:26.246Z",
+          "createdAt": "2026-06-08T12:52:25.045Z",
+          "url": "https://danirusev.com/api/media/file/6.webp",
+          "thumbnailURL": null,
+          "filename": "6.webp",
+          "mimeType": "image/webp",
+          "filesize": 554122,
+          "width": 1920,
+          "height": 2560,
+          "focalX": 50,
+          "focalY": 50
+        },
+        "http_status": 200
+      },
+      {
+        "position": 8,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/8.webp",
+        "source_type": "url",
+        "cms_alt": "gender reveal момиче",
+        "rendered_alt": "Дрифт Събитие 8",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/8.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 9,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/9.webp",
+        "source_type": "url",
+        "cms_alt": "gender reveal момче",
+        "rendered_alt": "Дрифт Събитие 9",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/9.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 10,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/10.webp",
+        "source_type": "url",
+        "cms_alt": "фирмено парти",
+        "rendered_alt": "Дрифт Събитие 10",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/10.webp",
+        "media": null,
+        "http_status": 403
+      },
+      {
+        "position": 11,
+        "is_main_hero": false,
+        "url": "https://danirusev.com/api/media/file/5.webp",
+        "source_type": "upload",
+        "cms_alt": "",
+        "rendered_alt": "Дрифт Събитие 11",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/11.webp",
+        "media": {
+          "id": 4,
+          "alt": "Егренско парти",
+          "prefix": "media",
+          "updatedAt": "2026-06-08T12:49:43.365Z",
+          "createdAt": "2026-06-08T12:49:42.033Z",
+          "url": "https://danirusev.com/api/media/file/5.webp",
+          "thumbnailURL": null,
+          "filename": "5.webp",
+          "mimeType": "image/webp",
+          "filesize": 822090,
+          "width": 1920,
+          "height": 2560,
+          "focalX": 50,
+          "focalY": 50
+        },
+        "http_status": 200
+      },
+      {
+        "position": 12,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/12.webp",
+        "source_type": "url",
+        "cms_alt": "предложение за брак",
+        "rendered_alt": "Дрифт Събитие 12",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/12.webp",
+        "media": null,
+        "http_status": 200
+      }
+    ],
+    "seo": {
+      "title": "Дрифт Събитие | Dani Rusev 11 | Dani Rusev 11 - Екстремни Преживявания",
+      "meta_description": "Поверете ни организацията на Вашите най-ценни моменти. Ние създаваме стилни, добре обмислени изненади и преживявания, които оставят вечен спомен!",
+      "canonical_url": "https://danirusev.com/experience/drift-event",
+      "open_graph_title": "Дрифт Събитие | Dani Rusev 11",
+      "open_graph_description": "Поверете ни организацията на Вашите най-ценни моменти. Ние създаваме стилни, добре обмислени изненади и преживявания, които оставят вечен спомен!",
+      "all_meta_fields": {
+        "viewport": "width=device-width, initial-scale=1",
+        "next-size-adjust": "",
+        "description": "Поверете ни организацията на Вашите най-ценни моменти. Ние създаваме стилни, добре обмислени изненади и преживявания, които оставят вечен спомен!",
+        "author": "Dani Rusev",
+        "keywords": "екстремни преживявания,автомобилни преживявания,дрифт,рали,писта каране,подарък за мъж,ваучер за преживяване,България,дани русев,данаил русев,rally driving experience,drift driving experience",
+        "creator": "Dani Rusev",
+        "publisher": "Echoray.io",
+        "robots": "index, follow",
+        "googlebot": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "format-detection": "telephone=no, address=no, email=no",
+        "og:title": "Дрифт Събитие | Dani Rusev 11",
+        "og:description": "Поверете ни организацията на Вашите най-ценни моменти. Ние създаваме стилни, добре обмислени изненади и преживявания, които оставят вечен спомен!",
+        "og:url": "https://danirusev.com",
+        "og:site_name": "Dani Rusev 11",
+        "og:locale": "bg_BG",
+        "og:image": "https://danirusev.com/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dani Rusev 11",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Dani Rusev 11",
+        "twitter:description": "Екстремни автомобилни преживявания в България. Дрифт, рали и каране на писта с професионални инструктори.",
+        "twitter:image": "https://danirusev.com/og-image.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Dani Rusev 11",
+          "alternateName": "Dani Rusev Extreme Experiences",
+          "url": "https://danirusev.com",
+          "logo": "https://danirusev.com/og-image.jpg",
+          "description": "Екстремни автомобилни преживявания - дрифт, рали и каране на писта в България",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BG",
+            "addressLocality": "София"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": [
+              "bg",
+              "en"
+            ]
+          },
+          "sameAs": [
+            "https://www.facebook.com/dani.rusev.5",
+            "https://www.instagram.com/danirusev11",
+            "https://www.youtube.com/@danirusev11",
+            "https://www.tiktok.com/@danirusev11"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Дрифт Събитие",
+          "description": "Поверете ни организацията на Вашите най-ценни моменти. Ние създаваме стилни, добре обмислени изненади и преживявания, които оставят вечен спомен!",
+          "image": [
+            "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/1.webp"
+          ],
+          "category": "Automotive Experience",
+          "brand": {
+            "@type": "Brand",
+            "name": "Dani Rusev 11"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://danirusev.com/experience/drift-event",
+            "priceCurrency": "EUR",
+            "price": null,
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2026-10-27T16:48:27.075Z",
+            "priceValidUntil": "2027-10-27T16:48:27.075Z"
+          },
+          "duration": "~4 часа",
+          "provider": {
+            "@type": "Organization",
+            "name": "Dani Rusev 11"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Дрифт Събитие",
+              "item": "/experience/drift-event"
+            }
+          ]
+        }
+      ]
+    },
+    "page_headings": [
+      {
+        "level": 1,
+        "text": "Дрифт Събитие"
+      },
+      {
+        "level": 1,
+        "text": "Дрифт Събитие"
+      },
+      {
+        "level": 3,
+        "text": "Подходящо за"
+      },
+      {
+        "level": 4,
+        "text": "Рожден ден"
+      },
+      {
+        "level": 4,
+        "text": "Ергенско или моминско парти"
+      },
+      {
+        "level": 4,
+        "text": "Gender Reveal"
+      },
+      {
+        "level": 4,
+        "text": "Годеж и сватба"
+      },
+      {
+        "level": 4,
+        "text": "TEAM BUILDING"
+      },
+      {
+        "level": 4,
+        "text": "Личен повод с класа"
+      },
+      {
+        "level": 4,
+        "text": "Локация"
+      },
+      {
+        "level": 3,
+        "text": "Какво е включено"
+      },
+      {
+        "level": 3,
+        "text": "Допълнителни опции"
+      },
+      {
+        "level": 4,
+        "text": "Ваучер Дигитален"
+      },
+      {
+        "level": 4,
+        "text": "Ваучер Физически"
+      },
+      {
+        "level": 4,
+        "text": "Писта Крайници"
+      },
+      {
+        "level": 4,
+        "text": "Предпочитана дата"
+      }
+    ],
+    "page_paragraphs": [
+      "\"Поверете ни организацията на Вашите най-ценни моменти. Ние създаваме стилни, добре обмислени изненади и преживявания, които оставят вечен спомен!\"",
+      "Празнувайте поредната година с висока скорост и личен урок по дрифт, който ще държи пулса ти висок дълго след финала.",
+      "Влезте в семейния живот с контролиран занос и споделен адреналин в кабината на мощни дрифт автомобили.",
+      "Разберете пола на вашето бебе чрез зрелищни облаци от син или розов дим, генерирани от въртящи се гуми.",
+      "Кажете „Да!“ под звука на въртящи се гуми, превръщайки пристигането си в незабравимо шоу с много конски сили.",
+      "Сплотете екипа чрез екстремно предизвикателство на пистата, което изисква пълно доверие и перфектна координация.",
+      "Отбележете важните моменти с ексклузивно дрифт преживяване, където прецизното шофиране среща безкомпромисния лукс.",
+      "София",
+      "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+      "Специален Повод",
+      "* Плащането се извършва ОНЛАЙН *",
+      "За наложен платеж се обадете:"
+    ],
+    "gift_voucher_flow": {
+      "separate_gift_voucher_product_found": false,
+      "digital_option_name": "Ваучер Дигитален",
+      "physical_option_name": "Ваучер Физически",
+      "recipient_name_field": {
+        "id_template": "voucher-name-{cartItemId}",
+        "label": "Име на ваучера",
+        "placeholder": "Име на получателя (по избор)",
+        "type": "text",
+        "required": false,
+        "max_length": 16,
+        "default": "",
+        "per_experience_cart_item": true,
+        "public_bundle_sources": [
+          "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+          "https://danirusev.com/_next/static/chunks/2171-050e2ce5f76f2b93.js"
+        ]
+      },
+      "public_terms_url": "https://danirusev.com/terms",
+      "guest_purchase_clause": "3.3. Покупката на Ваучер може да се прави от регистриран и нерегистриран потребител, който съгласно настоящите Общи условия предоставя данните, необходими за сключване и изпълнение на договора.",
+      "delivery_clauses": [
+        "6.1. Закупените физически Ваучери се доставят с куриер до адрес или до офис на куриер, или се получават лично от представител на Търговеца, а електронните ваучери се изпращат по електронна поща.",
+        "6.2. Цената на доставката на физическите ваучери зависи от тарифата на избраната от Потребителя куриерска фирма и услуга за доставка.",
+        "6.3. В случай че получателят не бъде намерен в срока за изпълнение на доставката на посочения адрес или не бъде осигурен достъп и условия за предаване на поръчката в този срок, Търговецът се освобождава от задължението да достави ваучера и Купувачът на ваучера следва да му заплати направени разходи за куриерски услуги по доставка и връщане на поръчката, както и разходи направени за опаковка.",
+        "6.4. За доставка по електронна поща под формата на електронен ваучер Купувачът на ваучера носи изцяло риска от неполучаване на Ваучера по електронен път при грешно подаден от негова страна имейл адрес и/или блокиране на съобщението от пощата му или други технически причини, които не са по вина на Търговеца.",
+        "6.5. Срокът за доставка на физически ваучер и за изпращане на електронен ваучер е 3-5 работни дни."
+      ],
+      "validity_clause": "6.6. Валидността на ваучера е 1 (една година) считано от датата на извършване на поръчката.",
+      "expired_voucher_clause": "6.7. Всеки ваучер може да се използва в рамките на своята валидност, изписана на ваучера. Резервации по ваучери с изтекла валидност не се правят. Такива ваучери са невалидни и услугите към тях не подлежат на изпълнение.",
+      "cancellation_clauses": [
+        "7.1. Потребителят има право, без да дължи обезщетение или неустойка и без да посочва причина, да се откаже от сключения договор в срок 14 календарни дни, считано от датата на получаване на стоката/ваучера.",
+        "7.2. Когато потребителят е упражнил правото си на отказ от договора от разстояние, Търговецът възстановява всички суми, получени от Купувача на ваучера, с изключение на разходите за доставка и банкови такси, удържани при превод, без неоправдано забавяне и не по-късно от 14 дни, считано от датата, на която е бил уведомен за решението на потребителя да се откаже от договора. Търговецът възстановява получените суми на посочена от потребителя банкова сметка.",
+        "7.3. Правото на отказ не се прилага за услуги, които вече са изпълнени или за персонализирани стоки.",
+        "7.4. В случай че правото на отказ е упражнено, потребителят трябва да изпрати или предаде на Търговеца закупения ваучер в срок до 3 дни от датата, на която е съобщил за отказа от договора от разстояние.",
+        "7.5. Отказ на поръчка се приема писмено с електронно писмо, с попълнен и изпратен по електронната поща формуляр за Упражняване на правото за отказ от Договор."
+      ],
+      "validity_extension_clause": "6.8. Срокът на валидност на ваучера не подлежи на удължаване.",
+      "issue_after_date_confirmation_clause": "8.1. След постигане на съгласие между търговеца и потребителя относно дата за изпълнение на събитието, търговецът избира и потвърждава датата чрез административен панел, след което ваучерът се генерира в потребителския акаунт на потребителя и е достъпен чрез индивидуален линк на адрес: https://danirusev.com/vouchers",
+      "digital_email_delivery_paragraph": "Потребителят има възможност да избере дали ваучерът да бъде дигитален или физически. При избор на дигитален ваучер, потребителят получава уведомителен имейл с линк към конкретния ваучер, без ваучерът да бъде прикачен като файл към имейла. Търговецът не носи отговорност при неполучаване на имейл уведомлението, когато това се дължи на некоректно въведен имейл адрес, филтриране от пощенски услуги, технически проблеми или други обстоятелства извън контрола на търговеца.",
+      "email_attachment_promised": false,
+      "email_link_promised": true,
+      "public_pdf_download_found": false,
+      "account_vouchers_url": "https://danirusev.com/vouchers",
+      "account_vouchers_public_headings": [
+        "Моите Ваучери",
+        "Управлявайте вашите дрифт преживявания"
+      ],
+      "post_purchase_voucher_observed": false
+    },
+    "checkout": {
+      "url": "https://danirusev.com/checkout",
+      "empty_cart_messages": [
+        "Твоята количка е празна",
+        "Изглежда още нямаш добавени преживявания. Вземи я напълни ;)",
+        "Преживявания →"
+      ],
+      "populated_checkout_observed_in_browser": false,
+      "populated_checkout_fields_extracted_from_public_javascript": true,
+      "public_bundle_source": "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+      "personal_information_heading": "Лична Информация",
+      "personal_information_subtitle": "Попълнете данните си преди да продължите",
+      "personal_information_fields": [
+        {
+          "id": "fullName",
+          "label": "Име и Фамилия",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "phoneNumber",
+          "label": "Тел. Номер",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "address",
+          "label": "Адрес",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "city",
+          "label": "Град",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "postalCode",
+          "label": "Пощенски код",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "country",
+          "label": "Държава",
+          "type": "text",
+          "required": false,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "България",
+          "disabled": true
+        }
+      ],
+      "recipient_name_field": {
+        "id_template": "voucher-name-{cartItemId}",
+        "label": "Име на ваучера",
+        "placeholder": "Име на получателя (по избор)",
+        "type": "text",
+        "required": false,
+        "max_length": 16,
+        "default": "",
+        "per_experience_cart_item": true,
+        "public_bundle_sources": [
+          "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+          "https://danirusev.com/_next/static/chunks/2171-050e2ce5f76f2b93.js"
+        ]
+      },
+      "payment_heading": "Плащане",
+      "payment_subtitle": "Сигурно плащане чрез myPOS",
+      "payment_provider": "myPOS",
+      "payment_currency": "EUR",
+      "continue_button": "Продължи към плащане →",
+      "zero_subtotal_button": "Потвърди Заявка →",
+      "terms_dialog": {
+        "title": "Правни Условия",
+        "description": "Преди да преминете към плащане, моля запознайте се и потвърдете съгласието си с нашите условия за ползване.",
+        "checkbox_id": "terms",
+        "checkbox_default": false,
+        "checkbox_label": "Прочетох и се съгласявам с Общите условия и Политиката за поверителност на Dani Rusev 11.",
+        "checkbox_required": true,
+        "links": [
+          "https://danirusev.com/terms",
+          "https://danirusev.com/privacy"
+        ],
+        "confirm_button": "Потвърди и Продължи →"
+      },
+      "shipping_label": "Доставка",
+      "shipping_display": "При плащане",
+      "payment_session_created": false,
+      "forms_submitted": false,
+      "payment_card_fields_observed": false
+    },
+    "source_urls": [
+      "https://danirusev.com/",
+      "https://danirusev.com/experience/drift-event",
+      "https://danirusev.com/api/products?where%5BproductType%5D%5Bequals%5D=experience&limit=100&depth=2",
+      "https://danirusev.com/terms",
+      "https://danirusev.com/checkout",
+      "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js",
+      "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js"
+    ],
+    "public_api_and_resolved_page_product_match": true,
+    "raw_public_product": {
+      "id": 21,
+      "title": "Дрифт Събитие",
+      "slug": "drift-event",
+      "productType": "experience",
+      "price": null,
+      "compareAtPrice": null,
+      "description": "Поверете ни организацията на Вашите най-ценни моменти. Ние създаваме стилни, добре обмислени изненади и преживявания, които оставят вечен спомен!",
+      "categories": [
+        {
+          "id": 3,
+          "title": "Преживяване",
+          "slug": "experience",
+          "parent": null,
+          "updatedAt": "2025-12-16T12:53:51.218Z",
+          "createdAt": "2025-12-16T12:53:51.917Z"
+        }
+      ],
+      "gallery": [
+        {
+          "id": "69541239018f4d6a16d0bd36",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/1.webp",
+          "alt": "Рожден ден на момиче"
+        },
+        {
+          "id": "69541256018f4d6a16d0bd38",
+          "type": "upload",
+          "media": {
+            "id": 7,
+            "alt": "Двойка мъж и жена",
+            "prefix": "media",
+            "updatedAt": "2026-06-08T12:54:02.343Z",
+            "createdAt": "2026-06-08T12:54:00.575Z",
+            "url": "https://danirusev.com/api/media/file/2.webp",
+            "thumbnailURL": null,
+            "filename": "2.webp",
+            "mimeType": "image/webp",
+            "filesize": 781880,
+            "width": 1920,
+            "height": 2560,
+            "focalX": 50,
+            "focalY": 50
+          },
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/2.webp",
+          "alt": "Сватба"
+        },
+        {
+          "id": "69541276018f4d6a16d0bd3a",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/3.webp",
+          "alt": "Рожден ден момче"
+        },
+        {
+          "id": "6954128b018f4d6a16d0bd3c",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/4.webp",
+          "alt": "Моминско парти"
+        },
+        {
+          "id": "695412bb018f4d6a16d0bd3e",
+          "type": "upload",
+          "media": {
+            "id": 5,
+            "alt": "Булката дрифти",
+            "prefix": "media",
+            "updatedAt": "2026-06-08T12:50:55.307Z",
+            "createdAt": "2026-06-08T12:50:54.054Z",
+            "url": "https://danirusev.com/api/media/file/7.webp",
+            "thumbnailURL": null,
+            "filename": "7.webp",
+            "mimeType": "image/webp",
+            "filesize": 352208,
+            "width": 1920,
+            "height": 2560,
+            "focalX": 50,
+            "focalY": 50
+          },
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/5.webp",
+          "alt": "Моминско булка"
+        },
+        {
+          "id": "695412cd018f4d6a16d0bd40",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/6.webp",
+          "alt": "Ергенско парти"
+        },
+        {
+          "id": "695412db018f4d6a16d0bd42",
+          "type": "upload",
+          "media": {
+            "id": 6,
+            "alt": "На капака на москвича",
+            "prefix": "media",
+            "updatedAt": "2026-06-08T12:52:26.246Z",
+            "createdAt": "2026-06-08T12:52:25.045Z",
+            "url": "https://danirusev.com/api/media/file/6.webp",
+            "thumbnailURL": null,
+            "filename": "6.webp",
+            "mimeType": "image/webp",
+            "filesize": 554122,
+            "width": 1920,
+            "height": 2560,
+            "focalX": 50,
+            "focalY": 50
+          },
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/7.webp",
+          "alt": "Ергенско"
+        },
+        {
+          "id": "695412eb018f4d6a16d0bd44",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/8.webp",
+          "alt": "gender reveal момиче"
+        },
+        {
+          "id": "69541351018f4d6a16d0bd46",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/9.webp",
+          "alt": "gender reveal момче"
+        },
+        {
+          "id": "69541365018f4d6a16d0bd48",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/10.webp",
+          "alt": "фирмено парти"
+        },
+        {
+          "id": "69541378018f4d6a16d0bd4a",
+          "type": "upload",
+          "media": {
+            "id": 4,
+            "alt": "Егренско парти",
+            "prefix": "media",
+            "updatedAt": "2026-06-08T12:49:43.365Z",
+            "createdAt": "2026-06-08T12:49:42.033Z",
+            "url": "https://danirusev.com/api/media/file/5.webp",
+            "thumbnailURL": null,
+            "filename": "5.webp",
+            "mimeType": "image/webp",
+            "filesize": 822090,
+            "width": 1920,
+            "height": 2560,
+            "focalX": 50,
+            "focalY": 50
+          },
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/11.webp",
+          "alt": ""
+        },
+        {
+          "id": "6954138a018f4d6a16d0bd4c",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/event/12.webp",
+          "alt": "предложение за брак"
+        }
+      ],
+      "stock": 0,
+      "lowStockThreshold": 5,
+      "optionDefinitions": [],
+      "variants": [],
+      "subtitle": "Специален Повод",
+      "duration": "~4 часа",
+      "locations": [
+        {
+          "id": "695413f8018f4d6a16d0bd4e",
+          "city": "София"
+        }
+      ],
+      "techSpecs": {
+        "carModel": "BMW E46 V6",
+        "horsePower": 240,
+        "tiresBurned": "∞"
+      },
+      "visuals": {
+        "iconName": "PartyPopper",
+        "themeColor": "event",
+        "pattern": "event"
+      },
+      "program": [
+        {
+          "id": "69541492018f4d6a16d0bd52",
+          "time": "1",
+          "icon": "Cake",
+          "activity": "Рожден ден",
+          "description": "Празнувайте поредната година с висока скорост и личен урок по дрифт, който ще държи пулса ти висок дълго след финала."
+        },
+        {
+          "id": "695416ab018f4d6a16d0bd72",
+          "time": "2",
+          "icon": "BottleWine",
+          "activity": "Ергенско или моминско парти",
+          "description": "Влезте в семейния живот с контролиран занос и споделен адреналин в кабината на мощни дрифт автомобили."
+        },
+        {
+          "id": "6954162e018f4d6a16d0bd6c",
+          "time": "3",
+          "icon": "Baby",
+          "activity": "Gender Reveal",
+          "description": "Разберете пола на вашето бебе чрез зрелищни облаци от син или розов дим, генерирани от въртящи се гуми."
+        },
+        {
+          "id": "69541649018f4d6a16d0bd6e",
+          "time": "4",
+          "icon": "Gem",
+          "activity": "Годеж и сватба",
+          "description": "Кажете „Да!“ под звука на въртящи се гуми, превръщайки пристигането си в незабравимо шоу с много конски сили."
+        },
+        {
+          "id": "6954167d018f4d6a16d0bd70",
+          "time": "5",
+          "icon": "Building2",
+          "activity": "TEAM BUILDING",
+          "description": "Сплотете екипа чрез екстремно предизвикателство на пистата, което изисква пълно доверие и перфектна координация."
+        },
+        {
+          "id": "695416da018f4d6a16d0bd74",
+          "time": "6",
+          "icon": "Sparkle",
+          "activity": "Личен повод с класа",
+          "description": "Отбележете важните моменти с ексклузивно дрифт преживяване, където прецизното шофиране среща безкомпромисния лукс."
+        }
+      ],
+      "included": [
+        {
+          "id": "695414d1018f4d6a16d0bd54",
+          "item": "Инструктор (Дани Русев)"
+        },
+        {
+          "id": "695414e9018f4d6a16d0bd56",
+          "item": "Наем на подготвен автомобил"
+        },
+        {
+          "id": "695414f1018f4d6a16d0bd58",
+          "item": "Гориво и Гуми за цялата сесия"
+        },
+        {
+          "id": "695414f9018f4d6a16d0bd5a",
+          "item": "Кетъринг"
+        },
+        {
+          "id": "69541502018f4d6a16d0bd5c",
+          "item": "Музика"
+        },
+        {
+          "id": "69541507018f4d6a16d0bd5e",
+          "item": "Декор"
+        },
+        {
+          "id": "6954150e018f4d6a16d0bd60",
+          "item": "Игри"
+        }
+      ],
+      "notIncluded": [
+        {
+          "id": "69541514018f4d6a16d0bd62",
+          "item": "Депозит за щети"
+        },
+        {
+          "id": "69541519018f4d6a16d0bd64",
+          "item": "Транспорт до пистата"
+        }
+      ],
+      "additionalItems": [
+        {
+          "id": "6954154e018f4d6a16d0bd68",
+          "name": "Ваучер Дигитален",
+          "price": null,
+          "description": null,
+          "icon": "Smartphone",
+          "type": "voucher",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "6954157e018f4d6a16d0bd6a",
+          "name": "Ваучер Физически",
+          "price": null,
+          "description": null,
+          "icon": "Gift",
+          "type": "voucher",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "69676bc403100480f4412cda",
+          "name": "Писта Крайници",
+          "price": null,
+          "description": null,
+          "icon": "MapPin",
+          "type": "location",
+          "googleMapsUrl": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+        }
+      ],
+      "tabNames": {
+        "program": "Подходящо за",
+        "included": null,
+        "additional": null
+      },
+      "updatedAt": "2026-06-08T12:54:12.666Z",
+      "createdAt": "2025-12-30T18:16:18.979Z",
+      "_status": "published"
+    }
+  },
+  {
+    "id": 22,
+    "slug": "drift-day",
+    "url": "https://danirusev.com/experience/drift-day",
+    "captured_at_utc": "2026-10-27T16:54:52+00:00",
+    "title": "Дрифт Ден",
+    "subtitle": "Курс",
+    "headline": "Дрифт Ден",
+    "separate_headline_field_found": false,
+    "description": "Дрифт обучение за начинаещи, подходящо за хора без опит и без шофьорска книжка. Индивидуален подход към всеки желаещ, на трасе съобразено с уменията му.",
+    "description_paragraphs": [
+      "Дрифт обучение за начинаещи, подходящо за хора без опит и без шофьорска книжка. Индивидуален подход към всеки желаещ, на трасе съобразено с уменията му."
+    ],
+    "price": {
+      "amount": 358,
+      "currency": "EUR",
+      "displayed": "358 €",
+      "base_price_label": "Базова цена",
+      "total_price_label": "Обща цена",
+      "default_total": 358,
+      "compare_at_price": null,
+      "displayed_bgn": null,
+      "bgn_visible_at_capture": false,
+      "bgn_conversion_rendering_cutoff": "2026-08-09",
+      "currency_logic_public_bundle": "https://danirusev.com/_next/static/chunks/7098-bc179bc9e823b270.js"
+    },
+    "duration": "ЦЯЛ ДЕН",
+    "technical_specifications": {
+      "car_model": "BMW E46 V6",
+      "horsepower": 240,
+      "horsepower_unit": "HP",
+      "tires_burned": "∞"
+    },
+    "displayed_specifications": [
+      {
+        "label": "Време",
+        "value": "ЦЯЛ ДЕН"
+      },
+      {
+        "label": "Автомобил",
+        "value": "BMW E46 V6"
+      },
+      {
+        "label": "Мощност",
+        "value": "240",
+        "unit": "HP"
+      },
+      {
+        "label": "Гуми",
+        "value": "∞"
+      }
+    ],
+    "locations": [
+      {
+        "city": "София",
+        "id": "6957c08873b0cf3facdf2bba",
+        "selectable_location_options": [
+          {
+            "id": "6957c4f988ed92247ab38532",
+            "name": "Писта Крайници",
+            "description": null,
+            "type": "location",
+            "cms_order": 4,
+            "price": null,
+            "currency": null,
+            "displayed_price": null,
+            "price_calculator_increment": 0,
+            "default_selected_on_fresh_client": true,
+            "multiple_options_in_same_group_selectable": false,
+            "multiple_units_of_this_add_on_selectable": false,
+            "description_rendered_in_option_card": false,
+            "google_maps_url": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+          }
+        ],
+        "alternative_location_found": false,
+        "changes_price": false,
+        "location_specific_availability_published": false
+      }
+    ],
+    "program_heading": "Програма",
+    "program": [
+      {
+        "time": "1",
+        "activity": "Правилно позициониране в автомобила",
+        "description": "Настройка на седалката и волана за максимален контрол и безопасност.",
+        "icon": "RectangleCircle",
+        "id": "6957c36b88ed92247ab3852e"
+      },
+      {
+        "time": "2",
+        "activity": "Спиране и работа с ръчната спирачка",
+        "description": "Използване на ръчната спирачка за иницииране и контролирано спиране.",
+        "icon": "CircleParking",
+        "id": "6957c08873b0cf3facdf2bc0"
+      },
+      {
+        "time": "3",
+        "activity": "Работа с педала за газта",
+        "description": "Фин контрол на газта за стабилизиране и корекция на дрифта.",
+        "icon": "CircleGauge",
+        "id": "6957c08873b0cf3facdf2bbf"
+      },
+      {
+        "time": "4",
+        "activity": "Тясна окръжност (донът)",
+        "description": "Контролирано въртене в малък радиус с постоянен ъгъл на занасяне.",
+        "icon": "CircleDotDashed",
+        "id": "6957c08873b0cf3facdf2bbb"
+      },
+      {
+        "time": "5",
+        "activity": "Широка окръжност (донът)",
+        "description": "Поддържане на стабилен дрифт в по-голям радиус и по-висока скорост.",
+        "icon": "CircleDot",
+        "id": "6957c08873b0cf3facdf2bbc"
+      },
+      {
+        "time": "6",
+        "activity": "Транзишън",
+        "description": "Плавно прехвърляне на тежестта за смяна на посоката без загуба на контрол.",
+        "icon": "ArrowLeftRight",
+        "id": "6957c08873b0cf3facdf2bbd"
+      },
+      {
+        "time": "7",
+        "activity": "Фигура 8 (осморка)",
+        "description": "Свързване на два последователни дрифта с прецизен контрол.",
+        "icon": "Infinity",
+        "id": "6957c08873b0cf3facdf2bbe"
+      },
+      {
+        "time": "8",
+        "activity": "Разбор и анализ",
+        "description": "Обсъждане на техниките и индивидуална обратна връзка за напредък.",
+        "icon": "ChartArea",
+        "id": "6957c38288ed92247ab38530"
+      }
+    ],
+    "included_heading": "Цената включва",
+    "included": [
+      "Инструктор (Дани Русев)",
+      "Наем на подготвен автомобил",
+      "Неограничени гориво и гуми",
+      "Кетъринг",
+      "Музика",
+      "Наем на писта"
+    ],
+    "not_included_heading": "Цената не включва",
+    "not_included": [
+      "Транспорт до пистата"
+    ],
+    "add_ons_heading": "Допълнителни опции",
+    "add_ons": [
+      {
+        "id": "695d6f7c165dd45de8b15a83",
+        "name": "GoPro Заснемане",
+        "description": "Професионално заснемане на цялата сесия",
+        "type": "standard",
+        "cms_order": 1,
+        "price": 20,
+        "currency": "EUR",
+        "displayed_price": "+20 €",
+        "price_calculator_increment": 20,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": true,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": true,
+        "google_maps_url": null
+      },
+      {
+        "id": "6957c08873b0cf3facdf2bca",
+        "name": "Ваучер Дигитален",
+        "description": null,
+        "type": "voucher",
+        "cms_order": 2,
+        "price": null,
+        "currency": null,
+        "displayed_price": null,
+        "price_calculator_increment": 0,
+        "default_selected_on_fresh_client": true,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      },
+      {
+        "id": "6957c08873b0cf3facdf2bcb",
+        "name": "Ваучер Физически",
+        "description": null,
+        "type": "voucher",
+        "cms_order": 3,
+        "price": 4,
+        "currency": "EUR",
+        "displayed_price": "+4 €",
+        "price_calculator_increment": 4,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      },
+      {
+        "id": "6957c4f988ed92247ab38532",
+        "name": "Писта Крайници",
+        "description": null,
+        "type": "location",
+        "cms_order": 4,
+        "price": null,
+        "currency": null,
+        "displayed_price": null,
+        "price_calculator_increment": 0,
+        "default_selected_on_fresh_client": true,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+      },
+      {
+        "id": "6957c90d88ed92247ab3853a",
+        "name": "2 Часа",
+        "description": null,
+        "type": "duration",
+        "cms_order": 5,
+        "price": null,
+        "currency": "EUR",
+        "displayed_price": "+0 €",
+        "price_calculator_increment": 0,
+        "default_selected_on_fresh_client": true,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      },
+      {
+        "id": "6957c93188ed92247ab3853c",
+        "name": "4 Часа",
+        "description": null,
+        "type": "duration",
+        "cms_order": 6,
+        "price": 141,
+        "currency": "EUR",
+        "displayed_price": "+141 €",
+        "price_calculator_increment": 141,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      },
+      {
+        "id": "6957c96488ed92247ab3853e",
+        "name": "6 Часа",
+        "description": null,
+        "type": "duration",
+        "cms_order": 7,
+        "price": 348,
+        "currency": "EUR",
+        "displayed_price": "+348 €",
+        "price_calculator_increment": 348,
+        "default_selected_on_fresh_client": false,
+        "multiple_options_in_same_group_selectable": false,
+        "multiple_units_of_this_add_on_selectable": false,
+        "description_rendered_in_option_card": false,
+        "google_maps_url": null
+      }
+    ],
+    "option_selection_logic_public_bundle": "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js",
+    "car_choice_options": [],
+    "extra_lap_options": [],
+    "extra_passenger_options": [],
+    "booking": {
+      "date_label": "Предпочитана дата",
+      "date_default": null,
+      "date_selection_mode": "single",
+      "past_dates_disabled": true,
+      "availability_calendar_found": false,
+      "date_confirmation_notice": "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+      "button_label": "Добави в Количката",
+      "online_reservations_temporarily_disabled": true,
+      "button_opens_contact_dialog": true,
+      "button_adds_product_to_cart": false,
+      "contact_dialog_title": "Моля обадете се на телефон:",
+      "contact_dialog_notice": "Временно онлайн резервациите не работят.",
+      "contact_dialog_phone": "+359 882726020",
+      "contact_phone_url": "tel:+359882726020",
+      "payment_notice": "* Плащането се извършва ОНЛАЙН *",
+      "cash_on_delivery_notice": "За наложен платеж се обадете:",
+      "cash_on_delivery_phone": "+359 88 272 6020",
+      "public_bundle_source": "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js"
+    },
+    "requirements_and_restrictions": {
+      "minimum_age": null,
+      "age_restriction_text": null,
+      "height_or_weight_restrictions": null,
+      "driving_licence_required": false,
+      "driving_licence_or_prior_experience_text": "Дрифт обучение за начинаещи, подходящо за хора без опит и без шофьорска книжка. Индивидуален подход към всеки желаещ, на трасе съобразено с уменията му.",
+      "product_specific_requirement_section_found": false,
+      "informed_consent_terms_source": "https://danirusev.com/terms",
+      "informed_consent_terms_paragraphs": [
+        "ВНИМАНИЕ: Преживяванията, предлагани от Търговеца, са с висок риск и по своята същност са опасни. Те включват, но не се ограничават до, рискове от сериозни телесни повреди, инвалидност или смърт.",
+        "С покупката на ваучер за преживяване, Вие потвърждавате, че разбирате и приемате тези рискове.",
+        "ЗАДЪЛЖИТЕЛНО УСЛОВИЕ ЗА УЧАСТИЕ: Всеки участник, без изключение, е длъжен лично да подпише документ „Информирано съгласие“ при пристигане на мястото на събитието. Този документ подробно описва всички потенциални рискове, свързани с преживяването.",
+        "Отказът да подпишете документа за Информирано съгласие ще доведе до незабавен отказ за участие в преживяването, без право на възстановяване на заплатената сума."
+      ]
+    },
+    "faqs": [],
+    "separate_specification_tables": [],
+    "gallery_image_urls": [
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/1.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/2.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/3.webp",
+      "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/4.webp"
+    ],
+    "main_image_url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/1.webp",
+    "gallery": [
+      {
+        "position": 1,
+        "is_main_hero": true,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/1.webp",
+        "source_type": "url",
+        "cms_alt": "Дани Русев зад скарата с кебапите",
+        "rendered_alt": "Дрифт Ден 1",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/1.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 2,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/2.webp",
+        "source_type": "url",
+        "cms_alt": "Дани те учи на теория",
+        "rendered_alt": "Дрифт Ден 2",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/2.webp",
+        "media": null,
+        "http_status": 403
+      },
+      {
+        "position": 3,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/3.webp",
+        "source_type": "url",
+        "cms_alt": "Дани Русев ти обяснява как се кара",
+        "rendered_alt": "Дрифт Ден 3",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/3.webp",
+        "media": null,
+        "http_status": 200
+      },
+      {
+        "position": 4,
+        "is_main_hero": false,
+        "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/4.webp",
+        "source_type": "url",
+        "cms_alt": "Дани Русев чертае траектории",
+        "rendered_alt": "Дрифт Ден 4",
+        "cms_url_field": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/4.webp",
+        "media": null,
+        "http_status": 200
+      }
+    ],
+    "seo": {
+      "title": "Дрифт Ден | Dani Rusev 11 | Dani Rusev 11 - Екстремни Преживявания",
+      "meta_description": "Дрифт обучение за начинаещи, подходящо за хора без опит и без шофьорска книжка. Индивидуален подход към всеки желаещ, на трасе съобразено с уменията му.",
+      "canonical_url": "https://danirusev.com/experience/drift-day",
+      "open_graph_title": "Дрифт Ден | Dani Rusev 11",
+      "open_graph_description": "Дрифт обучение за начинаещи, подходящо за хора без опит и без шофьорска книжка. Индивидуален подход към всеки желаещ, на трасе съобразено с уменията му.",
+      "all_meta_fields": {
+        "viewport": "width=device-width, initial-scale=1",
+        "next-size-adjust": "",
+        "description": "Дрифт обучение за начинаещи, подходящо за хора без опит и без шофьорска книжка. Индивидуален подход към всеки желаещ, на трасе съобразено с уменията му.",
+        "author": "Dani Rusev",
+        "keywords": "екстремни преживявания,автомобилни преживявания,дрифт,рали,писта каране,подарък за мъж,ваучер за преживяване,България,дани русев,данаил русев,rally driving experience,drift driving experience",
+        "creator": "Dani Rusev",
+        "publisher": "Echoray.io",
+        "robots": "index, follow",
+        "googlebot": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1",
+        "format-detection": "telephone=no, address=no, email=no",
+        "og:title": "Дрифт Ден | Dani Rusev 11",
+        "og:description": "Дрифт обучение за начинаещи, подходящо за хора без опит и без шофьорска книжка. Индивидуален подход към всеки желаещ, на трасе съобразено с уменията му.",
+        "og:url": "https://danirusev.com",
+        "og:site_name": "Dani Rusev 11",
+        "og:locale": "bg_BG",
+        "og:image": "https://danirusev.com/og-image.jpg",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": "Dani Rusev 11",
+        "og:type": "website",
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Dani Rusev 11",
+        "twitter:description": "Екстремни автомобилни преживявания в България. Дрифт, рали и каране на писта с професионални инструктори.",
+        "twitter:image": "https://danirusev.com/og-image.jpg"
+      },
+      "structured_data": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Dani Rusev 11",
+          "alternateName": "Dani Rusev Extreme Experiences",
+          "url": "https://danirusev.com",
+          "logo": "https://danirusev.com/og-image.jpg",
+          "description": "Екстремни автомобилни преживявания - дрифт, рали и каране на писта в България",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BG",
+            "addressLocality": "София"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": [
+              "bg",
+              "en"
+            ]
+          },
+          "sameAs": [
+            "https://www.facebook.com/dani.rusev.5",
+            "https://www.instagram.com/danirusev11",
+            "https://www.youtube.com/@danirusev11",
+            "https://www.tiktok.com/@danirusev11"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Дрифт Ден",
+          "description": "Дрифт обучение за начинаещи, подходящо за хора без опит и без шофьорска книжка. Индивидуален подход към всеки желаещ, на трасе съобразено с уменията му.",
+          "image": [
+            "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/1.webp"
+          ],
+          "category": "Automotive Experience",
+          "brand": {
+            "@type": "Brand",
+            "name": "Dani Rusev 11"
+          },
+          "offers": {
+            "@type": "Offer",
+            "url": "https://danirusev.com/experience/drift-day",
+            "priceCurrency": "EUR",
+            "price": 358,
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2026-10-27T16:48:22.906Z",
+            "priceValidUntil": "2027-10-27T16:48:22.906Z"
+          },
+          "duration": "ЦЯЛ ДЕН",
+          "provider": {
+            "@type": "Organization",
+            "name": "Dani Rusev 11"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Начало",
+              "item": "/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Дрифт Ден",
+              "item": "/experience/drift-day"
+            }
+          ]
+        }
+      ]
+    },
+    "page_headings": [
+      {
+        "level": 1,
+        "text": "Дрифт Ден"
+      },
+      {
+        "level": 1,
+        "text": "Дрифт Ден"
+      },
+      {
+        "level": 3,
+        "text": "Програма"
+      },
+      {
+        "level": 4,
+        "text": "Правилно позициониране в автомобила"
+      },
+      {
+        "level": 4,
+        "text": "Спиране и работа с ръчната спирачка"
+      },
+      {
+        "level": 4,
+        "text": "Работа с педала за газта"
+      },
+      {
+        "level": 4,
+        "text": "Тясна окръжност (донът)"
+      },
+      {
+        "level": 4,
+        "text": "Широка окръжност (донът)"
+      },
+      {
+        "level": 4,
+        "text": "Транзишън"
+      },
+      {
+        "level": 4,
+        "text": "Фигура 8 (осморка)"
+      },
+      {
+        "level": 4,
+        "text": "Разбор и анализ"
+      },
+      {
+        "level": 4,
+        "text": "Локация"
+      },
+      {
+        "level": 3,
+        "text": "Какво е включено"
+      },
+      {
+        "level": 3,
+        "text": "Допълнителни опции"
+      },
+      {
+        "level": 4,
+        "text": "GoPro Заснемане"
+      },
+      {
+        "level": 4,
+        "text": "Ваучер Дигитален"
+      },
+      {
+        "level": 4,
+        "text": "Ваучер Физически"
+      },
+      {
+        "level": 4,
+        "text": "Писта Крайници"
+      },
+      {
+        "level": 4,
+        "text": "2 Часа"
+      },
+      {
+        "level": 4,
+        "text": "4 Часа"
+      },
+      {
+        "level": 4,
+        "text": "6 Часа"
+      },
+      {
+        "level": 4,
+        "text": "Предпочитана дата"
+      }
+    ],
+    "page_paragraphs": [
+      "\"Дрифт обучение за начинаещи, подходящо за хора без опит и без шофьорска книжка. Индивидуален подход към всеки желаещ, на трасе съобразено с уменията му.\"",
+      "Настройка на седалката и волана за максимален контрол и безопасност.",
+      "Използване на ръчната спирачка за иницииране и контролирано спиране.",
+      "Фин контрол на газта за стабилизиране и корекция на дрифта.",
+      "Контролирано въртене в малък радиус с постоянен ъгъл на занасяне.",
+      "Поддържане на стабилен дрифт в по-голям радиус и по-висока скорост.",
+      "Плавно прехвърляне на тежестта за смяна на посоката без загуба на контрол.",
+      "Свързване на два последователни дрифта с прецизен контрол.",
+      "Обсъждане на техниките и индивидуална обратна връзка за напредък.",
+      "София",
+      "Професионално заснемане на цялата сесия",
+      "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+      "Курс",
+      "* Плащането се извършва ОНЛАЙН *",
+      "За наложен платеж се обадете:"
+    ],
+    "gift_voucher_flow": {
+      "separate_gift_voucher_product_found": false,
+      "digital_option_name": "Ваучер Дигитален",
+      "physical_option_name": "Ваучер Физически",
+      "recipient_name_field": {
+        "id_template": "voucher-name-{cartItemId}",
+        "label": "Име на ваучера",
+        "placeholder": "Име на получателя (по избор)",
+        "type": "text",
+        "required": false,
+        "max_length": 16,
+        "default": "",
+        "per_experience_cart_item": true,
+        "public_bundle_sources": [
+          "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+          "https://danirusev.com/_next/static/chunks/2171-050e2ce5f76f2b93.js"
+        ]
+      },
+      "public_terms_url": "https://danirusev.com/terms",
+      "guest_purchase_clause": "3.3. Покупката на Ваучер може да се прави от регистриран и нерегистриран потребител, който съгласно настоящите Общи условия предоставя данните, необходими за сключване и изпълнение на договора.",
+      "delivery_clauses": [
+        "6.1. Закупените физически Ваучери се доставят с куриер до адрес или до офис на куриер, или се получават лично от представител на Търговеца, а електронните ваучери се изпращат по електронна поща.",
+        "6.2. Цената на доставката на физическите ваучери зависи от тарифата на избраната от Потребителя куриерска фирма и услуга за доставка.",
+        "6.3. В случай че получателят не бъде намерен в срока за изпълнение на доставката на посочения адрес или не бъде осигурен достъп и условия за предаване на поръчката в този срок, Търговецът се освобождава от задължението да достави ваучера и Купувачът на ваучера следва да му заплати направени разходи за куриерски услуги по доставка и връщане на поръчката, както и разходи направени за опаковка.",
+        "6.4. За доставка по електронна поща под формата на електронен ваучер Купувачът на ваучера носи изцяло риска от неполучаване на Ваучера по електронен път при грешно подаден от негова страна имейл адрес и/или блокиране на съобщението от пощата му или други технически причини, които не са по вина на Търговеца.",
+        "6.5. Срокът за доставка на физически ваучер и за изпращане на електронен ваучер е 3-5 работни дни."
+      ],
+      "validity_clause": "6.6. Валидността на ваучера е 1 (една година) считано от датата на извършване на поръчката.",
+      "expired_voucher_clause": "6.7. Всеки ваучер може да се използва в рамките на своята валидност, изписана на ваучера. Резервации по ваучери с изтекла валидност не се правят. Такива ваучери са невалидни и услугите към тях не подлежат на изпълнение.",
+      "cancellation_clauses": [
+        "7.1. Потребителят има право, без да дължи обезщетение или неустойка и без да посочва причина, да се откаже от сключения договор в срок 14 календарни дни, считано от датата на получаване на стоката/ваучера.",
+        "7.2. Когато потребителят е упражнил правото си на отказ от договора от разстояние, Търговецът възстановява всички суми, получени от Купувача на ваучера, с изключение на разходите за доставка и банкови такси, удържани при превод, без неоправдано забавяне и не по-късно от 14 дни, считано от датата, на която е бил уведомен за решението на потребителя да се откаже от договора. Търговецът възстановява получените суми на посочена от потребителя банкова сметка.",
+        "7.3. Правото на отказ не се прилага за услуги, които вече са изпълнени или за персонализирани стоки.",
+        "7.4. В случай че правото на отказ е упражнено, потребителят трябва да изпрати или предаде на Търговеца закупения ваучер в срок до 3 дни от датата, на която е съобщил за отказа от договора от разстояние.",
+        "7.5. Отказ на поръчка се приема писмено с електронно писмо, с попълнен и изпратен по електронната поща формуляр за Упражняване на правото за отказ от Договор."
+      ],
+      "validity_extension_clause": "6.8. Срокът на валидност на ваучера не подлежи на удължаване.",
+      "issue_after_date_confirmation_clause": "8.1. След постигане на съгласие между търговеца и потребителя относно дата за изпълнение на събитието, търговецът избира и потвърждава датата чрез административен панел, след което ваучерът се генерира в потребителския акаунт на потребителя и е достъпен чрез индивидуален линк на адрес: https://danirusev.com/vouchers",
+      "digital_email_delivery_paragraph": "Потребителят има възможност да избере дали ваучерът да бъде дигитален или физически. При избор на дигитален ваучер, потребителят получава уведомителен имейл с линк към конкретния ваучер, без ваучерът да бъде прикачен като файл към имейла. Търговецът не носи отговорност при неполучаване на имейл уведомлението, когато това се дължи на некоректно въведен имейл адрес, филтриране от пощенски услуги, технически проблеми или други обстоятелства извън контрола на търговеца.",
+      "email_attachment_promised": false,
+      "email_link_promised": true,
+      "public_pdf_download_found": false,
+      "account_vouchers_url": "https://danirusev.com/vouchers",
+      "account_vouchers_public_headings": [
+        "Моите Ваучери",
+        "Управлявайте вашите дрифт преживявания"
+      ],
+      "post_purchase_voucher_observed": false
+    },
+    "checkout": {
+      "url": "https://danirusev.com/checkout",
+      "empty_cart_messages": [
+        "Твоята количка е празна",
+        "Изглежда още нямаш добавени преживявания. Вземи я напълни ;)",
+        "Преживявания →"
+      ],
+      "populated_checkout_observed_in_browser": false,
+      "populated_checkout_fields_extracted_from_public_javascript": true,
+      "public_bundle_source": "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+      "personal_information_heading": "Лична Информация",
+      "personal_information_subtitle": "Попълнете данните си преди да продължите",
+      "personal_information_fields": [
+        {
+          "id": "fullName",
+          "label": "Име и Фамилия",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "phoneNumber",
+          "label": "Тел. Номер",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": false,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "address",
+          "label": "Адрес",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "city",
+          "label": "Град",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "postalCode",
+          "label": "Пощенски код",
+          "type": "text",
+          "required": true,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "",
+          "disabled": false
+        },
+        {
+          "id": "country",
+          "label": "Държава",
+          "type": "text",
+          "required": false,
+          "only_for_physical_product_or_physical_voucher": true,
+          "default_if_no_profile": "България",
+          "disabled": true
+        }
+      ],
+      "recipient_name_field": {
+        "id_template": "voucher-name-{cartItemId}",
+        "label": "Име на ваучера",
+        "placeholder": "Име на получателя (по избор)",
+        "type": "text",
+        "required": false,
+        "max_length": 16,
+        "default": "",
+        "per_experience_cart_item": true,
+        "public_bundle_sources": [
+          "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js",
+          "https://danirusev.com/_next/static/chunks/2171-050e2ce5f76f2b93.js"
+        ]
+      },
+      "payment_heading": "Плащане",
+      "payment_subtitle": "Сигурно плащане чрез myPOS",
+      "payment_provider": "myPOS",
+      "payment_currency": "EUR",
+      "continue_button": "Продължи към плащане →",
+      "zero_subtotal_button": "Потвърди Заявка →",
+      "terms_dialog": {
+        "title": "Правни Условия",
+        "description": "Преди да преминете към плащане, моля запознайте се и потвърдете съгласието си с нашите условия за ползване.",
+        "checkbox_id": "terms",
+        "checkbox_default": false,
+        "checkbox_label": "Прочетох и се съгласявам с Общите условия и Политиката за поверителност на Dani Rusev 11.",
+        "checkbox_required": true,
+        "links": [
+          "https://danirusev.com/terms",
+          "https://danirusev.com/privacy"
+        ],
+        "confirm_button": "Потвърди и Продължи →"
+      },
+      "shipping_label": "Доставка",
+      "shipping_display": "При плащане",
+      "payment_session_created": false,
+      "forms_submitted": false,
+      "payment_card_fields_observed": false
+    },
+    "source_urls": [
+      "https://danirusev.com/",
+      "https://danirusev.com/experience/drift-day",
+      "https://danirusev.com/api/products?where%5BproductType%5D%5Bequals%5D=experience&limit=100&depth=2",
+      "https://danirusev.com/terms",
+      "https://danirusev.com/checkout",
+      "https://danirusev.com/_next/static/chunks/4960-eeca712243c05c5b.js",
+      "https://danirusev.com/_next/static/chunks/app/(frontend)/checkout/page-14f95085b4285160.js"
+    ],
+    "public_api_and_resolved_page_product_match": true,
+    "raw_public_product": {
+      "id": 22,
+      "title": "Дрифт Ден",
+      "slug": "drift-day",
+      "productType": "experience",
+      "price": 358,
+      "compareAtPrice": null,
+      "description": "Дрифт обучение за начинаещи, подходящо за хора без опит и без шофьорска книжка. Индивидуален подход към всеки желаещ, на трасе съобразено с уменията му.",
+      "categories": [
+        {
+          "id": 3,
+          "title": "Преживяване",
+          "slug": "experience",
+          "parent": null,
+          "updatedAt": "2025-12-16T12:53:51.218Z",
+          "createdAt": "2025-12-16T12:53:51.917Z"
+        }
+      ],
+      "gallery": [
+        {
+          "id": "6957c08873b0cf3facdf2bad",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/1.webp",
+          "alt": "Дани Русев зад скарата с кебапите"
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bae",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/2.webp",
+          "alt": "Дани те учи на теория"
+        },
+        {
+          "id": "6957c08873b0cf3facdf2baf",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/3.webp",
+          "alt": "Дани Русев ти обяснява как се кара"
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bb0",
+          "type": "url",
+          "media": null,
+          "url": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/experiences/day/4.webp",
+          "alt": "Дани Русев чертае траектории"
+        }
+      ],
+      "stock": 0,
+      "lowStockThreshold": 5,
+      "optionDefinitions": [],
+      "variants": [],
+      "subtitle": "Курс",
+      "duration": "ЦЯЛ ДЕН",
+      "locations": [
+        {
+          "id": "6957c08873b0cf3facdf2bba",
+          "city": "София"
+        }
+      ],
+      "techSpecs": {
+        "carModel": "BMW E46 V6",
+        "horsePower": 240,
+        "tiresBurned": "∞"
+      },
+      "visuals": {
+        "iconName": "Flag",
+        "themeColor": "day",
+        "pattern": "day"
+      },
+      "program": [
+        {
+          "id": "6957c36b88ed92247ab3852e",
+          "time": "1",
+          "icon": "RectangleCircle",
+          "activity": "Правилно позициониране в автомобила",
+          "description": "Настройка на седалката и волана за максимален контрол и безопасност."
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bc0",
+          "time": "2",
+          "icon": "CircleParking",
+          "activity": "Спиране и работа с ръчната спирачка",
+          "description": "Използване на ръчната спирачка за иницииране и контролирано спиране."
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bbf",
+          "time": "3",
+          "icon": "CircleGauge",
+          "activity": "Работа с педала за газта",
+          "description": "Фин контрол на газта за стабилизиране и корекция на дрифта."
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bbb",
+          "time": "4",
+          "icon": "CircleDotDashed",
+          "activity": "Тясна окръжност (донът)",
+          "description": "Контролирано въртене в малък радиус с постоянен ъгъл на занасяне."
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bbc",
+          "time": "5",
+          "icon": "CircleDot",
+          "activity": "Широка окръжност (донът)",
+          "description": "Поддържане на стабилен дрифт в по-голям радиус и по-висока скорост."
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bbd",
+          "time": "6",
+          "icon": "ArrowLeftRight",
+          "activity": "Транзишън",
+          "description": "Плавно прехвърляне на тежестта за смяна на посоката без загуба на контрол."
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bbe",
+          "time": "7",
+          "icon": "Infinity",
+          "activity": "Фигура 8 (осморка)",
+          "description": "Свързване на два последователни дрифта с прецизен контрол."
+        },
+        {
+          "id": "6957c38288ed92247ab38530",
+          "time": "8",
+          "icon": "ChartArea",
+          "activity": "Разбор и анализ",
+          "description": "Обсъждане на техниките и индивидуална обратна връзка за напредък."
+        }
+      ],
+      "included": [
+        {
+          "id": "6957c08873b0cf3facdf2bc1",
+          "item": "Инструктор (Дани Русев)"
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bc2",
+          "item": "Наем на подготвен автомобил"
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bc3",
+          "item": "Неограничени гориво и гуми"
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bc4",
+          "item": "Кетъринг"
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bc5",
+          "item": "Музика"
+        },
+        {
+          "id": "69727c160da6c2387d26a16d",
+          "item": "Наем на писта"
+        }
+      ],
+      "notIncluded": [
+        {
+          "id": "6957c08873b0cf3facdf2bc9",
+          "item": "Транспорт до пистата"
+        }
+      ],
+      "additionalItems": [
+        {
+          "id": "695d6f7c165dd45de8b15a83",
+          "name": "GoPro Заснемане",
+          "price": 20,
+          "description": "Професионално заснемане на цялата сесия",
+          "icon": "Video",
+          "type": "standard",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bca",
+          "name": "Ваучер Дигитален",
+          "price": null,
+          "description": null,
+          "icon": "Smartphone",
+          "type": "voucher",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "6957c08873b0cf3facdf2bcb",
+          "name": "Ваучер Физически",
+          "price": 4,
+          "description": null,
+          "icon": "Gift",
+          "type": "voucher",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "6957c4f988ed92247ab38532",
+          "name": "Писта Крайници",
+          "price": null,
+          "description": null,
+          "icon": "MapPin",
+          "type": "location",
+          "googleMapsUrl": "https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7"
+        },
+        {
+          "id": "6957c90d88ed92247ab3853a",
+          "name": "2 Часа",
+          "price": null,
+          "description": null,
+          "icon": "Clock",
+          "type": "duration",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "6957c93188ed92247ab3853c",
+          "name": "4 Часа",
+          "price": 141,
+          "description": null,
+          "icon": "ClockPlus",
+          "type": "duration",
+          "googleMapsUrl": null
+        },
+        {
+          "id": "6957c96488ed92247ab3853e",
+          "name": "6 Часа",
+          "price": 348,
+          "description": null,
+          "icon": "ClockArrowUp",
+          "type": "duration",
+          "googleMapsUrl": null
+        }
+      ],
+      "tabNames": {
+        "program": "",
+        "included": null,
+        "additional": null
+      },
+      "updatedAt": "2026-02-19T11:05:07.012Z",
+      "createdAt": "2026-01-02T12:56:40.901Z",
+      "_status": "published"
+    },
+    "duration_choices": [
+      {
+        "name": "2 Часа",
+        "surcharge": null,
+        "displayed_surcharge": "+0 €",
+        "currency": "EUR",
+        "base_plus_surcharge": 358,
+        "default": true
+      },
+      {
+        "name": "4 Часа",
+        "surcharge": 141,
+        "displayed_surcharge": "+141 €",
+        "currency": "EUR",
+        "base_plus_surcharge": 499,
+        "default": false
+      },
+      {
+        "name": "6 Часа",
+        "surcharge": 348,
+        "displayed_surcharge": "+348 €",
+        "currency": "EUR",
+        "base_plus_surcharge": 706,
+        "default": false
+      }
+    ]
+  }
+]

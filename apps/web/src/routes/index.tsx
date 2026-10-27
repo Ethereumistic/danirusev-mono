@@ -1,9 +1,14 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { listExperiences } from '@/features/experience/data'
 import { getLandingContent } from '@/features/landing/data'
 import { LandingPage } from '@/features/landing/landing-page'
 
 export const Route = createFileRoute('/')({
-  loader: () => getLandingContent(),
+  loader: async () => {
+    // A catalog failure keeps the bundled cards instead of failing the home page.
+    const catalog = await listExperiences().catch(() => null)
+    return getLandingContent(catalog?.experiences)
+  },
   head: () => ({
     meta: [
       { title: 'Dani Rusev 11 | Екстремни дрифт преживявания в България' },

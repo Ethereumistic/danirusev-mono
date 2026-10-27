@@ -4,6 +4,29 @@
   src: url("/fonts/Gagalin-Regular.otf") format("opentype");
   font-display: swap;
 }
+/* Experience program pills use the deployed reference's Geist Mono (latin subset, OFL). */
+@font-face {
+  font-family: "Geist Mono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/geist-mono-latin.woff2") format("woff2");
+  unicode-range:
+    U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308,
+    U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF,
+    U+FFFD;
+}
+@font-face {
+  font-family: "Geist Mono Fallback";
+  src: local("Arial");
+  ascent-override: 74.67%;
+  descent-override: 21.92%;
+  line-gap-override: 0%;
+  size-adjust: 134.59%;
+}
+:root {
+  --font-geist-mono: "Geist Mono", "Geist Mono Fallback";
+}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 64px;

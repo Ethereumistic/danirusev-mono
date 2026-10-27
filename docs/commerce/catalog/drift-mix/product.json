@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "handle": "drift-mix",
+  "name": "Дрифт Микс",
+  "status": "published",
+  "headline": "Возене + Каране",
+  "description": "Усетете дрифта от двете страни - от пасажерското място и от шофьорската седалка!\n\nПрограма:\n• Основи на дрифта, работа с волан и газ.\n• Интензивно возене на трасе.\n• Започни трансформацията си в дрифт звяр.\n• Обобщение на карането и обратна връзка.",
+  "collection": "Дрифт Преживявания",
+  "images": [
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/mix/2.png",
+      "alt": "Дрифт Микс 1"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/mix/1.png",
+      "alt": "Дрифт Микс 2"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/mix/3.png",
+      "alt": "Дрифт Микс 3"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/mix/4.png",
+      "alt": "Дрифт Микс 4"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/mix/5.png",
+      "alt": "Дрифт Микс 5"
+    }
+  ],
+  "price": 215,
+  "inventory": "made_to_order",
+  "fulfillment": ["delivery"],
+  "specifications": [
+    {
+      "label": "Време",
+      "value": "60 мин"
+    },
+    {
+      "label": "Автомобил",
+      "value": "BMW E46 V6"
+    },
+    {
+      "label": "Мощност",
+      "value": "240 HP"
+    },
+    {
+      "label": "Гуми",
+      "value": "4"
+    },
+    {
+      "label": "Локация",
+      "value": "София, Писта Крайници"
+    },
+    {
+      "label": "Цената включва",
+      "value": "Инструктор (Дани Русев), Наем на подготвен автомобил, Гориво и Гуми, Наем на писта"
+    },
+    {
+      "label": "Цената не включва",
+      "value": "Транспорт до пистата, Храна и напитки"
+    }
+  ],
+  "type": "Дрифт преживяване",
+  "tags": ["дрифт", "ваучер", "преживяване"],
+  "seo": {
+    "title": "Дрифт Микс | Dani Rusev 11",
+    "description": "Усетете дрифта от двете страни - от пасажерското място и от шофьорската седалка!"
+  },
+  "configurator": {
+    "version": 1,
+    "pricing": [],
+    "inputs": [
+      {
+        "key": "voucher",
+        "label": "Ваучер",
+        "kind": "choice",
+        "required": true,
+        "choices": [
+          {
+            "value": "digital",
+            "label": "Ваучер Дигитален",
+            "amount": 0,
+            "digital": true
+          },
+          {
+            "value": "physical",
+            "label": "Ваучер Физически",
+            "amount": 400
+          }
+        ]
+      },
+      {
+        "key": "location",
+        "label": "Локация",
+        "kind": "choice",
+        "required": true,
+        "hint": "Google Maps: https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7",
+        "choices": [
+          {
+            "value": "pista-kraynitsi",
+            "label": "Писта Крайници",
+            "amount": 0,
+            "venue": "pista-kraynitsi"
+          }
+        ]
+      },
+      {
+        "key": "gopro",
+        "label": "GoPro Заснемане",
+        "kind": "toggle",
+        "required": false,
+        "amount": 2000,
+        "hint": "Професионално заснемане на цялата сесия"
+      },
+      {
+        "key": "extra_tires",
+        "label": "Допълнителни Гуми",
+        "kind": "toggle",
+        "required": false,
+        "amount": 8000,
+        "hint": "2 екстра гуми за по-дълго возене или каране"
+      },
+      {
+        "key": "recipient",
+        "label": "Име на ваучера / Име на получателя (по избор)",
+        "kind": "text",
+        "required": false,
+        "maxLength": 16
+      },
+      {
+        "key": "preferred_date",
+        "label": "Предпочитана дата",
+        "kind": "date",
+        "required": false,
+        "minDays": 1,
+        "maxDays": 365,
+        "hint": "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+        "availability": true
+      }
+    ]
+  }
+}

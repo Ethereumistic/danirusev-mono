@@ -13,7 +13,7 @@ The actual deployed reference uses the system sans-serif stack (including bold/i
 1. Original sticky navbar: about/experience links, disabled shop/subscription items, cart, login button, and mobile sheet.
 2. Image-first video hero with the original Bulgarian text, 64px CTA, staggered entrance, and animated scroll indicator.
 3. Original introduction and three alternating feature galleries: machines, safety, and memories.
-4. Five hardcoded experience cards with original overlay layout, themed buttons, hover states, rotating location labels, and desktop carousel/mobile grid.
+4. Five hardcoded experience cards with original overlay layout, themed buttons linking to the detail pages, hover states, rotating location labels, and desktop carousel/mobile grid.
 5. Original three booking steps and reveal timing.
 6. Testimonials copied from the published reference as fixtures, with their original carousel and presentation.
 7. Original biography, portrait carousel, badge transitions, and YouTube carousel. Video metadata is a fixture snapshot; no feed service is called.
@@ -36,7 +36,7 @@ Use [Motion's lightweight React pattern](https://motion.dev/docs/react-reduce-bu
 
 `data.ts` owns the experience fixtures. `public-content.json` contains the published testimonial/video snapshot. `media-manifest.json` maps original public URLs to locally stored assets.
 
-No database, CMS client, authentication provider, payment integration, feed request, or Convex backend is installed. Prices and available dates are not live. Experience CTAs retain local previews, with contact options rather than a real reservation. The [contact page](contact-port.md) is now ported at `/contact`. Auth/legal links retain original route paths; their destination pages are outside this port.
+No database, CMS client, authentication provider, payment integration, feed request, or Convex backend is installed. Prices and available dates are not live. Experience cards link to `/experience/<slug>` like the legacy site; the detail pages are described in [storefront-echoray.md](storefront-echoray.md). The [contact page](contact-port.md) is now ported at `/contact`. Auth/legal links retain original route paths; their destination pages are outside this port.
 
 ## Comparison and verification
 

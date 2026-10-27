@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "handle": "drift-day",
+  "name": "Дрифт Ден",
+  "status": "published",
+  "headline": "Курс",
+  "description": "Дрифт обучение за начинаещи, подходящо за хора без опит и без шофьорска книжка. Индивидуален подход към всеки желаещ, на трасе съобразено с уменията му.\n\nПрограма:\n• Настройка на седалката и волана за максимален контрол и безопасност.\n• Използване на ръчната спирачка за иницииране и контролирано спиране.\n• Фин контрол на газта за стабилизиране и корекция на дрифта.\n• Контролирано въртене в малък радиус с постоянен ъгъл на занасяне.\n• Поддържане на стабилен дрифт в по-голям радиус и по-висока скорост.\n• Плавно прехвърляне на тежестта за смяна на посоката без загуба на контрол.\n• Свързване на два последователни дрифта с прецизен контрол.\n• Обсъждане на техниките и индивидуална обратна връзка за напредък.",
+  "collection": "Дрифт Преживявания",
+  "images": [
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/day/1.png",
+      "alt": "Дрифт Ден 1"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/day/2.png",
+      "alt": "Дрифт Ден 2"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/day/3.png",
+      "alt": "Дрифт Ден 3"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/day/4.png",
+      "alt": "Дрифт Ден 4"
+    }
+  ],
+  "price": 358,
+  "inventory": "made_to_order",
+  "fulfillment": ["delivery"],
+  "specifications": [
+    {
+      "label": "Време",
+      "value": "ЦЯЛ ДЕН"
+    },
+    {
+      "label": "Автомобил",
+      "value": "BMW E46 V6"
+    },
+    {
+      "label": "Мощност",
+      "value": "240 HP"
+    },
+    {
+      "label": "Гуми",
+      "value": "∞"
+    },
+    {
+      "label": "Локация",
+      "value": "София, Писта Крайници"
+    },
+    {
+      "label": "Цената включва",
+      "value": "Инструктор (Дани Русев), Наем на подготвен автомобил, Неограничени гориво и гуми, Кетъринг, Музика, Наем на писта"
+    },
+    {
+      "label": "Цената не включва",
+      "value": "Транспорт до пистата"
+    }
+  ],
+  "type": "Дрифт преживяване",
+  "tags": ["дрифт", "ваучер", "преживяване"],
+  "seo": {
+    "title": "Дрифт Ден | Dani Rusev 11",
+    "description": "Дрифт обучение за начинаещи, подходящо за хора без опит и без шофьорска книжка. Индивидуален подход към всеки желаещ, на трасе съобразено с уменията му."
+  },
+  "configurator": {
+    "version": 1,
+    "pricing": [],
+    "inputs": [
+      {
+        "key": "voucher",
+        "label": "Ваучер",
+        "kind": "choice",
+        "required": true,
+        "choices": [
+          {
+            "value": "digital",
+            "label": "Ваучер Дигитален",
+            "amount": 0,
+            "digital": true
+          },
+          {
+            "value": "physical",
+            "label": "Ваучер Физически",
+            "amount": 400
+          }
+        ]
+      },
+      {
+        "key": "location",
+        "label": "Локация",
+        "kind": "choice",
+        "required": true,
+        "hint": "Google Maps: https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7",
+        "choices": [
+          {
+            "value": "pista-kraynitsi",
+            "label": "Писта Крайници",
+            "amount": 0,
+            "venue": "pista-kraynitsi"
+          }
+        ]
+      },
+      {
+        "key": "duration",
+        "label": "Продължителност",
+        "kind": "choice",
+        "required": true,
+        "choices": [
+          {
+            "value": "2h",
+            "label": "2 Часа",
+            "amount": 0
+          },
+          {
+            "value": "4h",
+            "label": "4 Часа",
+            "amount": 14100
+          },
+          {
+            "value": "6h",
+            "label": "6 Часа",
+            "amount": 34800
+          }
+        ]
+      },
+      {
+        "key": "gopro",
+        "label": "GoPro Заснемане",
+        "kind": "toggle",
+        "required": false,
+        "amount": 2000,
+        "hint": "Професионално заснемане на цялата сесия"
+      },
+      {
+        "key": "recipient",
+        "label": "Име на ваучера / Име на получателя (по избор)",
+        "kind": "text",
+        "required": false,
+        "maxLength": 16
+      },
+      {
+        "key": "preferred_date",
+        "label": "Предпочитана дата",
+        "kind": "date",
+        "required": false,
+        "minDays": 1,
+        "maxDays": 365,
+        "hint": "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+        "availability": true
+      }
+    ]
+  }
+}

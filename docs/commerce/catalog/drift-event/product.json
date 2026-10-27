@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "handle": "drift-event",
+  "name": "Дрифт Събитие",
+  "status": "published",
+  "headline": "Специален Повод",
+  "description": "Поверете ни организацията на Вашите най-ценни моменти. Ние създаваме стилни, добре обмислени изненади и преживявания, които оставят вечен спомен!\n\nПодходящо за:\n• Празнувайте поредната година с висока скорост и личен урок по дрифт, който ще държи пулса ти висок дълго след финала.\n• Влезте в семейния живот с контролиран занос и споделен адреналин в кабината на мощни дрифт автомобили.\n• Разберете пола на вашето бебе чрез зрелищни облаци от син или розов дим, генерирани от въртящи се гуми.\n• Кажете „Да!“ под звука на въртящи се гуми, превръщайки пристигането си в незабравимо шоу с много конски сили.\n• Сплотете екипа чрез екстремно предизвикателство на пистата, което изисква пълно доверие и перфектна координация.\n• Отбележете важните моменти с ексклузивно дрифт преживяване, където прецизното шофиране среща безкомпромисния лукс.",
+  "collection": "Дрифт Преживявания",
+  "images": [
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/event/1.png",
+      "alt": "Дрифт Събитие 1"
+    },
+    {
+      "file": "https://danirusev.com/api/media/file/2.webp",
+      "alt": "Дрифт Събитие 2"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/event/3.png",
+      "alt": "Дрифт Събитие 3"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/event/4.png",
+      "alt": "Дрифт Събитие 4"
+    },
+    {
+      "file": "https://danirusev.com/api/media/file/7.webp",
+      "alt": "Дрифт Събитие 5"
+    }
+  ],
+  "price": 0,
+  "inventory": "made_to_order",
+  "fulfillment": ["delivery"],
+  "specifications": [
+    {
+      "label": "Време",
+      "value": "~4 часа"
+    },
+    {
+      "label": "Автомобил",
+      "value": "BMW E46 V6"
+    },
+    {
+      "label": "Мощност",
+      "value": "240 HP"
+    },
+    {
+      "label": "Гуми",
+      "value": "∞"
+    },
+    {
+      "label": "Локация",
+      "value": "София, Писта Крайници"
+    },
+    {
+      "label": "Цената включва",
+      "value": "Инструктор (Дани Русев), Наем на подготвен автомобил, Гориво и Гуми за цялата сесия, Кетъринг, Музика, Декор, Игри"
+    },
+    {
+      "label": "Цената не включва",
+      "value": "Депозит за щети, Транспорт до пистата"
+    }
+  ],
+  "type": "Дрифт преживяване",
+  "tags": ["дрифт", "ваучер", "преживяване"],
+  "seo": {
+    "title": "Дрифт Събитие | Dani Rusev 11",
+    "description": "Поверете ни организацията на Вашите най-ценни моменти. Ние създаваме стилни, добре обмислени изненади и преживявания, които оставят вечен спомен!"
+  },
+  "configurator": {
+    "version": 1,
+    "pricing": [],
+    "inputs": [
+      {
+        "key": "voucher",
+        "label": "Ваучер",
+        "kind": "choice",
+        "required": true,
+        "choices": [
+          {
+            "value": "digital",
+            "label": "Ваучер Дигитален",
+            "amount": 0,
+            "digital": true
+          },
+          {
+            "value": "physical",
+            "label": "Ваучер Физически",
+            "amount": 0
+          }
+        ]
+      },
+      {
+        "key": "location",
+        "label": "Локация",
+        "kind": "choice",
+        "required": true,
+        "hint": "Google Maps: https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7",
+        "choices": [
+          {
+            "value": "pista-kraynitsi",
+            "label": "Писта Крайници",
+            "amount": 0,
+            "venue": "pista-kraynitsi"
+          }
+        ]
+      },
+      {
+        "key": "recipient",
+        "label": "Име на ваучера / Име на получателя (по избор)",
+        "kind": "text",
+        "required": false,
+        "maxLength": 16
+      },
+      {
+        "key": "preferred_date",
+        "label": "Предпочитана дата",
+        "kind": "date",
+        "required": false,
+        "minDays": 1,
+        "maxDays": 365,
+        "hint": "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката.",
+        "availability": true
+      }
+    ]
+  },
+  "labels": ["По договаряне"],
+  "inquiry": {
+    "label": "по договаряне"
+  }
+}
