@@ -3,6 +3,7 @@
   "files": {
     "includes": [
       "**",
+      "!**/.claude",
       "!**/routeTree.gen.ts",
       "!**/worker-configuration.d.ts",
       "!**/dist",
