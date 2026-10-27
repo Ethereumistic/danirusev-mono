@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "handle": "drift-taxi",
+  "name": "Дрифт Такси",
+  "status": "draft",
+  "headline": "Пасажерско Изживяване",
+  "description": "Седнете на пасажерската седалка до Дани Русев и усетете истинската G-сила. Без теория, само чист адреналин.\n\nПрограма:\n• Запознаване с мерките за безопасност и екипировката.\n• Слагане на каска и закопчаване на 4-точковите колани.\n• 45 минути бясно лашкане на седалката.",
+  "collection": "Дрифт Преживявания",
+  "images": [
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/taxi/0.png",
+      "alt": "Дрифт Такси 1"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/taxi/2.png",
+      "alt": "Дрифт Такси 2"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/taxi/3.png",
+      "alt": "Дрифт Такси 3"
+    },
+    {
+      "file": "https://raw.githubusercontent.com/Ethereumistic/danirusev-assets/main/experiences/taxi/4.png",
+      "alt": "Дрифт Такси 4"
+    }
+  ],
+  "price": 155,
+  "inventory": "made_to_order",
+  "fulfillment": [
+    "delivery"
+  ],
+  "specifications": [
+    {
+      "label": "Време",
+      "value": "60 мин"
+    },
+    {
+      "label": "Автомобил",
+      "value": "BMW E46 V6"
+    },
+    {
+      "label": "Мощност",
+      "value": "240 HP"
+    },
+    {
+      "label": "Гуми",
+      "value": "4"
+    },
+    {
+      "label": "Локация",
+      "value": "София, Писта Крайници"
+    },
+    {
+      "label": "Цената включва",
+      "value": "Професионален пилот, Гориво и Гуми, Каска и боне, Наем на писта"
+    },
+    {
+      "label": "Цената не включва",
+      "value": "Транспорт до пистата, Храна и напитки"
+    }
+  ],
+  "type": "Дрифт преживяване",
+  "tags": [
+    "дрифт",
+    "ваучер",
+    "преживяване"
+  ],
+  "seo": {
+    "title": "Дрифт Такси | Dani Rusev 11",
+    "description": "Седнете на пасажерската седалка до Дани Русев и усетете истинската G-сила. Без теория, само чист адреналин."
+  },
+  "configurator": {
+    "version": 1,
+    "pricing": [],
+    "inputs": [
+      {
+        "key": "voucher",
+        "label": "Ваучер",
+        "kind": "choice",
+        "required": true,
+        "choices": [
+          {
+            "value": "digital",
+            "label": "Ваучер Дигитален",
+            "amount": 0
+          },
+          {
+            "value": "physical",
+            "label": "Ваучер Физически",
+            "amount": 400
+          }
+        ]
+      },
+      {
+        "key": "location",
+        "label": "Локация",
+        "kind": "choice",
+        "required": true,
+        "hint": "Google Maps: https://maps.app.goo.gl/WRbAdxrXFM2ZaM8Z7",
+        "choices": [
+          {
+            "value": "pista-kraynitsi",
+            "label": "Писта Крайници",
+            "amount": 0
+          }
+        ]
+      },
+      {
+        "key": "gopro",
+        "label": "GoPro Заснемане",
+        "kind": "toggle",
+        "required": false,
+        "amount": 2000,
+        "hint": "Професионално заснемане на цялата сесия"
+      },
+      {
+        "key": "extra_tires",
+        "label": "Допълнителни Гуми",
+        "kind": "toggle",
+        "required": false,
+        "amount": 8000,
+        "hint": "2 екстра гуми за по-дълго возене"
+      },
+      {
+        "key": "recipient",
+        "label": "Име на ваучера / Име на получателя (по избор)",
+        "kind": "text",
+        "required": false,
+        "maxLength": 16
+      },
+      {
+        "key": "preferred_date",
+        "label": "Предпочитана дата",
+        "kind": "text",
+        "required": false,
+        "maxLength": 40,
+        "hint": "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката."
+      }
+    ]
+  }
+}

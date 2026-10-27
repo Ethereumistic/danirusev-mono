@@ -4,7 +4,7 @@
 
 This repository is the new Dani Rusev application, rebuilt from scratch as a scalable monorepo. The existing application lives in the sibling `../danirusev` directory and uses Next.js, Payload CMS, and Supabase. The immediate priority is porting its UI to the new frontend stack.
 
-The commerce/backend migration is a separate phase. The user intends to use a simpler commerce backend solution with the flexibility currently provided by Payload CMS; that solution has not been named yet. Do not assume that Payload's commerce or content-management features will be rebuilt in Convex. Use the existing project to understand screens and interactions while keeping future backend integration replaceable.
+The commerce/backend migration is a separate phase. The selected commerce solution is Echoray Commerce on echoray.io (business "Dani Rusev 11"); the experience catalog, its mapping and the open Echoray extensions are recorded in [docs/commerce/echoray-port.md](docs/commerce/echoray-port.md). Do not assume that Payload's commerce or content-management features will be rebuilt in Convex. Use the existing project to understand screens and interactions while keeping future backend integration replaceable.
 
 Scaffolded on 2026-10-27: `apps/web` contains the fixture-backed landing page and `/contact`, and `packages/ui` contains shared Base UI-backed shadcn components. There is no database or backend package. Use [README.md](README.md) for actual commands, [docs/ui-port.md](docs/ui-port.md) for landing-page design notes, and [docs/contact-port.md](docs/contact-port.md) for the contact page and form boundary. The backend entries in the layout below describe a future location, not an existing implementation.
 
@@ -25,7 +25,7 @@ Use `motion` from Motion.dev, `motion/react-m`, and the shared `LazyMotion` prov
 | Styling                  | Tailwind CSS through the Vite integration                                                                       |
 | Component system         | shadcn/ui using Base UI primitives                                                                              |
 | Application backend      | Convex is part of the planned stack; its responsibilities will be defined separately from the commerce solution |
-| Commerce/content backend | Separate migration to a simpler solution; selection and integration contract remain open                        |
+| Commerce/content backend | Echoray Commerce (echoray.io); storefront integration contract remains open                                      |
 | Web hosting              | Cloudflare Workers, including SSR and static assets                                                             |
 
 Keep these choices when scaffolding and porting UI. Do not introduce Next.js runtime dependencies into the new frontend. Do not install Payload or Supabase into the new runtime merely to make the UI port work; any temporary connection to the existing services must be an explicit integration task.
