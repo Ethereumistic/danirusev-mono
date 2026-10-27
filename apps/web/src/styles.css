@@ -1,0 +1,71 @@
+@import "@danirusev/ui/styles/globals.css";
+@font-face {
+  font-family: gagalin;
+  src: url("/fonts/Gagalin-Regular.otf") format("opentype");
+  font-display: swap;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px;
+}
+body {
+  margin: 0;
+  background: #020617;
+  -webkit-font-smoothing: antialiased;
+}
+.gallery-dot {
+  height: 10px;
+  border-radius: 999px;
+  transition:
+    width 0.3s,
+    background-color 0.3s;
+  position: relative;
+}
+.gallery-dot::after {
+  content: "";
+  position: absolute;
+  inset: -8px -4px;
+}
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 150;
+  background: var(--main);
+  color: #000;
+  padding: 12px;
+  transform: translateY(-150%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+.fallback-page {
+  max-width: 700px;
+  padding: 32px;
+  margin: 15vh auto;
+}
+.fallback-page h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+.fallback-page a,
+.fallback-page button {
+  color: var(--main);
+  text-decoration: underline;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto;
+    /* biome-ignore lint/complexity/noImportantStyles: User preferences override component animation utilities. */
+    animation-duration: 0.01ms !important;
+    /* biome-ignore lint/complexity/noImportantStyles: User preferences override component animation utilities. */
+    animation-iteration-count: 1 !important;
+    /* biome-ignore lint/complexity/noImportantStyles: User preferences override component animation utilities. */
+    transition-duration: 0.01ms !important;
+  }
+}

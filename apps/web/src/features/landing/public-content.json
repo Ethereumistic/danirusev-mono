@@ -1,0 +1,89 @@
+{
+  "testimonials": [
+    {
+      "name": "Михаела Рибанчова",
+      "quote": "\"Честно казано, отидох на пистата с леко притеснение, но си тръгнах с най-широката усмивка, която съм имала от много време насам! Избрах Дрифт Микс при Дани и това определено беше най-доброто решение :P , защото получаваш пълната картинка – и да се возиш, и да караш!\"",
+      "paragraphs": ["Дрифт Микс", "Бухово"],
+      "avatar": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/testimonials/mihaela.webp",
+      "rating": 5
+    },
+    {
+      "name": "DJ Mascota",
+      "quote": "\"Както се казва в един филм: “Ей там за първи път ми стана лошо” :) Но, ако имате нужда от малко адреналин, освобождаване на напрежение и високи скорости се доверете на професионалист като Дани. След това си тръгвате като чисто нов човек.\"",
+      "paragraphs": ["Дрифт Такси", "Писта Дракон"],
+      "avatar": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/testimonials/mascota.webp",
+      "rating": 5
+    },
+    {
+      "name": "Рада Копрева",
+      "quote": "\"Винаги търся нови преживявания и естетика, но тук намерих чист екшън. Дани е супер търпелив инструктор, дори когато се опитвах аз да въртя волана. Уникален вайб!\"",
+      "paragraphs": ["Дрифт Такси", "Бухово"],
+      "avatar": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/testimonials/rada.webp",
+      "rating": 5
+    },
+    {
+      "name": "Милена Джоргова",
+      "quote": "\"Дани е най-готиният инструктор, който може да имате! Не съм предполагала, че някой може да кара така! Препоръчвам горещо!\"",
+      "paragraphs": ["Дрифт Такси", "Бухово"],
+      "avatar": "https://cdn.jsdelivr.net/gh/Ethereumistic/danirusev-assets/opt/testimonials/milena.webp",
+      "rating": 5
+    }
+  ],
+  "videos": [
+    {
+      "url": "https://www.youtube.com/watch?v=SSaY-e8DF5s",
+      "title": "ПРЕВЪРНАХМЕ BMW за 3000 ЛВ в ДРИФТАЧКА",
+      "thumbnail": "https://i.ytimg.com/vi/SSaY-e8DF5s/maxresdefault.jpg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eRZ1v69gbiQ",
+      "title": "Елза парини на навигаторското място!",
+      "thumbnail": "https://i.ytimg.com/vi/eRZ1v69gbiQ/maxresdefault.jpg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eEJhRsruiBQ",
+      "title": "Ако забележете странно поведение, момчета пазете се!",
+      "thumbnail": "https://i.ytimg.com/vi/eEJhRsruiBQ/maxresdefault.jpg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2sVZYYwzNVE",
+      "title": "Шампион не само на трасето",
+      "thumbnail": "https://i.ytimg.com/vi/2sVZYYwzNVE/maxresdefault.jpg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=55dx-ew-T04",
+      "title": "Нали така!?",
+      "thumbnail": "https://i.ytimg.com/vi/55dx-ew-T04/maxresdefault.jpg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1Q21EDZNBp4",
+      "title": "Не вървии…",
+      "thumbnail": "https://i.ytimg.com/vi/1Q21EDZNBp4/maxresdefault.jpg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=RqbobxsT2F8",
+      "title": "Няма да ми дава колата ли!?",
+      "thumbnail": "https://i.ytimg.com/vi/RqbobxsT2F8/maxresdefault.jpg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JCRsHaCF7GI",
+      "title": "Виж каква кола карам!?",
+      "thumbnail": "https://i.ytimg.com/vi/JCRsHaCF7GI/maxresdefault.jpg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=GF_GmgYwFkw",
+      "title": "Любов прибрах се!",
+      "thumbnail": "https://i.ytimg.com/vi/GF_GmgYwFkw/maxresdefault.jpg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=GyKVZwEyDf8",
+      "title": "Китайският ТАНК: Dongfeng M-Hero +1080 HP | Ревю",
+      "thumbnail": "https://i.ytimg.com/vi/GyKVZwEyDf8/maxresdefault.jpg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=E-I_HaPKHdM",
+      "title": "Мвр ни взеха попа!",
+      "thumbnail": "https://i.ytimg.com/vi/E-I_HaPKHdM/maxresdefault.jpg"
+    }
+  ]
+}

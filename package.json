@@ -1,0 +1,24 @@
+{
+  "name": "danirusev-mono",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.12.1",
+  "engines": {
+    "node": ">=22.12.0 <23",
+    "pnpm": ">=10 <11"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @danirusev/web dev",
+    "dev:web": "pnpm --filter @danirusev/web dev",
+    "build": "pnpm --filter @danirusev/web build",
+    "preview": "pnpm --filter @danirusev/web preview",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "check": "pnpm lint && pnpm typecheck && pnpm build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.3",
+    "typescript": "5.9.3"
+  }
+}

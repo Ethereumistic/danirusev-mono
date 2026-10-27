@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.output/
+.tanstack/
+.wrangler/
+.env
+.env.*
+!.env.example
+.dev.vars*
+*.tsbuildinfo
+apps/web/worker-configuration.d.ts
+output/
+.playwright-cli/
+.DS_Store
