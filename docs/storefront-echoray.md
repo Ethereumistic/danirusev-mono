@@ -10,7 +10,7 @@ The web app reads experiences from [Echoray Commerce](commerce/echoray-port.md) 
 | `/experience/rent-a-drift-car` | none                                       | 301 to `/experience/drift-rent` (the old landing-card slug).                                                                   |
 | `/vouchers/$token`             | `getVoucher(token)`                        | QR target of Echoray voucher PDFs. Validity only. `noindex`, `Cache-Control: private, no-store`.                               |
 
-Landing cards link to `/experience/<slug>`, as on the legacy site. Their text and images stay in the landing fixture (`features/landing/data.ts`). On the detail page, the "Още Преживявания" strip shows the landing cards for the other experiences in the catalog list, priced from it.
+Landing cards link to `/experience/<slug>`, as on the legacy site. Their copy stays in the landing fixture (`features/landing/data.ts`); prices and the first gallery image come from the published catalog, including responsive card/detail image sources. If the home-page catalog request fails, the bundled landing cards remain available. On the detail page, the "Още Преживявания" strip uses the same catalog-backed cards for the other experiences.
 
 ## Environment
 
@@ -35,7 +35,7 @@ Production: the Worker `danirusev-web` serves `dr11.echoray.cloud` through Echor
 `features/experience/data.ts` holds the TanStack Start server functions, the only data entry points:
 
 - `getExperience(slug)` → `ExperienceDetail | null`
-- `listExperiences()` → `{ source, experiences: { slug, price, inquiry }[] }`
+- `listExperiences()` → `{ source, experiences: { slug, price, inquiry, image }[] }`, where `image` is `{ src, srcSet, alt } | null`
 - `getVoucher(token)` → `VoucherLookup` (`unconfigured` / `not_found` / `error` / `found`)
 
 Server-only modules (`*.server.ts`, marked `@tanstack/react-start/server-only`):
@@ -70,6 +70,10 @@ Site presentation that Echoray does not store (theme colour, header icon, bookin
 - The booking card's total is base + surcharge; it is hidden for price-on-request products. The BGN line is omitted: the legacy utility stops showing BGN after 2026-08-09.
 
 "Добави в Количката" opens the live site's call dialog ("Моля обадете се на телефон:" / "Временно онлайн резервациите не работят." / `tel:+359882726020`, with copy button). Answers are not stored or sent anywhere.
+
+## Customer accounts
+
+The header’s “Вход” and the mobile menu’s sign-in/registration buttons open an account dialog. The sign-in form is local only: submitting valid email/password fields shows the paused-accounts notice without sending credentials. Registration shows “Регистрациите са временно спрени”. Both paused states offer the booking phone number and a copy button. Echoray’s guests-only setting currently disables customer accounts.
 
 ## Still open
 

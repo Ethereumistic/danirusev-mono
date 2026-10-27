@@ -15,8 +15,6 @@ import {
 } from '@danirusev/ui/components/dialog'
 import { cn } from '@danirusev/ui/lib/utils'
 import {
-  Check,
-  Copy,
   CreditCard,
   ExternalLink,
   MapPin,
@@ -26,7 +24,8 @@ import {
   Trophy,
   XIcon,
 } from 'lucide-react'
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
+import { CopyNumber, PHONE, PHONE_LABEL } from '@/components/call-number'
 import {
   type Answers,
   type Evaluation,
@@ -37,49 +36,8 @@ import type { ExperienceDetail } from './model'
 import { ExperiencePattern } from './patterns'
 import { addonIcon, type ThemeClasses } from './theme'
 
-const PHONE = '+359882726020'
-
 function Separator() {
   return <div role="none" className="bg-slate-800 shrink-0 h-px w-full" />
-}
-
-function CopyNumber({ number }: { number: string }) {
-  const [copied, setCopied] = useState(false)
-  const timer = useRef<ReturnType<typeof setTimeout>>(undefined)
-  useEffect(() => () => clearTimeout(timer.current), [])
-  const copy = async () => {
-    try {
-      await navigator.clipboard.writeText(number)
-    } catch {
-      // Clipboard API unavailable (insecure context): the legacy textarea fallback.
-      const area = document.createElement('textarea')
-      area.value = number
-      area.setAttribute('readonly', '')
-      area.style.position = 'absolute'
-      area.style.left = '-9999px'
-      document.body.appendChild(area)
-      area.select()
-      document.execCommand('copy')
-      document.body.removeChild(area)
-    }
-    setCopied(true)
-    clearTimeout(timer.current)
-    timer.current = setTimeout(() => setCopied(false), 2000)
-  }
-  return (
-    <button
-      type="button"
-      onClick={copy}
-      aria-label="Копирай номера"
-      className="flex items-center justify-center w-14 h-full min-h-[60px] rounded-xl bg-slate-800 border border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-white transition-all shrink-0"
-    >
-      {copied ? (
-        <Check className="w-5 h-5 text-green-400" />
-      ) : (
-        <Copy className="w-5 h-5" />
-      )}
-    </button>
-  )
 }
 
 /**
@@ -116,7 +74,7 @@ function CallDialog({
               className="flex-1 inline-flex items-center text-nowrap justify-center gap-3 px-6 py-4 rounded-xl bg-mix text-black font-black text-xl sm:text-2xl hover:bg-amber-300 transition-all hover:scale-105 shadow-lg shadow-amber-400/20"
             >
               <PhoneCall className="w-6 h-6 shrink-0" />
-              +359 882726020
+              {PHONE_LABEL}
             </a>
             <CopyNumber number={PHONE} />
           </div>

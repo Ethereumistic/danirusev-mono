@@ -6,6 +6,9 @@ export type Experience = {
   readonly subtitle: string
   readonly description: string
   readonly image: string
+  /** Responsive sources for catalog images; empty for the bundled fixture image. */
+  readonly imageSrcSet?: string
+  readonly imageAlt?: string
   readonly price: number
   readonly duration: string
   readonly horsepower: number
@@ -83,23 +86,41 @@ const experiences = [
     theme: 'day',
   },
 ] as const satisfies readonly Experience[]
-export function getLandingContent() {
+export function getLandingContent(catalog?: readonly CatalogCard[] | null) {
   return {
-    experiences,
+    // Without the catalog (fixture fallback or a failed list) the bundled cards stay.
+    experiences: catalog ? getExperienceCards(catalog) : experiences,
     testimonials: content.testimonials,
     videos: content.videos,
   }
 }
-/** Landing cards for the other experiences, priced from the catalog list (minor units). */
+type CatalogCard = {
+  slug: string
+  price: number | null
+  image: { src: string; srcSet: string; alt: string } | null
+}
+
+/**
+ * Landing cards for the published experiences: price (minor units) and photo come
+ * from the catalog list, the product's first gallery image being the card photo.
+ */
 export function getExperienceCards(
-  catalog: readonly { slug: string; price: number | null }[],
+  catalog: readonly CatalogCard[],
   excludeSlug?: string,
 ): Experience[] {
   return experiences.flatMap((experience) => {
     const listed = catalog.find((item) => item.slug === experience.slug)
     if (!listed || experience.slug === excludeSlug) return []
     return [
-      { ...experience, price: listed.price === null ? 0 : listed.price / 100 },
+      {
+        ...experience,
+        price: listed.price === null ? 0 : listed.price / 100,
+        ...(listed.image && {
+          image: listed.image.src,
+          imageSrcSet: listed.image.srcSet,
+          imageAlt: listed.image.alt,
+        }),
+      },
     ]
   })
 }

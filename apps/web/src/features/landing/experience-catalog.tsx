@@ -195,7 +195,8 @@ function ExperienceCard({ experience }: { experience: Experience }) {
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
           src={experience.image}
-          alt={experience.title}
+          srcSet={experience.imageSrcSet || undefined}
+          alt={experience.imageAlt || experience.title}
           fill
           sizes="(max-width:768px) 100vw,(max-width:1024px) 50vw,33vw"
           className="object-cover transition-transform duration-700 group-hover:scale-110"

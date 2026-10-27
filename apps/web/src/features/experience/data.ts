@@ -28,6 +28,9 @@ export const getExperience = createServerFn({ method: 'GET' })
 export const listExperiences = createServerFn({ method: 'GET' }).handler(
   async () => {
     const { source, products } = await fetchExperiences()
-    return { source, experiences: products.map(toCardPrice) }
+    return {
+      source,
+      experiences: products.map((card) => toCardPrice(card, imageUrl)),
+    }
   },
 )

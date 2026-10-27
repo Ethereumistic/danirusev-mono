@@ -140,13 +140,29 @@ export type ExperienceCardPrice = {
   slug: string
   price: number | null
   inquiry: string | null
+  /** The product's first gallery image (the catalog thumbnail), at card and detail size. */
+  image: { src: string; srcSet: string; alt: string } | null
 }
 
-export function toCardPrice(card: PublicCardV2): ExperienceCardPrice {
+export function toCardPrice(
+  card: PublicCardV2,
+  resolveImage: (image: PublicImage, preset: 'card' | 'detail') => string,
+): ExperienceCardPrice {
   const inquiry = card.experience?.inquiry?.label ?? null
+  const first = card.images[0]
+  const src = first && resolveImage(first, 'card')
+  const large = first && resolveImage(first, 'detail')
   return {
     slug: card.slug,
     price: inquiry || card.minAmount <= 0 ? null : card.minAmount,
     inquiry,
+    image:
+      first && src && large
+        ? {
+            src,
+            srcSet: src === large ? '' : `${src} 640w, ${large} 1200w`,
+            alt: first.alt || card.name,
+          }
+        : null,
   }
 }
