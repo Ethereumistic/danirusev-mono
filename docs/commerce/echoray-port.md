@@ -46,8 +46,7 @@ State on 2026-10-27:
 ## Open gaps
 
 The original Echoray brief is [handoff-echoray.md](handoff-echoray.md), and Echoray has implemented it. Still open:
-- Storefront credentials: `ECHORAY_STOREFRONT_ID`, `ECHORAY_CONVEX_URL` and the integration secret (see [../storefront-echoray.md](../storefront-echoray.md)). Without them the web app runs on fixtures.
-- Echoray's shop website address (Admin → Settings → Website and domain). Until it points at the new site, voucher QR codes hold only the bare token. Staff scanning works, but a phone camera doesn't open a page.
+- The site is live at <https://dr11.echoray.cloud> (Worker `danirusev-web`, connected through Echoray Connect on 2026-10-27; see [../storefront-echoray.md](../storefront-echoray.md)). Voucher QR codes open `https://dr11.echoray.cloud/vouchers/<token>`. The catalog still comes from the bundled fixtures until the products are published and `ECHORAY_STOREFRONT_ID` is set.
 - Publishing the five draft products, and the real voucher templates (the current ones print „Севлиево / Трявна“).
 - Checkout answers and online payments stay off until payments return.
 
