@@ -40,14 +40,15 @@ Echoray's answer to the handoff is [echoray-vouchers-setup.md](echoray-vouchers-
 State on 2026-10-27:
 - Draft orders is on. Venues: `pista-kraynitsi`, `sapareva-banya`, `sevlievo`, `tryavna`, `sofia`.
 - Voucher layouts also print `ЛОКАЦИЯ: <venue>` in the bottom row (x 620, y 55, 18 pt, type colour, max width 520). The legacy artwork still prints „Севлиево / Трявна“ until the owner supplies new templates.
-- Owner decisions: printed vouchers are delivered (no collection point) or the voucher is digital. All days are available, with a calendar to block taken or closed days (being built in Echoray). Booking opens the legacy call dialog while payments are paused.
-- Experience vouchers can't be switched on yet, because of an Echoray Features-page bug. The fix is in [handoff-echoray-vouchers-toggle.md](handoff-echoray-vouchers-toggle.md). The voucher types are written but not uploaded.
+- Owner decisions: printed vouchers are delivered (no collection point) or the voucher is digital. All days are available; taken or closed days are blocked in Admin → Calendar (`preferred_date` has `availability: true`). Booking opens the legacy call dialog while payments are paused.
+- Echoray release `commerce-calendar` (Echoray `3a48507f`, API 5) fixed the Features toggle ([handoff-echoray-vouchers-toggle.md](handoff-echoray-vouchers-toggle.md)) and added the calendar. Experience vouchers is on, and the five voucher types are uploaded (template v1, auto-issue off). One test voucher per type was issued, checked visually, and voided.
 
 ## Open gaps
 
 The original Echoray brief is [handoff-echoray.md](handoff-echoray.md), and Echoray has implemented it. Still open:
-- the bug above;
-- wiring the storefront (catalog, configurator, inquiry, checkout answers and the public `/vouchers/$token` page), which is step 7 of the setup doc;
-- the owner's decisions on the collection point, unavailable weekdays, location on the voucher artwork, and checkout behaviour while payments are paused.
+- Storefront credentials: `ECHORAY_STOREFRONT_ID`, `ECHORAY_CONVEX_URL` and the integration secret (see [../storefront-echoray.md](../storefront-echoray.md)). Without them the web app runs on fixtures.
+- Echoray's shop website address (Admin → Settings → Website and domain). Until it points at the new site, voucher QR codes hold only the bare token. Staff scanning works, but a phone camera doesn't open a page.
+- Publishing the five draft products, and the real voucher templates (the current ones print „Севлиево / Трявна“).
+- Checkout answers and online payments stay off until payments return.
 
 Research behind it: [research/legacy-commerce.md](research/legacy-commerce.md) (legacy model, vouchers, exact PDF stamping) and [research/echoray-capabilities.md](research/echoray-capabilities.md) (Echoray source review with file references).
