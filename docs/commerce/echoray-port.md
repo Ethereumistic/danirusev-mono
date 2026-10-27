@@ -23,18 +23,30 @@ The content comes from the live danirusev.com public snapshot taken 2026-10-27 (
 | `drift-taxi` | Дрифт Такси | 155 € | voucher medium, location, GoPro +20 €, extra tires +80 €, recipient, preferred date |
 | `drift-rent` | Карай Дрифтачка | 270 € | same as taxi |
 | `drift-mix` | Дрифт Микс | 215 € | same as taxi |
-| `drift-event` | Дрифт Събитие | price by agreement (stored as 0 € + label `По договаряне`) | voucher medium (both free), location, recipient, preferred date |
+| `drift-event` | Дрифт Събитие | price on request (`inquiry: по договаряне`, price 0; sold via draft orders) | voucher medium (both free), location, recipient, preferred date |
 | `drift-day` | Дрифт Ден | 358 € | voucher medium, location, duration 2 h / 4 h +141 € / 6 h +348 €, GoPro, recipient, preferred date |
 
 - The physical voucher costs +4 €, except on Event where it's included. Recipient is limited to 16 characters, as on the legacy checkout.
-- Location is a single-choice input. Its only live venue is `Писта Крайници` (Sofia). The legacy fixture cities (София / Пловдив / Севлиево) are not offered on the live site.
+- Location is a single-choice input pointing at the shop venue `pista-kraynitsi`. Its only live venue is `Писта Крайници` (Sofia). The legacy fixture cities (София / Пловдив / Севлиево) are not offered on the live site.
 - The live rent slug is `drift-rent`. The landing-page fixture still links to `rent-a-drift-car`, which 404s on the live site. Align it when the web app reads the catalog from Echoray.
 - Description = live description + program. Specifications = the four stat tiles + location + included / not included.
-- Products are created as **draft**, inventory `made_to_order` (unlimited) and fulfilment `delivery`.
+- Products are **drafts**, inventory `made_to_order` (unlimited). The digital voucher choice is `digital: true` (ships nothing, contact-only checkout); fulfilment stays `delivery` until the owner sets up a collection point.
+- `preferred_date` is a `date` input (1–365 days ahead), a preference confirmed by phone, not a booking.
 - Images: at most 5 per experience, in live display order. The danirusev-assets PNG masters are only 500×500 px; the Event uploads from Payload media are 1920×2560.
+
+## Vouchers and staff orders
+
+Echoray's answer to the handoff is [echoray-vouchers-setup.md](echoray-vouchers-setup.md). Voucher types live in `vouchers/<handle>.json` (legacy stamp layout, 365 days, auto-issue off). Their templates are uploaded with `shop vouchers save-type vouchers/<handle>.json --template=/home/echo/Documents/danirusev/public/vouchers/<handle>.pdf --profile=dani-rusev-11`. Staff steps, in Bulgarian, are in [staff-vouchers.md](staff-vouchers.md).
+
+State on 2026-10-27:
+- Draft orders is on, and the venue `pista-kraynitsi` exists.
+- Experience vouchers can't be switched on yet, because of an Echoray Features-page bug. The fix is in [handoff-echoray-vouchers-toggle.md](handoff-echoray-vouchers-toggle.md). The voucher types are written but not uploaded.
 
 ## Open gaps
 
-[handoff-echoray.md](handoff-echoray.md) is the single prompt for the echoray.io agent. It covers catalog and checkout extensions for experience merchants and the QR + PDF voucher/ticket pipeline (including manual issuance by staff), with every file path the agent needs.
+The original Echoray brief is [handoff-echoray.md](handoff-echoray.md), and Echoray has implemented it. Still open:
+- the bug above;
+- wiring the storefront (catalog, configurator, inquiry, checkout answers and the public `/vouchers/$token` page), which is step 7 of the setup doc;
+- the owner's decisions on the collection point, unavailable weekdays, location on the voucher artwork, and checkout behaviour while payments are paused.
 
 Research behind it: [research/legacy-commerce.md](research/legacy-commerce.md) (legacy model, vouchers, exact PDF stamping) and [research/echoray-capabilities.md](research/echoray-capabilities.md) (Echoray source review with file references).

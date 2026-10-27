@@ -86,7 +86,8 @@
           {
             "value": "digital",
             "label": "Ваучер Дигитален",
-            "amount": 0
+            "amount": 0,
+            "digital": true
           },
           {
             "value": "physical",
@@ -105,7 +106,8 @@
           {
             "value": "pista-kraynitsi",
             "label": "Писта Крайници",
-            "amount": 0
+            "amount": 0,
+            "venue": "pista-kraynitsi"
           }
         ]
       },
@@ -135,9 +137,10 @@
       {
         "key": "preferred_date",
         "label": "Предпочитана дата",
-        "kind": "text",
+        "kind": "date",
         "required": false,
-        "maxLength": 40,
+        "minDays": 1,
+        "maxDays": 365,
         "hint": "Избраната дата е предпочитана и ще бъде потвърдена по телефон след покупката."
       }
     ]

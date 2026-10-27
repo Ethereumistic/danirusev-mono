@@ -1,0 +1,42 @@
+{
+  "handle": "drift-mix",
+  "name": "Дрифт Микс",
+  "products": [
+    "drift-mix"
+  ],
+  "validityDays": 365,
+  "autoIssue": false,
+  "templateNote": "Шаблонът печата „Севлиево / Трявна“ и продължителност; закупените локация и продължителност може да се различават.",
+  "layout": [
+    {
+      "field": "recipient",
+      "page": 0,
+      "x": 510,
+      "y": 109.5,
+      "size": 78,
+      "font": "geist-black",
+      "colour": "#ffffff",
+      "align": "left",
+      "uppercase": true
+    },
+    {
+      "field": "expiry",
+      "page": 0,
+      "x": 1400,
+      "y": 55,
+      "size": 18,
+      "font": "geist-black",
+      "colour": "#d0f61a",
+      "align": "right",
+      "uppercase": true,
+      "text": "ВАЖИ ДО: {value}"
+    },
+    {
+      "field": "qr",
+      "page": 0,
+      "x": 1250,
+      "y": 630,
+      "size": 150
+    }
+  ]
+}
