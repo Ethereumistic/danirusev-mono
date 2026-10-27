@@ -35,9 +35,6 @@ The content comes from the live danirusev.com public snapshot taken 2026-10-27 (
 
 ## Open gaps
 
-The handoff prompts describe what Echoray must gain before these products can be sold and fulfilled like the legacy site:
+[handoff-echoray.md](handoff-echoray.md) is the single prompt for the echoray.io agent. It covers catalog and checkout extensions for experience merchants and the QR + PDF voucher/ticket pipeline (including manual issuance by staff), with every file path the agent needs.
 
-- [handoff-echoray-experiences.md](handoff-echoray-experiences.md): catalog and checkout extensions for experience merchants.
-- [handoff-voucher-pipeline.md](handoff-voucher-pipeline.md): QR + PDF voucher/ticket issuance, including manual issuance by staff.
-
-Research behind them: [research/legacy-commerce.md](research/legacy-commerce.md) (legacy model, vouchers, exact PDF stamping) and [research/echoray-capabilities.md](research/echoray-capabilities.md) (Echoray source review with file references).
+Research behind it: [research/legacy-commerce.md](research/legacy-commerce.md) (legacy model, vouchers, exact PDF stamping) and [research/echoray-capabilities.md](research/echoray-capabilities.md) (Echoray source review with file references).
