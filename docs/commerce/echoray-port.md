@@ -39,7 +39,9 @@ The content comes from the live danirusev.com public snapshot taken 2026-10-27 (
 Echoray's answer to the handoff is [echoray-vouchers-setup.md](echoray-vouchers-setup.md). Voucher types live in `vouchers/<handle>.json` (legacy stamp layout, 365 days, auto-issue off). Their templates are uploaded with `shop vouchers save-type vouchers/<handle>.json --template=/home/echo/Documents/danirusev/public/vouchers/<handle>.pdf --profile=dani-rusev-11`. Staff steps, in Bulgarian, are in [staff-vouchers.md](staff-vouchers.md).
 
 State on 2026-10-27:
-- Draft orders is on, and the venue `pista-kraynitsi` exists.
+- Draft orders is on. Venues: `pista-kraynitsi`, `sapareva-banya`, `sevlievo`, `tryavna`, `sofia`.
+- Voucher layouts also print `ЛОКАЦИЯ: <venue>` in the bottom row (x 620, y 55, 18 pt, type colour, max width 520). The legacy artwork still prints „Севлиево / Трявна“ until the owner supplies new templates.
+- Owner decisions: printed vouchers are delivered (no collection point) or the voucher is digital. All days are available, with a calendar to block taken or closed days (being built in Echoray). Booking opens the legacy call dialog while payments are paused.
 - Experience vouchers can't be switched on yet, because of an Echoray Features-page bug. The fix is in [handoff-echoray-vouchers-toggle.md](handoff-echoray-vouchers-toggle.md). The voucher types are written but not uploaded.
 
 ## Open gaps
