@@ -11,12 +11,15 @@ const csrfMiddleware = createCsrfMiddleware({
 })
 
 /**
- * One public origin: www redirects to the apex, and every other host (local,
- * workers.dev, previews, dr11.echoray.cloud) stays out of search indexes.
+ * One public origin: www and plain HTTP redirect to https://danirusev.com, and every
+ * other host (local, workers.dev, previews, dr11.echoray.cloud) stays out of search indexes.
  */
 const siteHeaders = createMiddleware().server(async ({ request, next }) => {
   const url = new URL(request.url)
-  if (url.hostname === 'www.danirusev.com')
+  if (
+    url.hostname === 'www.danirusev.com' ||
+    (url.protocol === 'http:' && PRODUCTION_HOSTS.includes(url.hostname))
+  )
     return Response.redirect(`${SITE_URL}${url.pathname}${url.search}`, 301)
   const result = await next()
   // Framework responses (redirects included) may carry immutable headers.

@@ -51,7 +51,7 @@ No `FAQPage` or `AggregateRating` markup: there is no visible FAQ section on the
 ## Launch checklist (outside the repository)
 
 1. Cloudflare dashboard → the `danirusev.com` zone → **AI Crawl Control** / **Bots**: turn off "Block AI bots" and the managed `robots.txt`, otherwise Cloudflare blocks or rewrites the AI crawlers this site invites. Leave "AI Labyrinth" off.
-2. Attach `danirusev.com` and `www.danirusev.com` to the `danirusev-web` Worker as custom domains (the www redirect happens in the Worker).
+2. Done 2026-10-28: `danirusev.com` and `www.danirusev.com` are custom domains of `danirusev-web` (`wrangler.jsonc` `routes`); the legacy Netlify site is no longer served there.
 3. Google Search Console and Bing Webmaster Tools (Bing feeds ChatGPT and Copilot search): verify the domain by DNS, submit `https://danirusev.com/sitemap.xml`, and in Bing enable IndexNow.
 4. Google Business Profile for "Dani Rusev 11" with the same name, phone and address as the structured data, category "Driving school"/"Race course", photos, and the booking link; ask happy customers for reviews there.
 5. Test with the Rich Results Test and the Schema.org validator after deployment.
