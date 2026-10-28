@@ -14,6 +14,15 @@
     // Public storefront integration ID (Echoray Connect); unset → bundled fixtures.
     "ECHORAY_STOREFRONT_ID": "p175c2xhv3vafj3hjq5hv225g98h3v4f"
   },
+  // Keep the workers.dev URL and preview URLs for checks outside production.
+  "workers_dev": true,
+  "preview_urls": true,
+  // Production domains (zone danirusev.com). www is attached so the Worker can 301 it
+  // to the apex (src/start.ts). Cut over from the legacy Netlify site on 2026-10-28.
+  "routes": [
+    { "pattern": "danirusev.com", "custom_domain": true },
+    { "pattern": "www.danirusev.com", "custom_domain": true }
+  ],
   "observability": {
     "enabled": true,
     "logs": { "enabled": true, "head_sampling_rate": 1 },
