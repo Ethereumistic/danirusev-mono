@@ -30,7 +30,7 @@ const experiences = [
     price: 155,
     duration: '60 мин',
     horsepower: 240,
-    locations: ['София', 'Пловдив', 'Севлиево'],
+    locations: ['Сапарева баня', 'Пловдив', 'Севлиево'],
     theme: 'taxi',
   },
   {
@@ -43,7 +43,7 @@ const experiences = [
     price: 270,
     duration: '60 мин',
     horsepower: 240,
-    locations: ['София', 'Пловдив', 'Севлиево'],
+    locations: ['Сапарева баня', 'Пловдив', 'Севлиево'],
     theme: 'rent',
   },
   {
@@ -56,7 +56,7 @@ const experiences = [
     price: 215,
     duration: '60 мин',
     horsepower: 240,
-    locations: ['София', 'Пловдив', 'Севлиево'],
+    locations: ['Сапарева баня', 'Пловдив', 'Севлиево'],
     theme: 'mix',
   },
   {
@@ -69,7 +69,7 @@ const experiences = [
     price: 0,
     duration: '~4 часа',
     horsepower: 240,
-    locations: ['София', 'Пловдив', 'Севлиево'],
+    locations: ['Сапарева баня', 'Пловдив', 'Севлиево'],
     theme: 'event',
   },
   {
@@ -82,7 +82,7 @@ const experiences = [
     price: 358,
     duration: 'ЦЯЛ ДЕН',
     horsepower: 240,
-    locations: ['София', 'Пловдив', 'Севлиево'],
+    locations: ['Сапарева баня', 'Пловдив', 'Севлиево'],
     theme: 'day',
   },
 ] as const satisfies readonly Experience[]

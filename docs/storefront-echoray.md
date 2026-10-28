@@ -53,7 +53,7 @@ The five products are **published** (2026-10-27). Only published products appear
 
 - Title, base price (`minAmount`, minor units), gallery, `page.headline` (gallery badge and booking subtitle).
 - `description`: the first paragraph is the quote and meta description; the first `Heading:` + `• item` block is the program (its heading becomes the tab name, e.g. Event's "Подходящо за").
-- `specifications`: `Време`, `Автомобил`, `Мощност`, `Гуми` → stat tiles; `Локация` → its first comma part ("София"); `Цената включва` / `Цената не включва` → comma-separated lists.
+- `specifications`: `Време`, `Автомобил`, `Мощност`, `Гуми` → stat tiles; `Локация` → its first comma part ("Сапарева баня"); `Цената включва` / `Цената не включва` → comma-separated lists.
 - `experience.inquiry` → the label instead of a price, no total (Event: "по договаряне").
 
 Site presentation that Echoray does not store (theme colour, header icon, booking-card pattern, program times/titles/icons) is in `features/experience/presentation.ts`, from the published snapshot. Program steps keep those labels only while Echoray has the same number of steps; otherwise they render numbered.

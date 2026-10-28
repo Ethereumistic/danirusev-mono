@@ -48,7 +48,10 @@ export function FeatureGallery({
                       fill
                       sizes="(max-width:768px) 100vw,50vw"
                       className="object-cover"
-                      loading={index === current ? 'eager' : 'lazy'}
+                      // Eager images are preloaded in <head> by React; only a slide the visitor moved to is.
+                      loading={
+                        index > 0 && index === current ? 'eager' : 'lazy'
+                      }
                     />
                   ) : null}
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />

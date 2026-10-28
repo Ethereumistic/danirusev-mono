@@ -12,6 +12,8 @@ node ~/.codex/skills/echoray-commerce-v2/scripts/commerce.mjs push . --dry-run -
 node ~/.codex/skills/echoray-commerce-v2/scripts/commerce.mjs push . --profile=dani-rusev-11
 ```
 
+The live products were edited after these files were last pushed (e.g. the 2026-10-28 location change was made with `update`), so `push` reports a revision conflict: `pull` first, or keep using `update` for small edits.
+
 Keys are in the owner's OS keyring (Commerce and Library keys, profile `dani-rusev-11`). Never copy them into the repository.
 
 ## Source and mapping
@@ -26,7 +28,7 @@ The content comes from the live danirusev.com public snapshot taken 2026-10-27 (
 | `drift-event` | Дрифт Събитие   | price on request (`inquiry: по договаряне`, price 0; sold via draft orders) | voucher medium (both free), location, recipient, preferred date                                    |
 | `drift-day`   | Дрифт Ден       | 358 €                                                                       | voucher medium, location, duration 2 h / 4 h +141 € / 6 h +348 €, GoPro, recipient, preferred date |
 - The physical voucher costs +4 €, except on Event where it's included. Recipient is limited to 16 characters, as on the legacy checkout.
-- Location is a single-choice input pointing at the shop venue `pista-kraynitsi`. Its only live venue is `Писта Крайници` (Sofia). The legacy fixture cities (София / Пловдив / Севлиево) are not offered on the live site.
+- Location is a single-choice input pointing at the shop venue `pista-kraynitsi`. Its only live venue is `Писта Крайници` near Сапарева баня (Kyustendil province). The landing cards list Сапарева баня / Пловдив / Севлиево; only the track is offered on the live site.
 - The live rent slug is `drift-rent`. The landing-page fixture still links to `rent-a-drift-car`, which 404s on the live site. Align it when the web app reads the catalog from Echoray.
 - Description = live description + program. Specifications = the four stat tiles + location + included / not included.
 - Products are **published** (2026-10-27), inventory `made_to_order` (unlimited). The digital voucher choice is `digital: true` (ships nothing, contact-only checkout); fulfilment stays `delivery` until the owner sets up a collection point.

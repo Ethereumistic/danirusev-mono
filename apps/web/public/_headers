@@ -1,0 +1,28 @@
+# Cloudflare Workers static assets: these rules apply to files in public/ and
+# the Vite build output, not to Worker (SSR) responses; those get headers in src/start.ts.
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+/media/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=604800
+
+/hero-poster*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=604800
+
+/*.png
+  Cache-Control: public, max-age=604800
+
+/favicon.ico
+  Cache-Control: public, max-age=604800
+
+/site.webmanifest
+  Cache-Control: public, max-age=86400
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin

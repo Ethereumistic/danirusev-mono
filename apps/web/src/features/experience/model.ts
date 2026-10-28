@@ -23,9 +23,10 @@ export type ExperienceDetail = {
   theme: ThemeColor
   pattern: PatternKey | null
   icon: IconName
-  images: { src: string; alt: string }[]
+  /** Gallery photos: `src` at detail size, `srcSet` adding the card size, `thumb` for the strip. */
+  images: { src: string; srcSet: string; thumb: string; alt: string }[]
   stats: { duration: string; car: string; power: string; tires: string }
-  /** City shown in the program's location card, e.g. "София". */
+  /** City shown in the program's location card, e.g. "Сапарева баня". */
   locationLabel: string | null
   programLabel: string | null
   program: {
@@ -45,7 +46,10 @@ export type ExperienceDetail = {
   blockedDates: PublicBlockedDates | null
 }
 
-export type ResolveImage = (image: PublicImage) => string
+export type ResolveImage = (
+  image: PublicImage,
+  preset: 'thumbnail' | 'card' | 'detail',
+) => string
 
 type Section = { heading: string; items: string[] }
 
@@ -113,10 +117,16 @@ export function toExperienceDetail(
     theme: presentation.theme,
     pattern: presentation.pattern,
     icon: presentation.icon,
-    images: product.gallery.map((image, index) => ({
-      src: resolveImage(image),
-      alt: image.alt || `${product.name} ${index + 1}`,
-    })),
+    images: product.gallery.map((image, index) => {
+      const src = resolveImage(image, 'detail')
+      const card = resolveImage(image, 'card')
+      return {
+        src,
+        srcSet: card === src ? '' : `${card} 640w, ${src} 1200w`,
+        thumb: resolveImage(image, 'thumbnail'),
+        alt: image.alt || `${product.name} ${index + 1}`,
+      }
+    }),
     stats: {
       duration: spec('Време') ?? '60 мин',
       car: spec('Автомобил') ?? 'BMW E46',

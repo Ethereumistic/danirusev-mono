@@ -49,7 +49,7 @@ export const fixtureProducts: readonly PublicDetailV2[] = [
       },
       {
         label: 'Локация',
-        value: 'София, Писта Крайници',
+        value: 'Сапарева баня, Писта Крайници',
       },
       {
         label: 'Цената включва',
@@ -230,7 +230,7 @@ export const fixtureProducts: readonly PublicDetailV2[] = [
       },
       {
         label: 'Локация',
-        value: 'София, Писта Крайници',
+        value: 'Сапарева баня, Писта Крайници',
       },
       {
         label: 'Цената включва',
@@ -411,7 +411,7 @@ export const fixtureProducts: readonly PublicDetailV2[] = [
       },
       {
         label: 'Локация',
-        value: 'София, Писта Крайници',
+        value: 'Сапарева баня, Писта Крайници',
       },
       {
         label: 'Цената включва',
@@ -597,7 +597,7 @@ export const fixtureProducts: readonly PublicDetailV2[] = [
       },
       {
         label: 'Локация',
-        value: 'София, Писта Крайници',
+        value: 'Сапарева баня, Писта Крайници',
       },
       {
         label: 'Цената включва',
@@ -769,7 +769,7 @@ export const fixtureProducts: readonly PublicDetailV2[] = [
       },
       {
         label: 'Локация',
-        value: 'София, Писта Крайници',
+        value: 'Сапарева баня, Писта Крайници',
       },
       {
         label: 'Цената включва',

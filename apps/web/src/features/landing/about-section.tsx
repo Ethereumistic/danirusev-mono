@@ -254,7 +254,7 @@ export function AboutSection({
                   onMouseLeave={() => bioPlugin.reset()}
                 >
                   <CarouselContent className="ml-0">
-                    {BIO_IMAGES.map((image, index) => (
+                    {BIO_IMAGES.map((image) => (
                       <CarouselItem
                         key={image.url}
                         className="pl-0 basis-full relative"
@@ -266,7 +266,6 @@ export function AboutSection({
                             fill
                             sizes="(max-width: 1024px) 100vw, 50vw"
                             className="object-cover"
-                            priority={index === 0}
                           />
                         </div>
                       </CarouselItem>

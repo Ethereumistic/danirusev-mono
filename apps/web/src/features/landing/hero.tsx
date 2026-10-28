@@ -5,6 +5,37 @@ import * as motion from 'motion/react-m'
 import { useEffect, useRef, useState } from 'react'
 import { Image } from '@/components/image'
 
+// React hoists a preload for this eager, high-priority poster into <head>.
+const HERO_POSTER_SRCSET =
+  '/hero-poster-640w.webp 640w, /hero-poster-1080w.webp 1080w, /hero-poster.webp 1920w'
+
+// AV1 first (≈50% smaller), then H.264 for browsers without AV1; small screens get 480p.
+const MOBILE = '(max-width: 767px)'
+const HERO_SOURCES = [
+  {
+    src: '/media/hero-480-av1.mp4',
+    type: 'video/mp4; codecs="av01.0.04M.08"',
+    media: MOBILE,
+  },
+  { src: '/media/hero-480-avc.mp4', type: 'video/mp4', media: MOBILE },
+  {
+    src: '/media/hero-1080-av1.mp4',
+    type: 'video/mp4; codecs="av01.0.08M.08"',
+  },
+  { src: '/media/hero-720-avc.mp4', type: 'video/mp4' },
+]
+
+/** Skip the background video for reduced motion and data-saver connections. */
+function prefersStillHero() {
+  const connection = (
+    navigator as Navigator & { connection?: { saveData?: boolean } }
+  ).connection
+  return (
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+    connection?.saveData === true
+  )
+}
+
 export function Hero() {
   const video = useRef<HTMLVideoElement>(null)
   const reducedMotion = useReducedMotion()
@@ -12,10 +43,7 @@ export function Hero() {
   const [ready, setReady] = useState(false)
   const [paused, setPaused] = useState(false)
   useEffect(() => {
-    if (
-      reducedMotion ||
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    ) {
+    if (reducedMotion || prefersStillHero()) {
       video.current?.pause()
       setReady(false)
       setEnabled(false)
@@ -32,17 +60,13 @@ export function Hero() {
       <div className="absolute inset-0 z-0 bg-slate-950">
         <Image
           src="/hero-poster.webp"
-          alt="Dani Rusev Drift Experience"
+          srcSet={HERO_POSTER_SRCSET}
+          alt="Дрифт автомобил вдига прах в завой на писта"
           fill
           priority
-          fetchPriority="high"
           sizes="100vw"
           className={`object-cover transition-opacity duration-700 ${ready ? 'opacity-0' : 'opacity-100'}`}
-          onLoad={() =>
-            setEnabled(
-              !window.matchMedia('(prefers-reduced-motion: reduce)').matches,
-            )
-          }
+          onLoad={() => setEnabled(!prefersStillHero())}
         />
         {enabled && (
           <video
@@ -57,7 +81,9 @@ export function Hero() {
             onLoadedData={() => setReady(true)}
             className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-700 ${ready ? 'opacity-100' : 'opacity-0'}`}
           >
-            <source src="/media/hero.mp4" type="video/mp4" />
+            {HERO_SOURCES.map((source) => (
+              <source key={source.src} {...source} />
+            ))}
           </video>
         )}
         <div className="absolute inset-0 bg-slate-950/20 z-10" />

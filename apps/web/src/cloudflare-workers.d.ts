@@ -14,3 +14,8 @@ declare module 'cloudflare:workers' {
     readonly STOREFRONT_ORIGIN?: string
   }
 }
+
+// Workers' per-colo edge cache (Cache API); only `caches.default` is used.
+interface CacheStorage {
+  readonly default: Cache
+}

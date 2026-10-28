@@ -8,6 +8,7 @@
     "preview": "vite preview --host 127.0.0.1 --port 3000",
     "typecheck": "tsc --noEmit",
     "cf-typegen": "wrangler types",
+    "optimize:media": "node scripts/optimize-media.mjs",
     "deploy": "pnpm build && wrangler deploy",
     "deploy:dry-run": "pnpm build && wrangler deploy --dry-run"
   },

@@ -9,8 +9,16 @@ import { formatAmount } from '@/features/experience/configurator'
 import { getExperience, listExperiences } from '@/features/experience/data'
 import { ExperiencePage } from '@/features/experience/experience-page'
 import { getExperienceCards } from '@/features/landing/data'
+import {
+  absoluteUrl,
+  breadcrumbs,
+  ids,
+  jsonLd,
+  pageMeta,
+  SITE_NAME,
+  snippet,
+} from '@/lib/seo'
 
-const SITE = 'https://danirusev.com'
 // Old landing-card slug; the live catalog calls the rental `drift-rent`.
 const RENAMED: Readonly<Record<string, string>> = {
   'rent-a-drift-car': 'drift-rent',
@@ -41,68 +49,95 @@ export const Route = createFileRoute('/experience/$slug')({
   head: ({ loaderData, params }) => {
     if (!loaderData)
       return {
-        meta: [{ title: 'Преживяването не е намерено | Dani Rusev 11' }],
+        meta: [
+          { title: 'Преживяването не е намерено | Dani Rusev 11' },
+          { name: 'robots', content: 'noindex, follow' },
+        ],
       }
     const { experience } = loaderData
-    const url = `${SITE}/experience/${params.slug}`
-    const title = `${experience.title} | Dani Rusev 11`
-    const description = experience.intro || experience.subtitle
-    const image = experience.images[0]?.src
+    const path = `/experience/${params.slug}`
+    const url = absoluteUrl(path)
+    const title = `${experience.title}${experience.subtitle ? ` – ${experience.subtitle}` : ''} | Dani Rusev 11`
+    const description = snippet(
+      `${experience.intro || experience.subtitle} ${experience.stats.duration}, ${experience.stats.car}.`,
+    )
+    const first = experience.images[0]
+    const { meta, links } = pageMeta({
+      path,
+      title,
+      description,
+      type: 'product',
+      ...(first ? { image: { url: first.src, alt: first.alt } } : {}),
+    })
+    const price =
+      experience.basePrice === null
+        ? null
+        : formatAmount(experience.basePrice).replace(',', '.')
     return {
       meta: [
-        { title },
-        { name: 'description', content: description },
-        { property: 'og:title', content: title },
-        { property: 'og:description', content: description },
-        { property: 'og:url', content: url },
-        { property: 'og:site_name', content: 'Dani Rusev 11' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:locale', content: 'bg_BG' },
-        { property: 'og:image', content: image ?? `${SITE}/og-image.jpg` },
-        { name: 'twitter:card', content: 'summary_large_image' },
-      ],
-      links: [{ rel: 'canonical', href: url }],
-      scripts: [
-        {
-          type: 'application/ld+json',
-          children: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Product',
-            name: experience.title,
-            description,
-            image: image ? [image] : [],
-            category: 'Automotive Experience',
-            brand: { '@type': 'Brand', name: 'Dani Rusev 11' },
-            offers: {
-              '@type': 'Offer',
-              url,
-              priceCurrency: experience.currency,
-              ...(experience.basePrice !== null
-                ? {
-                    price: formatAmount(experience.basePrice).replace(',', '.'),
-                  }
-                : {}),
-            },
-            duration: experience.stats.duration,
-            provider: { '@type': 'Organization', name: 'Dani Rusev 11' },
-          }),
-        },
-        {
-          type: 'application/ld+json',
-          children: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Начало', item: SITE },
+        ...meta,
+        ...(price
+          ? [
+              { property: 'product:price:amount', content: price },
               {
-                '@type': 'ListItem',
-                position: 2,
-                name: experience.title,
-                item: url,
+                property: 'product:price:currency',
+                content: experience.currency,
               },
-            ],
-          }),
-        },
+            ]
+          : []),
+      ],
+      // React preloads the eager, high-priority first gallery photo itself.
+      links,
+      scripts: [
+        jsonLd({
+          '@type': ['Product', 'Service'],
+          '@id': `${url}#experience`,
+          name: experience.title,
+          description: experience.intro || experience.subtitle,
+          url,
+          image: experience.images.slice(0, 6).map((image) => image.src),
+          category: 'Дрифт преживяване',
+          serviceType: 'Drift experience',
+          brand: { '@type': 'Brand', name: SITE_NAME },
+          provider: { '@id': ids.organization },
+          areaServed: { '@type': 'Country', name: 'България' },
+          ...(experience.locationLabel
+            ? {
+                location: {
+                  '@id': ids.track,
+                },
+              }
+            : {}),
+          additionalProperty: [
+            ['Продължителност', experience.stats.duration],
+            ['Автомобил', experience.stats.car],
+            ['Мощност', experience.stats.power],
+          ].map(([name, value]) => ({
+            '@type': 'PropertyValue',
+            name,
+            value,
+          })),
+          ...(price
+            ? {
+                offers: {
+                  '@type': 'Offer',
+                  url,
+                  price,
+                  priceCurrency: experience.currency,
+                  availability: 'https://schema.org/InStock',
+                  seller: { '@id': ids.organization },
+                  areaServed: 'BG',
+                },
+              }
+            : {}),
+        }),
+        jsonLd(
+          breadcrumbs([
+            { name: 'Начало', path: '/' },
+            { name: 'Дрифт преживявания', path: '/#drift-experiences' },
+            { name: experience.title, path },
+          ]),
+        ),
       ],
     }
   },

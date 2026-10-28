@@ -18,9 +18,7 @@ export const getExperience = createServerFn({ method: 'GET' })
   .handler(async ({ data: slug }) => {
     const found = await fetchExperience(slug)
     return found
-      ? toExperienceDetail(found.product, found.source, (image) =>
-          imageUrl(image, 'detail'),
-        )
+      ? toExperienceDetail(found.product, found.source, imageUrl)
       : null
   })
 

@@ -1,8 +1,17 @@
 @import "@danirusev/ui/styles/globals.css";
+/* Full Gagalin, losslessly repackaged as WOFF2 (master: /fonts/Gagalin-Regular.otf).
+   The wordmark only needs Basic Latin, so that range is a separate, preloaded file. */
 @font-face {
   font-family: gagalin;
-  src: url("/fonts/Gagalin-Regular.otf") format("opentype");
+  src: url("/fonts/gagalin-latin.woff2") format("woff2");
   font-display: swap;
+  unicode-range: U+20-7E, U+A0;
+}
+@font-face {
+  font-family: gagalin;
+  src: url("/fonts/gagalin-full.woff2") format("woff2");
+  font-display: swap;
+  unicode-range: U+A1-10FFFF;
 }
 /* Experience program pills use the deployed reference's Geist Mono (latin subset, OFL). */
 @font-face {

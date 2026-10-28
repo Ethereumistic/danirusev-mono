@@ -14,16 +14,21 @@ import { mediaUrl } from '@/components/image'
 
 function ImageWithLoader({
   src,
+  srcSet,
+  sizes,
   alt,
   priority = false,
   className,
 }: {
   src: string
+  srcSet?: string
+  sizes?: string
   alt: string
   priority?: boolean
   className?: string
 }) {
-  const [loading, setLoading] = useState(true)
+  // The first photo is the LCP element: never cover it with a spinner before hydration.
+  const [loading, setLoading] = useState(!priority)
   const ref = useRef<HTMLImageElement>(null)
   // A server-rendered image can finish before hydration attaches onLoad.
   useEffect(() => {
@@ -39,10 +44,12 @@ function ImageWithLoader({
       <img
         ref={ref}
         src={mediaUrl(src)}
+        srcSet={srcSet || undefined}
+        sizes={srcSet ? sizes : undefined}
         alt={alt}
         loading={priority ? 'eager' : 'lazy'}
         fetchPriority={priority ? 'high' : undefined}
-        decoding="async"
+        decoding={priority ? 'sync' : 'async'}
         onLoad={() => setLoading(false)}
         onError={() => setLoading(false)}
         className={cn('absolute inset-0 h-full w-full', className)}
@@ -51,12 +58,15 @@ function ImageWithLoader({
   )
 }
 
+/** The gallery fills the column: full width below lg, half of the 6xl container above. */
+const GALLERY_SIZES = '(max-width: 1023px) 100vw, 560px'
+
 export function ExperienceGallery({
   images,
   title,
   subtitle,
 }: {
-  images: readonly { src: string; alt: string }[]
+  images: readonly { src: string; srcSet: string; thumb: string; alt: string }[]
   title: string
   subtitle: string
 }) {
@@ -88,7 +98,9 @@ export function ExperienceGallery({
                 <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-lg bg-slate-100">
                   <ImageWithLoader
                     src={image.src}
-                    alt={`${title} ${idx + 1}`}
+                    srcSet={image.srcSet}
+                    sizes={GALLERY_SIZES}
+                    alt={image.alt || `${title} ${idx + 1}`}
                     priority={idx === 0}
                     className="object-cover"
                   />
@@ -133,8 +145,8 @@ export function ExperienceGallery({
             className="relative w-full aspect-square overflow-hidden group cursor-pointer shadow-md hover:shadow-lg transition-shadow bg-slate-100 rounded-lg"
           >
             <ImageWithLoader
-              src={image.src}
-              alt={`${title} thumbnail ${idx + 1}`}
+              src={image.thumb}
+              alt=""
               className="object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />

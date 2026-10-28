@@ -1,54 +1,38 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { SiteLayout } from '@/components/site-layout'
 import { ContactContent } from '@/features/contact/contact-page'
+import { breadcrumbs, ids, jsonLd, pageMeta, SITE_URL } from '@/lib/seo'
 
+const title = 'Контакти и резервации | Dani Rusev 11'
 const description =
-  'Свържете се с нас за резервации, въпроси или специални оферти. Автомобилни преживявания в България - дрифт, рали, писта.'
+  'Резервирай дрифт преживяване с Дани Русев: телефон +359 88 272 6020, имейл и локация на пистата. Отговаряме на въпроси за дати, подаръчни ваучери и събития.'
 
 export const Route = createFileRoute('/contact')({
-  head: () => ({
-    meta: [
-      { title: 'Контакти | Dani Rusev 11' },
-      { name: 'description', content: description },
-      {
-        name: 'keywords',
-        content:
-          'контакти dani rusev, резервация преживяване, дрифт резервация, рали резервация',
-      },
-      { property: 'og:title', content: 'Свържете се с Dani Rusev 11' },
-      { property: 'og:description', content: description },
-      { property: 'og:url', content: 'https://danirusev.com/contact' },
-      { property: 'og:site_name', content: 'Dani Rusev 11' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:locale', content: 'bg_BG' },
-      { property: 'og:image', content: 'https://danirusev.com/og-image.jpg' },
-      { name: 'twitter:card', content: 'summary_large_image' },
-    ],
-    links: [{ rel: 'canonical', href: 'https://danirusev.com/contact' }],
-    scripts: [
-      {
-        type: 'application/ld+json',
-        children: JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'BreadcrumbList',
-          itemListElement: [
-            {
-              '@type': 'ListItem',
-              position: 1,
-              name: 'Начало',
-              item: 'https://danirusev.com',
-            },
-            {
-              '@type': 'ListItem',
-              position: 2,
-              name: 'Контакти',
-              item: 'https://danirusev.com/contact',
-            },
-          ],
+  head: () => {
+    const { meta, links } = pageMeta({ path: '/contact', title, description })
+    return {
+      meta,
+      links,
+      scripts: [
+        jsonLd({
+          '@type': 'ContactPage',
+          '@id': `${SITE_URL}/contact#webpage`,
+          url: `${SITE_URL}/contact`,
+          name: title,
+          description,
+          inLanguage: 'bg-BG',
+          isPartOf: { '@id': ids.website },
+          about: { '@id': ids.organization },
         }),
-      },
-    ],
-  }),
+        jsonLd(
+          breadcrumbs([
+            { name: 'Начало', path: '/' },
+            { name: 'Контакти', path: '/contact' },
+          ]),
+        ),
+      ],
+    }
+  },
   component: () => (
     <SiteLayout>
       <ContactContent />

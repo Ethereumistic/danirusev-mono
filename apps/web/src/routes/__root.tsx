@@ -6,6 +6,7 @@ import {
   Scripts,
 } from '@tanstack/react-router'
 import type { ReactNode } from 'react'
+import { jsonLd, SITE_NAME, siteGraph } from '@/lib/seo'
 import styles from '../styles.css?url'
 
 export const Route = createRootRoute({
@@ -14,20 +15,47 @@ export const Route = createRootRoute({
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'theme-color', content: '#020617' },
-      // Fixture preview: opt into indexing only as part of the real public launch.
-      { name: 'robots', content: 'noindex, nofollow' },
+      { name: 'color-scheme', content: 'dark' },
+      { name: 'format-detection', content: 'telephone=no' },
+      // Non-production hosts add X-Robots-Tag: noindex in src/start.ts.
+      {
+        name: 'robots',
+        content:
+          'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
+      },
+      { name: 'author', content: 'Дани Русев' },
+      { name: 'geo.region', content: 'BG' },
+      { name: 'geo.placename', content: 'България' },
+      { property: 'og:site_name', content: SITE_NAME },
+      { property: 'og:locale', content: 'bg_BG' },
     ],
     links: [
-      { rel: 'stylesheet', href: styles },
-      { rel: 'icon', href: '/favicon.ico' },
+      // The wordmark font is in the header on every page; start it with the CSS.
       {
         rel: 'preload',
-        href: '/fonts/Gagalin-Regular.otf',
+        href: '/fonts/gagalin-latin.woff2',
         as: 'font',
-        type: 'font/otf',
+        type: 'font/woff2',
         crossOrigin: 'anonymous',
       },
+      { rel: 'stylesheet', href: styles },
+      { rel: 'icon', href: '/favicon.ico', sizes: '40x40' },
+      {
+        rel: 'icon',
+        href: '/icon-192.png',
+        type: 'image/png',
+        sizes: '192x192',
+      },
+      { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+      { rel: 'manifest', href: '/site.webmanifest' },
+      {
+        rel: 'alternate',
+        type: 'text/markdown',
+        href: '/llms.txt',
+        title: 'Dani Rusev 11 – описание за AI асистенти (llms.txt)',
+      },
     ],
+    scripts: [jsonLd(siteGraph())],
   }),
   component: Outlet,
   shellComponent: RootDocument,

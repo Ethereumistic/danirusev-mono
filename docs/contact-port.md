@@ -6,7 +6,7 @@ The legacy public contact page is ported at `/contact`. The reference is `../dan
 
 Preserve the original Bulgarian copy, hero, response statistics, five contact cards, company and bank details, form, and bottom phone/email call to action. Typography, spacing, responsive layouts, glows, borders, buttons, hover states, and entrance/viewport animation settings follow the reference.
 
-The landing and contact pages share `SiteLayout`, header/footer, and the lightweight Motion provider. Contact links in the desktop/mobile navigation identify the current route with `aria-current="page"`. Inputs use Base UI; label and textarea are shared native controls. The route preserves contact metadata, canonical URL, and breadcrumb structured data. Prototype `noindex` remains inherited from the document shell.
+The landing and contact pages share `SiteLayout`, header/footer, and the lightweight Motion provider. Contact links in the desktop/mobile navigation identify the current route with `aria-current="page"`. Inputs use Base UI; label and textarea are shared native controls. The route preserves contact metadata, canonical URL, and breadcrumb structured data. Indexing is decided per host; see [search and AI discovery](seo.md).
 
 ## Form boundary
 

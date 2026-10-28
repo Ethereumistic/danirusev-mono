@@ -50,6 +50,7 @@ The generated `apps/web/src/routeTree.gen.ts` is checked in so fresh-checkout ty
 - `apps/web/src/features/experience/`: experience detail page port, configurator preview and the `getExperience`/`listExperiences` server functions.
 - `apps/web/src/features/vouchers/`: public voucher validity page.
 - `apps/web/src/lib/echoray/`: server-only Echoray catalog and voucher clients, response types, and catalog fixtures.
+- `apps/web/src/features/legal/`: privacy, cookies and terms pages, text verbatim from the legacy site.
 - `apps/web/src/features/contact/`: original contact page and frontend-only form validation; see [contact port notes](docs/contact-port.md).
 - `apps/web/src/components/`: shared site layout, navigation/footer, and lazy Motion provider/features.
 - `apps/web/src/styles.css`: application layout, local fonts, responsive design, reduced motion.
@@ -77,7 +78,7 @@ pnpm --filter @danirusev/web deploy
 
 Echoray settings are optional: copy `apps/web/.env.example` to `apps/web/.dev.vars` locally; in Cloudflare set the vars per environment and the secret with `pnpm --filter @danirusev/web exec wrangler secret put ECHORAY_INTEGRATION_SECRET`. Details are in [the storefront notes](docs/storefront-echoray.md).
 
-No deployment has been made by this scaffold. The fixture site ships `noindex` metadata and a blocking `robots.txt`; remove those deliberately for a real public launch, confirm the canonical domain, and verify actual commercial content first.
+Only `danirusev.com` is indexable: every other host (local, `workers.dev`, previews) is sent `X-Robots-Tag: noindex` and a blocking `robots.txt`, and `www` redirects to the apex. `robots.txt`, `sitemap.xml`, `llms.txt` and `llms-full.txt` are generated from the catalog. See [search and AI discovery](docs/seo.md) for the metadata, structured data, performance budget and the Cloudflare/Search Console launch checklist.
 
 ## Assets and scope
 
