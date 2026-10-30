@@ -1,3 +1,16 @@
+import {
+  Briefcase,
+  CalendarDays,
+  Clapperboard,
+  Flag,
+  Globe2,
+  type LucideIcon,
+  Medal,
+  ShieldCheck,
+  Trophy,
+  Users,
+} from 'lucide-react'
+
 /**
  * Copy and figures for the private sponsorship presentation at /partnership.
  * Audience numbers are the ones Dani supplied for the 2027 pitch; update them
@@ -23,10 +36,69 @@ export const stageOf = (id: StageId) => {
   return stage
 }
 
-export const PILOT_FACTS = [
-  { title: 'Вицешампион', detail: 'по рали спринт, сезон 2023' },
-  { title: 'Шампион', detail: 'на България по гимкхана' },
-  { title: 'Каскадьор', detail: 'в кино и музикални продукции' },
+/** The three brand accents of the site, used to colour-code parallel items. */
+export type Accent = 'taxi' | 'rent' | 'main'
+
+export const PILOT_FACTS: readonly {
+  title: string
+  detail: string
+  icon: LucideIcon
+  accent: Accent
+}[] = [
+  {
+    title: 'Вицешампион',
+    detail: 'по рали спринт, сезон 2023',
+    icon: Medal,
+    accent: 'taxi',
+  },
+  {
+    title: 'Шампион',
+    detail: 'на България по гимкхана',
+    icon: Trophy,
+    accent: 'main',
+  },
+  {
+    title: 'Каскадьор',
+    detail: 'в кино и музикални продукции',
+    icon: Clapperboard,
+    accent: 'rent',
+  },
+]
+
+/** Suzuki Swift Sport rally photos (-800/-1600 webp, 16:9). */
+export const RALLY_GALLERY = [
+  {
+    src: '/partnership/rally-swift-ntracing',
+    alt: 'Suzuki Swift Sport атакува завой на асфалтов етап',
+  },
+  {
+    src: '/partnership/rally-suzuki-action',
+    alt: 'Suzuki Swift Sport с номер 17 минава през село по време на рали',
+  },
+  {
+    src: '/partnership/rally-swift-mural',
+    alt: 'Автомобилът минава покрай стенопис с Васил Левски',
+  },
+  {
+    src: '/partnership/rally-swift-crowd',
+    alt: 'Suzuki Swift с номер 20 пред публиката на етапа',
+  },
+  {
+    src: '/partnership/rally-swift-forest',
+    alt: 'Suzuki Swift излиза от горски завой',
+  },
+  {
+    src: '/partnership/rally-swift-side',
+    alt: 'Страничен кадър на Suzuki Swift в движение',
+  },
+  {
+    src: '/partnership/rally-swift-hill',
+    alt: 'Suzuki Swift на етап с гуми и публика край трасето',
+  },
+  {
+    src: '/partnership/rally-swift-pan',
+    alt: 'Панорамен кадър на Suzuki Swift в градски етап',
+  },
 ] as const
 
 /** Files in public/partnership; photos have -800 and -1600 webp variants. */
@@ -37,13 +109,20 @@ export const PARTNERSHIP_ASSETS = {
   heroAlt: 'Рали автомобил вдига прах на планински макадамов етап по залез',
   portrait: '/partnership/dani-portrait',
   portraitAlt: 'Дани Русев в състезателен гащеризон с каска в ръка',
-  rally: '/partnership/rally-suzuki-action',
-  rallyAlt: 'Suzuki Swift Sport с номер 17 на асфалтов рали етап',
+  seasonBg: '/partnership/bg-redbull-drift',
   balkanDrive: '/partnership/balkan-drive-milena',
   balkanDriveAlt:
     'Милена Джоргова и Дани Русев в автомобила по време на Balkan Drive',
-  campaign: '/partnership/drift-bmw-action',
-  campaignAlt: 'Дрифт автомобилът на Дани Русев в облак дим на пистата',
+  // Portrait photos: -600/-1200 webp, 4:5.
+  campaign: '/partnership/campaign-vivacom-flags',
+  campaignAlt:
+    'Дрифт автомобилът на Дани между флаговете на Vivacom и SkyShowtime на пистата',
+  campaignWide: '/partnership/campaign-vivacom-wide',
+  campaignWideAlt: 'Автомобилът и флаговете на кампанията на фона на планината',
+  d2Set: '/partnership/d2-set',
+  d2SetAlt: 'Снимачната площадка на клипа на D2 в A1 Motor Park',
+  d2Cars: '/partnership/d2-a1-cars',
+  d2CarsAlt: 'Автомобилите от клипа пред сградата на A1 Motor Park',
   livery: '/partnership/gen-livery-mockup',
   liveryAlt:
     'Илюстрация на съвременен рали автомобил с празни зони за лога на капака, вратата, покрива и задния калник',
@@ -62,17 +141,17 @@ export const D2_VIDEO = {
   subtitle: 'D2 x Deo — „Свобода“, август 2026',
 } as const
 
-/** Guests named in published Balkan Drive episodes. */
-export const BALKAN_DRIVE_GUESTS = [
-  'Милена Джоргова',
-  'Жанета Осипова',
-  'DJ Mascota',
-  'Рада Копрева',
-  'Боряна Лекова',
-  'Елена Сергова',
-  'Иван Ванов',
-  'Костадин Щерев',
+/** Published Balkan Drive episodes (YouTube IDs from the official channel). */
+export const BALKAN_DRIVE_EPISODES = [
+  { guest: 'Милена Джоргова', id: '0VWtZZFbaQ4' },
+  { guest: 'DJ Mascota', id: '0lml4jTENX4' },
+  { guest: 'Жанета Осипова', id: 'XsvNFaznVwg' },
+  { guest: 'Радо Шишарката', id: 'SB9ZcKcpndU' },
+  { guest: 'Рада Копрева', id: '8Hew4LZXWVc' },
+  { guest: 'Костадин Щерев', id: '7Dex_h5Xp9A' },
 ] as const
+
+export const BALKAN_DRIVE_CHANNEL = 'https://www.youtube.com/@BalkanDrive'
 
 export type SeasonTrack = 'national' | 'europe' | 'events'
 
@@ -80,19 +159,27 @@ export const SEASON_TRACKS: readonly {
   id: SeasonTrack
   title: string
   body: string
+  icon: LucideIcon
+  accent: Accent
 }[] = [
   {
     id: 'national',
+    icon: Flag,
+    accent: 'main',
     title: 'Национален рали шампионат',
     body: 'Основната цел е участие във всички кръгове на Българския рали шампионат — най-престижното ниво на рали състезанията у нас.',
   },
   {
     id: 'europe',
+    icon: Globe2,
+    accent: 'rent',
     title: 'Европейски състезания',
     body: 'При осигурен допълнителен бюджет — подбрани европейски кръгове и присъствие на проекта извън България.',
   },
   {
     id: 'events',
+    icon: CalendarDays,
+    accent: 'taxi',
     title: 'Автомобилът извън трасето',
     body: 'Състезателният автомобил и партньорските брандове на големите автомобилни събития в България.',
   },
@@ -152,11 +239,31 @@ export const CALENDAR_NOTE =
   'Ориентир по календарите за 2026 г. Официалният календар за 2027 г. и участията предстои да бъдат потвърдени. Jap Fest 2027 е обявен за 11–12 септември.'
 
 /** Public follower counts read on 30.10.2026. */
-export const SOCIAL_REACH = [
-  { platform: 'TikTok', account: 'Balkan Drive', followers: 16_604 },
-  { platform: 'Facebook', account: 'Balkan Drive', followers: 17_462 },
-  { platform: 'Facebook', account: 'Дани Русев', followers: 14_845 },
-] as const
+export const SOCIAL_REACH: readonly {
+  platform: 'TikTok' | 'Facebook'
+  account: string
+  followers: number
+  accent: Accent
+}[] = [
+  {
+    platform: 'TikTok',
+    account: 'Balkan Drive',
+    followers: 16_604,
+    accent: 'main',
+  },
+  {
+    platform: 'Facebook',
+    account: 'Balkan Drive',
+    followers: 17_462,
+    accent: 'rent',
+  },
+  {
+    platform: 'Facebook',
+    account: 'Дани Русев',
+    followers: 14_845,
+    accent: 'taxi',
+  },
+]
 export const REACH_DATE = '30.10.2026'
 
 export const TOTAL_FOLLOWERS = SOCIAL_REACH.reduce(
@@ -172,22 +279,32 @@ export const formatCount = (value: number) =>
 /** Where a partner appears across the season. */
 export const TOUCHPOINTS = [
   {
+    image: '/partnership/tp-car',
+    alt: 'Логата на партньорите върху вратата на рали автомобила',
     title: 'Състезателният автомобил',
     body: 'Логото на партньора върху автомобила, позиционирано според партньорското ниво.',
   },
   {
+    image: '/partnership/tp-team',
+    alt: 'Екипът на DR11 с фен тениски около рали автомобила',
     title: 'Екипът',
     body: 'Гащеризоните на пилота и навигатора и фен тениските на отбора.',
   },
   {
+    image: '/partnership/tp-digital',
+    alt: 'Кадър от Balkan Drive с гост в автомобила',
     title: 'Дигитално съдържание',
     body: 'Интеграции във видеа, публикации и съдържание около състезанията и специалните проекти.',
   },
   {
+    image: '/partnership/tp-paddock',
+    alt: 'Брандирана шатра и флагове на партньор в сервизния парк',
     title: 'Сервизният парк',
     body: 'Рекламни материали в сервизния парк и бокса, според правилата на събитието.',
   },
   {
+    image: '/partnership/tp-event',
+    alt: 'Дрифт автомобилът пред брандирана арка на автомобилно събитие',
     title: 'Семплинг и активации',
     body: 'Продукти, семплинг и интерактивни активации на автомобилни събития и събори.',
   },
@@ -218,20 +335,41 @@ export const TIER_RIGHTS: readonly {
   },
 ]
 
-export const ACADEMY_SERVICES = [
+export const ACADEMY_SERVICES: readonly {
+  title: string
+  en: string
+  body: string
+  icon: LucideIcon
+  accent: Accent
+}[] = [
   {
+    icon: Users,
+    accent: 'main',
     title: 'Дрифт тиймбилдинг',
     en: 'Team building',
     body: 'Нестандартно корпоративно преживяване — адреналин, емоции и споделени моменти извън офиса.',
   },
   {
+    icon: ShieldCheck,
+    accent: 'rent',
     title: 'Практическо обучение по безопасно шофиране',
     en: 'Safe driving',
     body: 'Концентрация, контрол над автомобила и реакции в различни ситуации, съобразено с нивото на участниците.',
   },
   {
+    icon: Briefcase,
+    accent: 'taxi',
     title: 'Корпоративни преживявания',
     en: 'Corporate experiences',
     body: 'Индивидуални събития за служители, клиенти и партньори, с брандиране и посланията на компанията.',
   },
+]
+
+export const MARQUEE_WORDS = [
+  'Рали',
+  'Гимкхана',
+  'Дрифт',
+  'Balkan Drive',
+  'Сезон 2027',
+  'Европа',
 ] as const

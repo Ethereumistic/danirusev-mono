@@ -101,3 +101,9 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+/* /partnership start-line banner: two identical halves, so -50% loops seamlessly. */
+@keyframes partnership-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
