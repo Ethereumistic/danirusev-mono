@@ -48,6 +48,7 @@ The generated `apps/web/src/routeTree.gen.ts` is checked in so fresh-checkout ty
 - `apps/web/src/features/landing/data.ts`: typed fixture data and the `getLandingContent` data boundary.
 - `apps/web/src/features/landing/`: faithful legacy sections, video hero, galleries, experience previews, and public-content fixtures.
 - `apps/web/src/features/experience/`: experience detail page port, configurator preview and the `getExperience`/`listExperiences` server functions.
+- `apps/web/src/features/partnership/`: private 2027 sponsorship presentation at `/partnership`, shared by direct link only: not linked, not in the sitemap, `noindex`. Copy and figures live in `content.ts`.
 - `apps/web/src/features/vouchers/`: public voucher validity page.
 - `apps/web/src/lib/echoray/`: server-only Echoray catalog and voucher clients, response types, and catalog fixtures.
 - `apps/web/src/features/legal/`: privacy, cookies and terms pages, text verbatim from the legacy site.

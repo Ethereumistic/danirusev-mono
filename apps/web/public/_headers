@@ -11,6 +11,9 @@
 /media/*
   Cache-Control: public, max-age=2592000, stale-while-revalidate=604800
 
+/partnership/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=604800
+
 /hero-poster*
   Cache-Control: public, max-age=2592000, stale-while-revalidate=604800
 
