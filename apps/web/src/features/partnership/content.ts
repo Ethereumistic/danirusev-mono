@@ -103,10 +103,7 @@ export const RALLY_GALLERY = [
 
 /** Files in public/partnership; photos have -800 and -1600 webp variants. */
 export const PARTNERSHIP_ASSETS = {
-  // Generated mood images (see output/partnership/research.md), captioned on the page.
-  hero: '/partnership/gen-hero-dusk',
-  heroMobile: '/partnership/gen-hero-dusk-mobile',
-  heroAlt: 'Рали автомобил вдига прах на планински макадамов етап по залез',
+  heroAlt: 'Дрифт автомобил вдига прах в завой на писта',
   portrait: '/partnership/dani-portrait',
   portraitAlt: 'Дани Русев в състезателен гащеризон с каска в ръка',
   seasonBg: '/partnership/bg-redbull-drift',
@@ -132,7 +129,7 @@ export const PARTNERSHIP_ASSETS = {
   vivacomLogo: '/partnership/vivacom-logo.svg',
   skyshowtimeLogo: '/partnership/skyshowtime-logo-white.svg',
   d2Logo: '/partnership/d2-logo-white.png',
-  balkanDriveAvatar: '/partnership/balkan-drive-avatar.webp',
+  balkanDriveLogo: '/partnership/balkan-drive-logo.webp',
 } as const
 
 export const D2_VIDEO = {
@@ -364,12 +361,3 @@ export const ACADEMY_SERVICES: readonly {
     body: 'Индивидуални събития за служители, клиенти и партньори, с брандиране и посланията на компанията.',
   },
 ]
-
-export const MARQUEE_WORDS = [
-  'Рали',
-  'Гимкхана',
-  'Дрифт',
-  'Balkan Drive',
-  'Сезон 2027',
-  'Европа',
-] as const

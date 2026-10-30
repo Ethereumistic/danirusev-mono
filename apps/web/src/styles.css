@@ -107,3 +107,26 @@ body {
     transform: translateX(-50%);
   }
 }
+/* /partnership marquee: one display face per discipline, each subset to its single word
+   (Google Fonts text= subsets, SIL OFL 1.1). They only ever render those strings. */
+@font-face {
+  font-family: "Russo One";
+  src: url("/fonts/partnership/russo-one-rali.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik Glitch";
+  src: url("/fonts/partnership/rubik-glitch-drift.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Stalinist One";
+  src: url("/fonts/partnership/stalinist-one-gymkhana.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: Tektur;
+  font-weight: 900;
+  src: url("/fonts/partnership/tektur-season.woff2") format("woff2");
+  font-display: swap;
+}

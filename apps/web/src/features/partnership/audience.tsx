@@ -135,17 +135,16 @@ export function Audience() {
       </div>
       <div className={cn(shell, 'mt-16 grid gap-16 lg:grid-cols-12')}>
         <div className="lg:col-span-5">
-          <div className="flex items-center gap-4">
+          <h3>
             <img
-              src={A.balkanDriveAvatar}
-              alt=""
+              src={A.balkanDriveLogo}
+              alt="Balkan Drive"
+              width={1505}
+              height={119}
               loading="lazy"
-              className="size-14 rounded-full ring-2 ring-main/60"
+              className="h-auto w-full max-w-md"
             />
-            <h3 className="font-gagalin text-4xl text-white md:text-5xl">
-              Balkan Drive
-            </h3>
-          </div>
+          </h3>
           <p className="mt-6 text-lg leading-relaxed text-slate-300">
             Видео предаването на Дани: популярни личности сядат зад волана на
             писта, а разговорът се случва в движение — на високи обороти и с

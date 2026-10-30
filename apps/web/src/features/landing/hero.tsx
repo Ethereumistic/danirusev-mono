@@ -6,12 +6,12 @@ import { useEffect, useRef, useState } from 'react'
 import { Image } from '@/components/image'
 
 // React hoists a preload for this eager, high-priority poster into <head>.
-const HERO_POSTER_SRCSET =
+export const HERO_POSTER_SRCSET =
   '/hero-poster-640w.webp 640w, /hero-poster-1080w.webp 1080w, /hero-poster.webp 1920w'
 
 // AV1 first (≈50% smaller), then H.264 for browsers without AV1; small screens get 480p.
 const MOBILE = '(max-width: 767px)'
-const HERO_SOURCES = [
+export const HERO_SOURCES = [
   {
     src: '/media/hero-480-av1.mp4',
     type: 'video/mp4; codecs="av01.0.04M.08"',
@@ -26,7 +26,7 @@ const HERO_SOURCES = [
 ]
 
 /** Skip the background video for reduced motion and data-saver connections. */
-function prefersStillHero() {
+export function prefersStillHero() {
   const connection = (
     navigator as Navigator & { connection?: { saveData?: boolean } }
   ).connection

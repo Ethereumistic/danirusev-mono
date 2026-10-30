@@ -1,18 +1,19 @@
 import { cn } from '@danirusev/ui/lib/utils'
 import { Link } from '@tanstack/react-router'
-import { Mail, Phone } from 'lucide-react'
+import { Mail, Pause, Phone, Play } from 'lucide-react'
 import { useReducedMotion, useScroll, useTransform } from 'motion/react'
 import * as motion from 'motion/react-m'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { MotionProvider } from '@/components/motion-provider'
+import {
+  HERO_POSTER_SRCSET,
+  HERO_SOURCES,
+  prefersStillHero,
+} from '@/features/landing/hero'
 import { BUSINESS } from '@/lib/seo'
 import { Audience } from './audience'
 import { Brand } from './brand'
-import {
-  PARTNERSHIP_ASSETS as A,
-  ACADEMY_SERVICES,
-  MARQUEE_WORDS,
-} from './content'
+import { PARTNERSHIP_ASSETS as A, ACADEMY_SERVICES } from './content'
 import { Pilot } from './pilot'
 import { Proof } from './proof'
 import { Season } from './season'
@@ -55,6 +56,77 @@ const coverLine = {
   }),
 }
 
+/**
+ * The site's hero drift video behind the cover. The poster renders on the
+ * server; the video starts after hydration unless the visitor prefers reduced
+ * motion or saves data, and fades in once its first frame is ready.
+ */
+function useCoverVideo() {
+  const video = useRef<HTMLVideoElement>(null)
+  const reducedMotion = useReducedMotion()
+  const [enabled, setEnabled] = useState(false)
+  const [ready, setReady] = useState(false)
+  const [paused, setPaused] = useState(false)
+  useEffect(() => {
+    if (reducedMotion || prefersStillHero()) {
+      video.current?.pause()
+      setReady(false)
+      setEnabled(false)
+    } else setEnabled(true)
+  }, [reducedMotion])
+  const toggle = () => {
+    if (paused) void video.current?.play()
+    else video.current?.pause()
+    setPaused(!paused)
+  }
+  return { video, enabled, ready, setReady, paused, toggle }
+}
+
+function CoverVideo({
+  video,
+  enabled,
+  ready,
+  setReady,
+}: ReturnType<typeof useCoverVideo>) {
+  return (
+    <>
+      <img
+        src="/hero-poster.webp"
+        srcSet={HERO_POSTER_SRCSET}
+        sizes="100vw"
+        alt={A.heroAlt}
+        fetchPriority="high"
+        decoding="sync"
+        className={cn(
+          'absolute inset-0 h-full w-full object-cover transition-opacity duration-700',
+          ready ? 'opacity-0' : 'opacity-100',
+        )}
+      />
+      {enabled && (
+        <video
+          ref={video}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="none"
+          aria-hidden="true"
+          tabIndex={-1}
+          onLoadedData={() => setReady(true)}
+          className={cn(
+            'absolute inset-0 h-full w-full object-cover transition-opacity duration-700',
+            ready ? 'opacity-100' : 'opacity-0',
+          )}
+        >
+          {HERO_SOURCES.map((source) => (
+            <source key={source.src} {...source} />
+          ))}
+        </video>
+      )}
+    </>
+  )
+}
+
 function Cover() {
   const lines = ['Заедно към', 'европейската', 'сцена']
   const ref = useRef<HTMLDivElement>(null)
@@ -63,10 +135,11 @@ function Cover() {
     target: ref,
     offset: ['start start', 'end start'],
   })
-  // The photo drifts slower than the page and the copy lifts away as you leave the cover.
+  // The video drifts slower than the page and the copy lifts away as you leave the cover.
   const imageY = useTransform(scrollYProgress, [0, 1], ['0%', '22%'])
   const copyY = useTransform(scrollYProgress, [0, 1], ['0%', '-18%'])
   const copyOpacity = useTransform(scrollYProgress, [0, 0.75], [1, 0])
+  const cover = useCoverVideo()
   return (
     <div ref={ref}>
       <Slide id="start" className="flex min-h-svh bg-slate-950">
@@ -80,17 +153,10 @@ function Cover() {
             animate={{ scale: 1 }}
             transition={{ duration: 2.4, ease: [0.22, 1, 0.36, 1] }}
           >
-            <picture>
-              <source
-                media="(max-width: 767px) and (orientation: portrait)"
-                srcSet={`${A.heroMobile}-600.webp 600w, ${A.heroMobile}-900.webp 900w`}
-                sizes="100vw"
-              />
-              <Photo src={A.hero} alt={A.heroAlt} priority />
-            </picture>
+            <CoverVideo {...cover} />
           </motion.div>
         </motion.div>
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-slate-950/50 md:via-slate-950/35 md:to-slate-950/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-slate-950/75 md:via-slate-950/35 md:to-slate-950/25" />
         <div className="absolute inset-0 hidden bg-gradient-to-r from-slate-950/70 via-transparent to-transparent md:block" />
         <motion.div
           style={reducedMotion ? undefined : { y: copyY, opacity: copyOpacity }}
@@ -148,43 +214,104 @@ function Cover() {
             </a>
           </motion.div>
         </motion.div>
-        <p className="absolute right-3 bottom-3 z-10 text-[11px] text-white/40">
-          Концептуална визуализация
-        </p>
+        {cover.ready && (
+          <button
+            type="button"
+            className="absolute right-4 bottom-4 z-20 rounded-full bg-slate-950/50 p-3 text-white opacity-60 transition-opacity hover:opacity-100 focus-visible:opacity-100"
+            aria-label={
+              cover.paused ? 'Пусни фоновото видео' : 'Спри фоновото видео'
+            }
+            onClick={cover.toggle}
+          >
+            {cover.paused ? (
+              <Play className="size-4" aria-hidden="true" />
+            ) : (
+              <Pause className="size-4" aria-hidden="true" />
+            )}
+          </button>
+        )}
       </Slide>
     </div>
   )
 }
 
-/** A start-line banner of outlined words that scrolls past between cover and pilot. */
+type MarqueeItem =
+  | { kind: 'word'; text: string; className: string }
+  | { kind: 'balkan-drive' }
+  | { kind: 'wordmark' }
+
+/** Each discipline in a face that suits it; the two brands use their own marks. */
+const MARQUEE: readonly MarqueeItem[] = [
+  {
+    kind: 'word',
+    text: 'РАЛИ',
+    className: "font-['Russo_One'] text-white",
+  },
+  { kind: 'balkan-drive' },
+  {
+    kind: 'word',
+    text: 'ДРИФТ',
+    className: "font-['Rubik_Glitch'] text-white",
+  },
+  { kind: 'wordmark' },
+  {
+    kind: 'word',
+    text: 'ГИМКХАНА',
+    className: "font-['Stalinist_One'] text-[0.8em] text-white",
+  },
+  {
+    kind: 'word',
+    text: 'СЕЗОН 2027',
+    className: 'font-[Tektur] font-black text-taxi',
+  },
+]
+
+const SEPARATORS = [ACCENT.main.bg, ACCENT.rent.bg, ACCENT.taxi.bg]
+
+function MarqueeEntry({ item }: { item: MarqueeItem }) {
+  if (item.kind === 'balkan-drive')
+    return (
+      <img
+        src={A.balkanDriveLogo}
+        alt=""
+        width={1505}
+        height={119}
+        className="h-[0.5em] w-auto"
+      />
+    )
+  if (item.kind === 'wordmark')
+    return (
+      <span className="font-gagalin whitespace-nowrap text-main font-outline">
+        Dani Rusev 11
+      </span>
+    )
+  return (
+    <span className={cn('whitespace-nowrap leading-none', item.className)}>
+      {item.text}
+    </span>
+  )
+}
+
+/** A start-line banner of the project's disciplines and brands, between cover and pilot. */
 function Marquee() {
-  const words = [...MARQUEE_WORDS, ...MARQUEE_WORDS]
   return (
     <div
       aria-hidden="true"
-      className="relative overflow-hidden border-y border-white/10 bg-slate-950 py-5 md:py-7"
+      className="relative overflow-hidden border-y border-white/10 bg-slate-950 py-6 md:py-8"
     >
-      <div className="flex w-max animate-[partnership-marquee_38s_linear_infinite] motion-reduce:animate-none">
+      <div className="flex w-max animate-[partnership-marquee_42s_linear_infinite] motion-reduce:animate-none">
         {[0, 1].map((copy) => (
           <span key={copy} className="flex shrink-0">
-            {words.map((word, index) => (
+            {[...MARQUEE, ...MARQUEE].map((item, index) => (
               <span
-                key={`${copy}-${word}-${index.toString()}`}
-                className="flex items-center gap-8 pr-8 text-5xl font-black uppercase italic tracking-tighter md:gap-12 md:pr-12 md:text-7xl"
+                key={`${copy}-${index.toString()}`}
+                className="flex items-center gap-8 pr-8 text-5xl md:gap-12 md:pr-12 md:text-7xl"
               >
+                <MarqueeEntry item={item} />
                 <span
                   className={cn(
-                    index % 3 === 0
-                      ? 'text-transparent [-webkit-text-stroke:1.5px_rgb(255_255_255/0.45)]'
-                      : 'text-white/90',
-                  )}
-                >
-                  {word}
-                </span>
-                <span
-                  className={cn(
-                    'size-3 rotate-45 md:size-4',
-                    [ACCENT.main.bg, ACCENT.rent.bg, ACCENT.taxi.bg][index % 3],
+                    'size-3 shrink-0 rotate-45 md:size-4',
+                    SEPARATORS[index % SEPARATORS.length],
                   )}
                 />
               </span>
